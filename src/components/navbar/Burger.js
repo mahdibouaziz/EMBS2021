@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 import RightNav from "./RightNav";
+import { ContextNav } from "./ContextNav";
 
 const StyledBurger = styled.div`
   width: 2rem;
@@ -43,7 +44,7 @@ const StyledBurger = styled.div`
 `;
 
 const Burger = () => {
-  const [open, setOpen] = useState(false);
+  const { open, setOpen } = useContext(ContextNav);
 
   return (
     <>

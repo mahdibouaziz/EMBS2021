@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { ContextNav } from "./ContextNav";
 
 const UL = styled.ul`
   list-style: none;
@@ -39,14 +40,25 @@ const UL = styled.ul`
   }
 `;
 
-const RightNav = (props) => {
+const RightNav = () => {
+  const { open, setOpen } = useContext(ContextNav);
   return (
-    <UL open={props.open}>
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
-      <Link to="/activities">Activities</Link>
-      <Link to="/newsletter">NewsLetter</Link>
-      <Link to="/contact">Contact</Link>
+    <UL open={open}>
+      <Link onClick={() => setOpen(!open)} to="/">
+        Home
+      </Link>
+      <Link onClick={() => setOpen(!open)} to="/about">
+        About
+      </Link>
+      <Link onClick={() => setOpen(!open)} to="/activities">
+        Activities
+      </Link>
+      <Link onClick={() => setOpen(!open)} to="/newsletter">
+        NewsLetter
+      </Link>
+      <Link onClick={() => setOpen(!open)} to="/contact">
+        Contact
+      </Link>
     </UL>
   );
 };

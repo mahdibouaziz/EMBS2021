@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Burger from "./Burger";
+import ContextNavProvider from "./ContextNav";
 
 const Nav = styled.nav`
   width: 100%;
@@ -18,8 +19,10 @@ const Nav = styled.nav`
 const NavBar = () => {
   return (
     <Nav>
-      <div className="logo">EMBS LOGO</div>
-      <Burger />
+      <ContextNavProvider>
+        <div className="logo">EMBS LOGO</div>
+        <Burger />
+      </ContextNavProvider>
     </Nav>
   );
 };
