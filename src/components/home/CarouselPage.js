@@ -7,7 +7,7 @@ import Typical from "react-typical";
 
 const CarouselPage = () => {
   return (
-    <Carousel interval={11000} style={{ position: "relative", zIndex: "0" }}>
+    <Carousel interval={7500} style={{ position: "relative", zIndex: "0" }}>
       <Carousel.Item>
         <img
           style={{ maxHeight: "74vh" }}
@@ -18,16 +18,16 @@ const CarouselPage = () => {
         <Carousel.Caption>
           <div className="carousel-caption">
             <h1>
-              ktiba fixe wala mobile najam{" "}
+              Welcome
               <Typical
                 loop={Infinity}
                 wrapper="b"
                 steps={[
-                  "Welcome to the EMBS",
+                  " to the EMBS",
                   1500,
-                  "ch9awlkom fel fekra?",
+                  " ay faza",
                   1500,
-                  "9oulouli cht7ebou n7ot ktiba",
+                  " atiwni text xD",
                   1500,
                 ]}
               />
