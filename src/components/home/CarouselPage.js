@@ -1,50 +1,55 @@
 import React from "react";
 import carr5 from "../../img/carousel/carr5.jpg";
-import carr4 from "../../img/carousel/carr4.jpg";
-import carr3 from "../../img/carousel/carr3.jpg";
+import carr2 from "../../img/carousel/carr2.jpg";
+import carr3 from "../../img/carousel/carr1.jpg";
 import { Carousel } from "react-bootstrap";
+import Typical from "react-typical";
 
 const CarouselPage = () => {
   return (
-    <Carousel style={{ position: "relative", zIndex: "0" }}>
+    <Carousel interval={11000} style={{ position: "relative", zIndex: "0" }}>
       <Carousel.Item>
         <img
-          style={{ maxHeight: "80vh" }}
+          style={{ maxHeight: "74vh" }}
           className="d-block w-100"
           src={carr5}
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <div className="carousel-caption">
+            <h1>
+              ktiba fixe wala mobile najam{" "}
+              <Typical
+                loop={Infinity}
+                wrapper="b"
+                steps={[
+                  "Welcome to the EMBS",
+                  1500,
+                  "ch9awlkom fel fekra?",
+                  1500,
+                  "9oulouli cht7ebou n7ot ktiba",
+                  1500,
+                ]}
+              />
+            </h1>
+          </div>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
-          style={{ maxHeight: "80vh" }}
+          style={{ maxHeight: "74vh" }}
           className="d-block w-100"
           src={carr3}
           alt="First slide"
         />
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
-          style={{ maxHeight: "80vh" }}
+          style={{ maxHeight: "74vh" }}
           className="d-block w-100"
-          src={carr4}
+          src={carr2}
           alt="First slide"
         />
-
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
   );
