@@ -9,7 +9,8 @@ const UL = styled.ul`
   flex-flow: row nowrap;
 
   a {
-    padding: 20px 20px;
+    margin-top: 0.7rem;
+    padding: 3px 20px;
     color: #333;
     text-decoration: none;
     font-size: 20px;
@@ -18,7 +19,7 @@ const UL = styled.ul`
   }
 
   a:hover {
-    background: #ccc;
+    color: #09a3bb;
   }
 
   @media (max-width: 768px) {
