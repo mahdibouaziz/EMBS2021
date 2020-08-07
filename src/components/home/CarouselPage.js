@@ -17,21 +17,15 @@ const CarouselPage = () => {
         />
         <Carousel.Caption>
           <div className="carousel-caption">
-            <h1>
-              Welcome
+            <h1>IEEE INSAT EMBS Chapter</h1>
+            <h3>
+              Your Global Connection
               <Typical
                 loop={Infinity}
                 wrapper="b"
-                steps={[
-                  " to the EMBS",
-                  1500,
-                  " ay faza",
-                  1500,
-                  " atiwni text xD",
-                  1500,
-                ]}
+                steps={["  To The World Of Biomedical Engineering ", 3500]}
               />
-            </h1>
+            </h3>
           </div>
         </Carousel.Caption>
       </Carousel.Item>
@@ -42,6 +36,29 @@ const CarouselPage = () => {
           src={carr3}
           alt="First slide"
         />
+        <Carousel.Caption>
+          <div className="carousel-caption">
+            <h3>We work to enhance</h3>
+            <h1>Students Skills</h1>
+            <h3>
+              Through
+              <Typical
+                loop={Infinity}
+                wrapper="b"
+                steps={[
+                  " Workshops",
+                  900,
+                  " Events",
+                  900,
+                  " Conferences",
+                  900,
+                  " Magasines",
+                  900,
+                ]}
+              />
+            </h3>
+          </div>
+        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
@@ -50,6 +67,14 @@ const CarouselPage = () => {
           src={carr2}
           alt="First slide"
         />
+        <Carousel.Caption>
+          <div className="carousel-caption">
+            <h1>
+              Ready
+              <br /> To Be part of our journey ?
+            </h1>
+          </div>
+        </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
   );
