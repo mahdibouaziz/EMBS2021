@@ -3,7 +3,7 @@ import React from "react";
 const LastActivities = () => {
   return (
     <section>
-      <h1>Last Activities</h1>
+      {/* <h1>Last Activities</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nostrum
         nobis vel praesentium ducimus. Hic, minima velit odio fugit vel
@@ -11,7 +11,7 @@ const LastActivities = () => {
         nam eveniet veniam corrupti? Veniam veritatis autem consequuntur? Fugiat
         ut dolorum illo, placeat tempore magni possimus expedita omnis eum
         distinctio, reiciendis eveniet quo.
-      </p>
+      </p> */}
     </section>
   );
 };

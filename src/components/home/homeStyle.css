@@ -1,0 +1,28 @@
+/* Caousel Section ani jeyha baad choiya */
+
+/* About section */
+
+.about-section {
+  margin-top: 5rem;
+}
+
+.about-section .title {
+  display: inline-block;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+.about-section .title span {
+  color: rgb(6, 6, 144);
+}
+
+.about-section .text {
+  font-size: 1.4rem;
+}
+
+.about-section .embs-logo {
+  display: block;
+  max-height: 12rem;
+  max-width: 18rem;
+  margin: 0 auto;
+}

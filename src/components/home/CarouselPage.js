@@ -1,7 +1,7 @@
 import React from "react";
-import carr5 from "../../img/carousel/carr5.jpg";
-import carr2 from "../../img/carousel/carr2.jpg";
-import carr3 from "../../img/carousel/carr1.jpg";
+import carr5 from "./img/carousel/carr5.jpg";
+import carr2 from "./img/carousel/carr2.jpg";
+import carr3 from "./img/carousel/carr1.jpg";
 import { Carousel } from "react-bootstrap";
 import Typical from "react-typical";
 
