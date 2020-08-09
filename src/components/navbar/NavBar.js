@@ -8,19 +8,26 @@ const Nav = styled.nav`
   height: 65px;
   border-bottom: 2px solid #f1f1f1;
   padding: 0 20px;
-  display: flex;
+  display: fixe;
   justify-content: space-between;
-  position: relative;
+  position: fixed;
   z-index: 99;
+  left: -2px;
+  background-color: rgba(16, 66, 143, 0.6);
+  border-color: transparent;
 
   .logo {
+    color: #fff;
+    font-size: 20px;
+    padding: 20px 15px;
+    font-weight: bold;
     padding: 20px 0;
   }
 `;
 
 const NavBar = () => {
   return (
-    <Nav>
+    <Nav className="nav-style">
       <ContextNavProvider>
         <div className="logo">EMBS LOGO</div>
         <Burger />

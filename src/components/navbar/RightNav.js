@@ -11,11 +11,13 @@ const UL = styled.ul`
   a {
     margin-top: 0.7rem;
     padding: 3px 20px;
-    color: #333;
+    color: #fff;
     text-decoration: none;
     font-size: 20px;
     transition: all 0.4s ease-in-out;
     border-radius: 6px;
+    text-transform: uppercase;
+    font-weight: bold;
   }
 
   a:hover {
@@ -24,7 +26,7 @@ const UL = styled.ul`
 
   @media (max-width: 768px) {
     flex-flow: column nowrap;
-    background-color: #fff;
+    background-color: rgba(16, 66, 143, 0.6);
     position: fixed;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     top: 0;
@@ -35,7 +37,7 @@ const UL = styled.ul`
     transition: transform 0.3s ease-in-out;
 
     a {
-      color: #333;
+      color: #fff;
       text-decoration: none;
     }
   }
