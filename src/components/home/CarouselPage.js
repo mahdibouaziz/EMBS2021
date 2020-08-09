@@ -54,20 +54,15 @@ const CarouselPage = () => {
               className="animate__animated animate__fadeInDown"
               style={{ animationDelay: "1s" }}
             >
-              IEEE INSAT <span>EMBS</span> Chapter
+              We work to enhance <br />
+              <span>Students Skills</span>
             </h2>
             <h3
               className="animate__animated animate__fadeInDown"
               style={{ animationDelay: "1s" }}
             >
-              Your Global Connection To The World Of Biomedical Engineering
+              Through Workshops, Events, Conferences, Magasines and More...
             </h3>
-            <p
-              className="animate__animated animate__fadeInDown"
-              style={{ animationDelay: "1s" }}
-            >
-              <Link to="#">Contact us</Link>
-            </p>
           </div>
         </Carousel.Caption>
       </Carousel.Item>
@@ -82,7 +77,8 @@ const CarouselPage = () => {
               className="animate__animated animate__fadeInDown"
               style={{ animationDelay: "1s" }}
             >
-              IEEE INSAT <span>EMBS</span> Chapter
+              <span>Ready To</span> <br />
+              Be part of our journey?
             </h2>
             <h3
               className="animate__animated animate__fadeInDown"
@@ -94,7 +90,7 @@ const CarouselPage = () => {
               className="animate__animated animate__fadeInDown"
               style={{ animationDelay: "1s" }}
             >
-              <Link to="#">Contact us</Link>
+              <Link to="#">GET STARTED</Link>
             </p>
           </div>
         </Carousel.Caption>

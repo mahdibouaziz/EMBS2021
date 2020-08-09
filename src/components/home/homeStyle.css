@@ -37,32 +37,45 @@
 /* ipad */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .carousel-caption {
-    position: absolute;
-    top: 6rem;
+    top: 8rem;
   }
 
   .carousel-caption h2 {
-    font-size: 4rem;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-size: 4.2rem;
   }
   .carousel-caption a {
     padding: 20px 35px;
   }
 }
 
-/* mobile */
+/* Mobile li akbar mel iphone 5*/
 @media only screen and (max-width: 767px) {
   .carousel-caption {
-    position: absolute;
-    top: 2rem;
+    top: 4.2rem;
   }
 
   .carousel-caption h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-size: 2.1rem;
   }
+  .carousel-caption a {
+    padding: 10px 25px;
+  }
+}
+
+/* mobile iphone 5 / se */
+@media only screen and (max-width: 320px) {
+  .carousel-caption {
+    top: 2.3rem;
+  }
+
+  .carousel-caption h2 {
+    font-size: 1.6rem;
+  }
+
+  .carousel-caption h3 {
+    font-size: 1.4rem;
+  }
+
   .carousel-caption a {
     padding: 10px 25px;
   }
