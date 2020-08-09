@@ -21,7 +21,7 @@ const Nav = styled.nav`
     font-size: 20px;
     padding: 20px 15px;
     font-weight: bold;
-    padding: 20px 0;
+    padding: 1rem 0;
   }
 `;
 

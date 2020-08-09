@@ -1,18 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Row, Col, Button } from "react-bootstrap";
 import act1 from "./img/activities/act1.png";
 import act2 from "./img/activities/act2.png";
 import act3 from "./img/activities/act3.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const LastActivities = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1100 });
+  }, []);
   return (
     <section className="activities-section">
-      <Row>
+      <Row data-aos="fade-right">
         <h1 className="title">Last Activities</h1>
       </Row>
       <Row className="row-activities">
         {/* Act1 */}
-        <Col className="box-activities" lg={{ span: 3 }} md={7}>
+        <Col
+          data-aos="fade-right"
+          className="box-activities"
+          lg={{ span: 3 }}
+          md={7}
+        >
           <Row>
             <Col>
               <img src={act1} alt="act1" />
@@ -29,7 +39,12 @@ const LastActivities = () => {
           </Row>
         </Col>
 
-        <Col className="box-activities" lg={{ span: 3 }} md={7}>
+        <Col
+          data-aos="fade-right"
+          className="box-activities"
+          lg={{ span: 3 }}
+          md={7}
+        >
           <Row>
             <Col>
               <img src={act2} alt="act2" />
@@ -46,7 +61,12 @@ const LastActivities = () => {
           </Row>
         </Col>
 
-        <Col className="box-activities" lg={{ span: 3 }} md={7}>
+        <Col
+          data-aos="fade-right"
+          className="box-activities"
+          lg={{ span: 3 }}
+          md={7}
+        >
           <Row>
             <Col>
               <img src={act3} alt="act3" />

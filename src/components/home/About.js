@@ -1,17 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
 import embsLogo from "./img/about/embs.png";
 import "./homeStyle.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1100 });
+  }, []);
   return (
     <section className="about-section">
-      <Row>
+      {/* check https://github.com/michalsnik/aos#animations for the animation */}
+      <Row data-aos="fade-right">
         <h1 className="title">
           About <span>Us</span>
         </h1>
       </Row>
-      <Row>
+      <Row data-aos="fade-right">
         <Col md={12} lg={7}>
           <p className="text">
             IEEE Engineering in Medicine and Biology Society (EMBS) is the
