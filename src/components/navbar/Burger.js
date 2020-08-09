@@ -50,9 +50,9 @@ const Burger = () => {
   return (
     <>
       <StyledBurger open={open} onClick={() => setOpen(!open)}>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div style={{ backgroundColor: "#fff" }}></div>
+        <div style={{ backgroundColor: "#fff" }}></div>
+        <div style={{ backgroundColor: "#fff" }}></div>
       </StyledBurger>
       <RightNav open={open} />
     </>
