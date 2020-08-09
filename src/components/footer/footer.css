@@ -1,0 +1,19 @@
+footer {
+  margin-top: 2rem;
+}
+
+.footer-row {
+  padding: 3rem 0;
+  background-color: #474747;
+}
+
+.footer-col {
+  text-align: center;
+  color: rgb(230, 230, 230);
+}
+
+/* font awesome icons */
+.fab {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}

@@ -6,6 +6,7 @@ import About from "./components/About";
 import Activities from "./components/Activities";
 import NewsLetter from "./components/NewsLetter";
 import Contact from "./components/Contact";
+import Footer from "./components/footer/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container } from "react-bootstrap";
 
@@ -23,6 +24,7 @@ function App() {
           <Route exact path="/newsletter" component={NewsLetter} />
           <Route exact path="/contact" component={Contact} />
         </Switch>
+        <Footer />
       </Router>
     </div>
   );
