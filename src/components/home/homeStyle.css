@@ -26,3 +26,34 @@
   max-width: 18rem;
   margin: 0 auto;
 }
+
+/* Activities-section */
+
+.activities-section {
+  margin-top: 5rem;
+}
+
+.activities-section .title {
+  display: inline-block;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+.activities-section .box-activities {
+  background-color: #ece9e9;
+  box-shadow: 0px 2px #d8d8d8;
+  border-radius: 1rem;
+  margin-bottom: 10rem;
+  margin: 1rem;
+}
+
+.activities-section .row-activities {
+  justify-content: center !important;
+}
+
+.activities-section .box-activities img {
+  display: block;
+  margin: auto;
+  width: 100%;
+  border-radius: 1rem;
+}
