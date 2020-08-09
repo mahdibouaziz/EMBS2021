@@ -23,15 +23,21 @@ const CarouselPage = () => {
           <div className="carousel-caption">
             {/* Check this for animation https://animate.style/ */}
             <h2
-              className="animate__animated animate__fadeInUp"
+              className="animate__animated animate__fadeInDown"
               style={{ animationDelay: "1s" }}
             >
               IEEE INSAT <span>EMBS</span> Chapter
             </h2>
-            <h3>
+            <h3
+              className="animate__animated animate__fadeInDown"
+              style={{ animationDelay: "1s" }}
+            >
               Your Global Connection To The World Of Biomedical Engineering
             </h3>
-            <p>
+            <p
+              className="animate__animated animate__fadeInDown"
+              style={{ animationDelay: "1s" }}
+            >
               <Link to="#">Contact us</Link>
             </p>
           </div>
@@ -44,13 +50,22 @@ const CarouselPage = () => {
         ></div>
         <Carousel.Caption>
           <div className="carousel-caption">
-            <h2>
+            <h2
+              className="animate__animated animate__fadeInDown"
+              style={{ animationDelay: "1s" }}
+            >
               IEEE INSAT <span>EMBS</span> Chapter
             </h2>
-            <h3>
+            <h3
+              className="animate__animated animate__fadeInDown"
+              style={{ animationDelay: "1s" }}
+            >
               Your Global Connection To The World Of Biomedical Engineering
             </h3>
-            <p>
+            <p
+              className="animate__animated animate__fadeInDown"
+              style={{ animationDelay: "1s" }}
+            >
               <Link to="#">Contact us</Link>
             </p>
           </div>
@@ -63,13 +78,22 @@ const CarouselPage = () => {
         ></div>
         <Carousel.Caption>
           <div className="carousel-caption">
-            <h2>
+            <h2
+              className="animate__animated animate__fadeInDown"
+              style={{ animationDelay: "1s" }}
+            >
               IEEE INSAT <span>EMBS</span> Chapter
             </h2>
-            <h3>
+            <h3
+              className="animate__animated animate__fadeInDown"
+              style={{ animationDelay: "1s" }}
+            >
               Your Global Connection To The World Of Biomedical Engineering
             </h3>
-            <p>
+            <p
+              className="animate__animated animate__fadeInDown"
+              style={{ animationDelay: "1s" }}
+            >
               <Link to="#">Contact us</Link>
             </p>
           </div>
