@@ -29,7 +29,7 @@ const About = () => {
           </p>
         </Col>
         {/* <Col md={{ span: 4, offset: 2 }} lg={{ span: 5, offset: 0 }}> */}
-        <Col md={12} lg={5}>
+        <Col data-aos="fade-right" md={12} lg={5}>
           <img className="embs-logo" src={embsLogo} alt="embs" />
         </Col>
       </Row>
