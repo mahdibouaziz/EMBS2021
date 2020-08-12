@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Burger from "./Burger";
 import ContextNavProvider from "./ContextNav";
+import logo from "./embs_logo.png";
 
 const Nav = styled.nav`
   width: 100%;
@@ -16,12 +17,9 @@ const Nav = styled.nav`
   background-color: rgba(16, 66, 143, 0.6);
   border-color: transparent;
 
-  .logo {
-    color: #fff;
-    font-size: 20px;
-    padding: 20px 15px;
-    font-weight: bold;
-    padding: 1rem 0;
+  .logo img {
+    width: 5rem;
+    padding-top: 9px;
   }
 `;
 
@@ -29,7 +27,9 @@ const NavBar = () => {
   return (
     <Nav className="nav-style">
       <ContextNavProvider>
-        <div className="logo">EMBS LOGO</div>
+        <div className="logo">
+          <img src={logo} alt="logo" />
+        </div>
         <Burger />
       </ContextNavProvider>
     </Nav>

@@ -4,12 +4,17 @@ footer {
 
 .footer-row {
   padding: 3rem 0;
-  background-color: #474747;
+  background-color: #6b6a6a;
 }
 
 .footer-col {
   text-align: center;
   color: rgb(230, 230, 230);
+}
+
+.footer-col img {
+  width: 13rem;
+  margin-bottom: 1.5rem;
 }
 
 /* font awesome icons */

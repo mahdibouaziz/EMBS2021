@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import "./footer.css";
+import logo from "./embs_logo.png";
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
       <Container fluid>
         <Row className="footer-row">
           <Col className="footer-col" sm={{ span: 4, offset: 1 }}>
-            <h1>EMBS LOGO</h1>
+            <img src={logo} alt="" />
             <p>
               If you think you have the passion, attitude and capability to join
               us, don't hesitate.
