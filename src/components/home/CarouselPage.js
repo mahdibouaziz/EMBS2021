@@ -1,8 +1,7 @@
 import React from "react";
-import carr5 from "./img/carousel/carr5.jpg";
-import carr2 from "./img/carousel/carr2.jpg";
-import carr3 from "./img/carousel/carr1.jpg";
-
+import lab from "./img/carousel/lab.png";
+import medic from "./img/carousel/medic.png";
+import virus from "./img/carousel/virus.png";
 import { Carousel } from "react-bootstrap";
 // import Typical from "react-typical";
 import { Link } from "react-router-dom";
@@ -17,7 +16,7 @@ const CarouselPage = () => {
       <Carousel.Item className="item">
         <div
           className="banner"
-          style={{ backgroundImage: `url(${carr5})` }}
+          style={{ backgroundImage: `url(${lab})` }}
         ></div>
         <Carousel.Caption>
           <div className="carousel-caption">
@@ -46,7 +45,7 @@ const CarouselPage = () => {
       <Carousel.Item className="item">
         <div
           className="banner"
-          style={{ backgroundImage: `url(${carr2})` }}
+          style={{ backgroundImage: `url(${medic})` }}
         ></div>
         <Carousel.Caption>
           <div className="carousel-caption">
@@ -69,7 +68,7 @@ const CarouselPage = () => {
       <Carousel.Item className="item">
         <div
           className="banner"
-          style={{ backgroundImage: `url(${carr3})` }}
+          style={{ backgroundImage: `url(${virus})` }}
         ></div>
         <Carousel.Caption>
           <div className="carousel-caption">
