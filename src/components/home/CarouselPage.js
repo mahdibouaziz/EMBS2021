@@ -37,7 +37,7 @@ const CarouselPage = () => {
               className="animate__animated animate__fadeInDown"
               style={{ animationDelay: "1s" }}
             >
-              <Link to="#">Contact us</Link>
+              <Link to="#">GET TO KNOW US</Link>
             </p>
           </div>
         </Carousel.Caption>
@@ -85,12 +85,6 @@ const CarouselPage = () => {
             >
               Your Global Connection To The World Of Biomedical Engineering
             </h3>
-            <p
-              className="animate__animated animate__fadeInDown"
-              style={{ animationDelay: "1s" }}
-            >
-              <Link to="#">GET STARTED</Link>
-            </p>
           </div>
         </Carousel.Caption>
       </Carousel.Item>

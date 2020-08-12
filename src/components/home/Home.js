@@ -1,16 +1,14 @@
 import React from "react";
 import CarouselPage from "./CarouselPage";
 import { Container } from "react-bootstrap";
-import About from "./About";
-import LastActivities from "./LastActivities";
+import Team from "./Team";
 
 const Home = () => {
   return (
     <div>
       <CarouselPage />
       <Container>
-        <About />
-        <LastActivities />
+        <Team />
       </Container>
     </div>
   );
