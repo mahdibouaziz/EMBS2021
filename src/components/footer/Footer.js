@@ -1,19 +1,13 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import "./footer.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const Footer = () => {
   return (
     <footer>
       <Container fluid>
         <Row className="footer-row">
-          <Col
-            data-aos="fade-right"
-            className="footer-col"
-            sm={{ span: 4, offset: 1 }}
-          >
+          <Col className="footer-col" sm={{ span: 4, offset: 1 }}>
             <h1>EMBS LOGO</h1>
             <p>
               If you think you have the passion, attitude and capability to join
@@ -21,11 +15,7 @@ const Footer = () => {
             </p>
             <p>Tnajam t7ot ktiba houni</p>
           </Col>
-          <Col
-            data-aos="fade-right"
-            className="footer-col"
-            sm={{ span: 5, offset: 1 }}
-          >
+          <Col className="footer-col" sm={{ span: 5, offset: 1 }}>
             <p>CONTACT US</p>
             <p>
               <i className="fas fa-location-arrow">
