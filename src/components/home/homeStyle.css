@@ -51,7 +51,7 @@
 /* Mobile li akbar mel iphone 5*/
 @media only screen and (max-width: 767px) {
   .carousel-caption {
-    top: 4.2rem;
+    top: 2rem;
   }
 
   .carousel-caption h2 {

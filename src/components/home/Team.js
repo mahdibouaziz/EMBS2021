@@ -24,9 +24,9 @@ const Team = () => {
           <p className="name">Med Aziz Hadj Nasr</p>
           <p className="post">Chairmain</p>
           <p className="social">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-linkedin-in"></i>
+            <i className="fab fa-facebook-f"></i>
+            <i className="fab fa-instagram"></i>
+            <i className="fab fa-linkedin-in"></i>
           </p>
         </Col>
         <Col className="box" lg={{ span: 3 }} md={{ span: 5 }} sm={{ span: 5 }}>
@@ -34,9 +34,9 @@ const Team = () => {
           <p className="name">Med Aziz Hadj Nasr</p>
           <p className="post">Chairmain</p>
           <p className="social">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-linkedin-in"></i>
+            <i className="fab fa-facebook-f"></i>
+            <i className="fab fa-instagram"></i>
+            <i className="fab fa-linkedin-in"></i>
           </p>
         </Col>
         <Col className="box" lg={{ span: 3 }} md={{ span: 5 }} sm={{ span: 5 }}>
@@ -44,9 +44,9 @@ const Team = () => {
           <p className="name">Med Aziz Hadj Nasr</p>
           <p className="post">Chairmain</p>
           <p className="social">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-linkedin-in"></i>
+            <i className="fab fa-facebook-f"></i>
+            <i className="fab fa-instagram"></i>
+            <i className="fab fa-linkedin-in"></i>
           </p>
         </Col>
         <Col className="box" lg={{ span: 3 }} md={{ span: 5 }} sm={{ span: 5 }}>
@@ -54,9 +54,9 @@ const Team = () => {
           <p className="name">Med Aziz Hadj Nasr</p>
           <p className="post">Chairmain</p>
           <p className="social">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-linkedin-in"></i>
+            <i className="fab fa-facebook-f"></i>
+            <i className="fab fa-instagram"></i>
+            <i className="fab fa-linkedin-in"></i>
           </p>
         </Col>
         <Col className="box" lg={{ span: 3 }} md={{ span: 5 }} sm={{ span: 5 }}>
@@ -64,9 +64,9 @@ const Team = () => {
           <p className="name">Med Aziz Hadj Nasr</p>
           <p className="post">Chairmain</p>
           <p className="social">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-linkedin-in"></i>
+            <i className="fab fa-facebook-f"></i>
+            <i className="fab fa-instagram"></i>
+            <i className="fab fa-linkedin-in"></i>
           </p>
         </Col>
         <Col className="box" lg={{ span: 3 }} md={{ span: 5 }} sm={{ span: 5 }}>
@@ -74,9 +74,9 @@ const Team = () => {
           <p className="name">Med Aziz Hadj Nasr</p>
           <p className="post">Chairmain</p>
           <p className="social">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-linkedin-in"></i>
+            <i className="fab fa-facebook-f"></i>
+            <i className="fab fa-instagram"></i>
+            <i className="fab fa-linkedin-in"></i>
           </p>
         </Col>
         <Col className="box" lg={{ span: 3 }} md={{ span: 5 }} sm={{ span: 5 }}>
@@ -84,9 +84,9 @@ const Team = () => {
           <p className="name">Med Aziz Hadj Nasr</p>
           <p className="post">Chairmain</p>
           <p className="social">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-linkedin-in"></i>
+            <i className="fab fa-facebook-f"></i>
+            <i className="fab fa-instagram"></i>
+            <i className="fab fa-linkedin-in"></i>
           </p>
         </Col>
         <Col className="box" lg={{ span: 3 }} md={{ span: 5 }} sm={{ span: 5 }}>
@@ -94,9 +94,9 @@ const Team = () => {
           <p className="name">Med Aziz Hadj Nasr</p>
           <p className="post">Chairmain</p>
           <p className="social">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-linkedin-in"></i>
+            <i className="fab fa-facebook-f"></i>
+            <i className="fab fa-instagram"></i>
+            <i className="fab fa-linkedin-in"></i>
           </p>
         </Col>
       </Row>

@@ -24,14 +24,14 @@ const Footer = () => {
               </i>
             </p>
             <p>
-              <i class="fas fa-phone-square-alt"> (+216) 58 869 350</i>
+              <i className="fas fa-phone-square-alt"> (+216) 58 869 350</i>
             </p>
             <p>
               <i className="fas fa-envelope-square"> embs-insat@outlook.com</i>
             </p>
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-linkedin-in"></i>
+            <i className="fab fa-facebook"></i>
+            <i className="fab fa-instagram"></i>
+            <i className="fab fa-linkedin-in"></i>
           </Col>
         </Row>
       </Container>

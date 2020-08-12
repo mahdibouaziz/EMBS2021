@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Burger from "./Burger";
 import ContextNavProvider from "./ContextNav";
@@ -14,8 +14,12 @@ const Nav = styled.nav`
   position: fixed;
   z-index: 99;
   left: 0px;
-  background-color: rgba(16, 66, 143, 0.6);
+  ${"" /* Loun el navbar */}
+  background-color: ${(props) =>
+    props.posit ? "rgba(255, 255, 225,1)" : "rgba(0, 0, 0, 0)"};
   border-color: transparent;
+
+  transition: background-color 1s;
 
   .logo img {
     width: 5rem;
@@ -24,8 +28,23 @@ const Nav = styled.nav`
 `;
 
 const NavBar = () => {
+  const [headerShow, setHeaderShow] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", scrollEffect);
+  });
+
+  // Scroll effect
+  const scrollEffect = () => {
+    if (window.scrollY > 70) {
+      setHeaderShow(true);
+    } else {
+      setHeaderShow(false);
+    }
+  };
+
   return (
-    <Nav className="nav-style">
+    <Nav className="nav-style" posit={headerShow}>
       <ContextNavProvider>
         <div className="logo">
           <img src={logo} alt="logo" />

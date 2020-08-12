@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { ContextNav } from "./ContextNav";
@@ -11,7 +11,7 @@ const UL = styled.ul`
   a {
     margin-top: 0.7rem;
     padding: 3px 20px;
-    color: #fff;
+    color: ${(props) => (props.posit ? "#000" : "#f2f2f2")};
     text-decoration: none;
     font-size: 20px;
     transition: all 0.4s ease-in-out;
@@ -45,9 +45,23 @@ const UL = styled.ul`
 `;
 
 const RightNav = () => {
+  const [headerShow, setHeaderShow] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", scrollEffect);
+  });
+
+  // Scroll effect
+  const scrollEffect = () => {
+    if (window.scrollY > 70) {
+      setHeaderShow(true);
+    } else {
+      setHeaderShow(false);
+    }
+  };
   const { open, setOpen } = useContext(ContextNav);
   return (
-    <UL open={open}>
+    <UL posit={headerShow} open={open}>
       <Link onClick={() => setOpen(!open)} to="/">
         Home
       </Link>

@@ -49,10 +49,14 @@ const Burger = () => {
 
   return (
     <>
-      <StyledBurger open={open} onClick={() => setOpen(!open)}>
-        <div style={{ backgroundColor: "#fff" }}></div>
-        <div style={{ backgroundColor: "#fff" }}></div>
-        <div style={{ backgroundColor: "#fff" }}></div>
+      <StyledBurger
+        style={{ backgroundColor: "rgba(16, 66, 143, 1)", width: "45px" }}
+        open={open}
+        onClick={() => setOpen(!open)}
+      >
+        <div style={{ backgroundColor: "#fff", margin: "2px 6px" }}></div>
+        <div style={{ backgroundColor: "#fff", margin: "2px 6px" }}></div>
+        <div style={{ backgroundColor: "#fff", margin: "2px 6px" }}></div>
       </StyledBurger>
       <RightNav open={open} />
     </>
