@@ -12,7 +12,7 @@ const Nav = styled.nav`
   justify-content: space-between;
   position: fixed;
   z-index: 99;
-  left: -2px;
+  left: 0px;
   background-color: rgba(16, 66, 143, 0.6);
   border-color: transparent;
 

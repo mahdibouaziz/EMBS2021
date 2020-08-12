@@ -3,6 +3,7 @@ import { Row, Col } from "react-bootstrap";
 import "./homeStyle.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import pic from "./img/team/pic.png";
 
 const Team = () => {
   useEffect(() => {
@@ -16,7 +17,89 @@ const Team = () => {
           Our<span> Team</span>
         </h1>
       </Row>
-      <Row data-aos="fade-right"></Row>
+
+      <Row className="main-row">
+        <Col className="box" lg={{ span: 3 }} md={{ span: 5 }} sm={{ span: 5 }}>
+          <img src={pic} alt="pic" />
+          <p className="name">Med Aziz Hadj Nasr</p>
+          <p className="post">Chairmain</p>
+          <p className="social">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+          </p>
+        </Col>
+        <Col className="box" lg={{ span: 3 }} md={{ span: 5 }} sm={{ span: 5 }}>
+          <img src={pic} alt="pic" />
+          <p className="name">Med Aziz Hadj Nasr</p>
+          <p className="post">Chairmain</p>
+          <p className="social">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+          </p>
+        </Col>
+        <Col className="box" lg={{ span: 3 }} md={{ span: 5 }} sm={{ span: 5 }}>
+          <img src={pic} alt="pic" />
+          <p className="name">Med Aziz Hadj Nasr</p>
+          <p className="post">Chairmain</p>
+          <p className="social">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+          </p>
+        </Col>
+        <Col className="box" lg={{ span: 3 }} md={{ span: 5 }} sm={{ span: 5 }}>
+          <img src={pic} alt="pic" />
+          <p className="name">Med Aziz Hadj Nasr</p>
+          <p className="post">Chairmain</p>
+          <p className="social">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+          </p>
+        </Col>
+        <Col className="box" lg={{ span: 3 }} md={{ span: 5 }} sm={{ span: 5 }}>
+          <img src={pic} alt="pic" />
+          <p className="name">Med Aziz Hadj Nasr</p>
+          <p className="post">Chairmain</p>
+          <p className="social">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+          </p>
+        </Col>
+        <Col className="box" lg={{ span: 3 }} md={{ span: 5 }} sm={{ span: 5 }}>
+          <img src={pic} alt="pic" />
+          <p className="name">Med Aziz Hadj Nasr</p>
+          <p className="post">Chairmain</p>
+          <p className="social">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+          </p>
+        </Col>
+        <Col className="box" lg={{ span: 3 }} md={{ span: 5 }} sm={{ span: 5 }}>
+          <img src={pic} alt="pic" />
+          <p className="name">Med Aziz Hadj Nasr</p>
+          <p className="post">Chairmain</p>
+          <p className="social">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+          </p>
+        </Col>
+        <Col className="box" lg={{ span: 3 }} md={{ span: 5 }} sm={{ span: 5 }}>
+          <img src={pic} alt="pic" />
+          <p className="name">Med Aziz Hadj Nasr</p>
+          <p className="post">Chairmain</p>
+          <p className="social">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+          </p>
+        </Col>
+      </Row>
     </section>
   );
 };
