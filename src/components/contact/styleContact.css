@@ -1,0 +1,43 @@
+.banner-text-contact {
+  color: #fff;
+  position: relative;
+  text-align: center;
+  top: 20vh;
+  font-size: 6rem;
+}
+
+/* Meduim Screens */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .banner-text-contact {
+    top: 40vh;
+    font-size: 4.2rem;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  .banner-text-contact {
+    top: 40vh;
+    font-size: 3rem;
+  }
+}
+
+.input {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  background: #f2f2f2;
+  width: 100%;
+  border-radius: 1rem;
+}
+.input:focus {
+  border: 3px solid rgb(30, 44, 175);
+}
+
+.btn {
+  width: 100% !important;
+}
