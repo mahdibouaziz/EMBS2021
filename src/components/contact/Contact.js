@@ -71,6 +71,10 @@ const Contact = () => {
           </Col>
         </Row>
       </Container>
+      {/* Lel map hal blasa */}
+      <Container fluid>
+        <Row></Row>
+      </Container>
     </div>
   );
 };
