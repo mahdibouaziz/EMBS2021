@@ -27,7 +27,6 @@
   }
 }
 /* Events */
-/* Team section */
 
 .event-section {
   margin-top: 2.5rem;
@@ -35,8 +34,9 @@
 
 .event-section .title {
   display: inline-block;
-  margin: auto;
+  margin: 1rem auto;
   margin-bottom: 3rem;
+  font-weight: bold;
 }
 
 .event-section .title span {
@@ -81,4 +81,10 @@
   display: flex;
   justify-content: center;
 }
-/* Boxes */
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  .event-section .title {
+    font-size: 1.5rem;
+  }
+}
