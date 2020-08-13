@@ -1,5 +1,6 @@
 .row-about {
   margin-top: 2rem;
+  margin-bottom: 6rem;
 }
 
 .col-about {
@@ -18,4 +19,21 @@
 
 .row-about p {
   margin-left: 1rem;
+  color: rgb(38, 39, 39);
+}
+
+.ieee-logo {
+  width: 70%;
+}
+
+.embs-logo {
+  width: 90%;
+}
+
+.ieee-tunisia-logo {
+  width: 95%;
+}
+
+.ieee-insat-logo {
+  width: 90%;
 }
