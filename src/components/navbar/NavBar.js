@@ -15,9 +15,12 @@ const Nav = styled.nav`
   z-index: 99;
   left: 0px;
   ${"" /* Loun el navbar */}
-  background-color: ${(props) =>
-    props.posit ? "rgba(255, 255, 225,1)" : "rgba(0, 0, 0, 0)"};
+  background-color: ${(props) => (props.posit ? "#fff" : "rgba(0, 0, 0, 0)")};
   border-color: transparent;
+  box-shadow: ${(props) =>
+    props.posit
+      ? "0px 7px 13px -1px rgba(0,0,0,0.75)"
+      : "0px 0px 0px 0px rgba(0,0,0,0.75)"}; 
 
   transition: background-color 1s;
 
