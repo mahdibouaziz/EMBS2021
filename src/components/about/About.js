@@ -57,10 +57,7 @@ const About = () => {
         </Row>
 
         <Row className="row-about">
-          <Col className="col-about" sm={12} md={4}>
-            <img className="ieee-tunisia-logo" src={ieee_tunisia} alt="ieee" />
-          </Col>
-          <Col sm={12} md={8}>
+          <Col sm={12} md={{ span: 8, order: 2 }}>
             <h1>EMBS TUNISIA SECTION</h1>
             <p>
               The IEEE Tunisia EMB Chapter is established in January 2009.
@@ -82,7 +79,11 @@ const About = () => {
               seminars, lectures, schools, conferences, and other events.
             </p>
           </Col>
+          <Col className="col-about" sm={12} md={{ span: 4, order: 1 }}>
+            <img className="ieee-tunisia-logo" src={ieee_tunisia} alt="ieee" />
+          </Col>
         </Row>
+
         <Row className="row-about">
           <Col sm={12} md={8}>
             <h1>EMBS IN INSAT !</h1>
@@ -104,10 +105,7 @@ const About = () => {
         </Row>
 
         <Row className="row-about">
-          <Col className="col-about" sm={12} md={4}>
-            <img className="embs-logo" src={embs_logo} alt="ieee" />
-          </Col>
-          <Col sm={12} md={8}>
+          <Col sm={12} md={{ span: 8, order: 2 }}>
             <h1>WELCOME TO OUR COMMUNITY !</h1>
             <p>
               Do you want to know how to design the electrical circuits that
@@ -126,6 +124,9 @@ const About = () => {
               between science and life science, creating innovations in
               healthcare technology for the benefit of all humanity.
             </p>
+          </Col>
+          <Col className="col-about" sm={12} md={{ span: 4, order: 1 }}>
+            <img className="embs-logo" src={embs_logo} alt="ieee" />
           </Col>
         </Row>
       </Container>
