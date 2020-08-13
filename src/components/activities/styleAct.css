@@ -1,0 +1,33 @@
+/* Taswira lekbira */
+.banner {
+  height: 80vh;
+}
+
+.banner-title {
+  position: relative;
+  color: #fff;
+  top: 30vh;
+  text-align: center;
+  font-size: 6rem;
+}
+
+/* Events */
+/* Text */
+.row-title {
+  margin-top: 2rem;
+}
+
+.row-title h2 {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.row-title p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: rgb(54, 53, 53);
+}
+
+/* Boxes */

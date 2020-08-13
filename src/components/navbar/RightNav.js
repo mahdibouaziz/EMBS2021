@@ -11,7 +11,7 @@ const UL = styled.ul`
   a {
     margin-top: 0.7rem;
     padding: 3px 20px;
-    color: ${(props) => (props.posit ? "#000" : "#f2f2f2")};
+    color: ${(props) => (props.posit ? "#000" : "#fff")};
     text-decoration: none;
     font-size: 20px;
     transition: all 0.4s ease-in-out;
