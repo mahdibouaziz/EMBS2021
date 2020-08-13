@@ -28,22 +28,22 @@
 }
 /* Events */
 
-.event-section {
+.section {
   margin-top: 2.5rem;
 }
 
-.event-section .title {
+.section .title {
   display: inline-block;
   margin: 1rem auto;
   margin-bottom: 3rem;
   font-weight: bold;
 }
 
-.event-section .title span {
+.section .title span {
   color: rgb(6, 6, 144);
 }
 
-.event-section .box {
+.section .box {
   background-color: rgb(255, 255, 255);
   padding: 0;
   margin: 1rem;
@@ -51,28 +51,28 @@
   border-radius: 5px;
 }
 
-.event-section .box img {
+.section .box img {
   width: 100%;
   border-radius: 5px;
 }
 
-.event-section .box p {
+.section .box p {
   text-align: center;
 }
 
-.event-section .box .desc {
+.section .box .desc {
   font-size: 1.2rem;
 
   color: rgb(0, 0, 0);
 }
 
-.event-section .box .date {
+.section .box .date {
   margin-top: 1rem;
   font-size: 0.9rem;
   color: rgb(119, 117, 117);
 }
 
-.event-section .box .social {
+.section .box .social {
   font-size: 1.3rem;
   color: rgb(0, 0, 0);
 }
@@ -84,7 +84,9 @@
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
-  .event-section .title {
+  .section .title {
     font-size: 1.5rem;
   }
 }
+
+/* Trainings */

@@ -7,7 +7,7 @@ import nanobang from "./img/events/nanobang.jpg";
 
 const Events = () => {
   return (
-    <Container className="event-section">
+    <Container className="section">
       {/* check https://github.com/michalsnik/aos#animations for the animation */}
       <Row>
         <h1 className="title">
