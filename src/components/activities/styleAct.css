@@ -3,31 +3,30 @@
   height: 80vh;
 }
 
-.banner-title {
-  position: relative;
+.banner-text {
   color: #fff;
-  top: 30vh;
+  position: relative;
   text-align: center;
+  top: 30vh;
   font-size: 6rem;
 }
 
+/* Meduim Screens */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .banner-text {
+    top: 30vh;
+    font-size: 4.2rem;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  .banner-text {
+    top: 30vh;
+    font-size: 3.5rem;
+  }
+}
 /* Events */
 /* Text */
-.row-title {
-  margin-top: 2rem;
-}
-
-.row-title h2 {
-  text-align: center;
-  font-weight: bold;
-  margin-top: 1rem;
-  margin-bottom: 1.2rem;
-}
-
-.row-title p {
-  text-align: center;
-  font-size: 1.1rem;
-  color: rgb(54, 53, 53);
-}
 
 /* Boxes */
