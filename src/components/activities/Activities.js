@@ -3,6 +3,7 @@ import pic from "./img/events/biiot_challenge.jpg";
 import "./styleAct.css";
 import Events from "./Events";
 import Trainings from "./Trainings";
+import Visits from "./Visits";
 
 const Activities = () => {
   return (
@@ -12,6 +13,7 @@ const Activities = () => {
       </div>
       <Events />
       <Trainings />
+      <Visits />
     </div>
   );
 };

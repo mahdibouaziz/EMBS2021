@@ -127,3 +127,27 @@
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
+.training-div {
+  padding-bottom: 2rem;
+}
+
+/* Visits */
+.visit-carr img {
+  width: 100%;
+  max-height: 38rem;
+  border-radius: 1rem;
+}
+
+.visit-date {
+  text-align: center;
+  font-size: 2rem;
+  color: #535353;
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  .visit-date {
+    font-size: 1.5rem;
+  }
+}

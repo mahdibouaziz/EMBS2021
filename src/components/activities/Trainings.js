@@ -7,7 +7,7 @@ import python_training from "./img/trainings/python_training.jpg";
 
 const Trainings = () => {
   return (
-    <div style={{ backgroundColor: "#f2f2f2f2" }}>
+    <div className="training-div" style={{ backgroundColor: "#f2f2f2f2" }}>
       <Container className="section">
         {/* check https://github.com/michalsnik/aos#animations for the animation */}
         <Row>
