@@ -35,7 +35,7 @@ const Nav = styled.nav`
 
   @media (max-width: 768px) {
     .logo{
-    margin-left:2rem;
+    margin-left:0rem;
   }
   }
 `;
