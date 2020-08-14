@@ -25,7 +25,7 @@ const Nav = styled.nav`
   transition: background-color 1s;
 
   .logo{
-    margin-left:28rem;
+    margin-left:20%;
   }
 
   .logo img {
@@ -33,10 +33,24 @@ const Nav = styled.nav`
     padding-top: 9px;
   }
 
-  @media (max-width: 768px) {
+  @media only screen and (min-width: 1200px) and (max-width: 1550px) {
+    .logo{
+    margin-left:15%;
+    }
+  }
+
+  @media only screen and (min-width: 850px) and (max-width: 1199px) {
+    .logo{
+    margin-left:4%;
+    }
+  }
+
+
+
+  @media (max-width: 849px) {
     .logo{
     margin-left:0rem;
-  }
+    }
   }
 `;
 

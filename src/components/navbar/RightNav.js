@@ -7,7 +7,11 @@ const UL = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
-  margin-right: 25rem;
+  margin-right: 12%;
+
+  @media only screen and (min-width: 769px) and (max-width: 1199px) {
+    margin-right: 5%;
+  }
 
   a {
     margin-top: 0.7rem;
