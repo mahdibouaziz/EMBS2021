@@ -24,9 +24,19 @@ const Nav = styled.nav`
 
   transition: background-color 1s;
 
+  .logo{
+    margin-left:28rem;
+  }
+
   .logo img {
     width: 5rem;
     padding-top: 9px;
+  }
+
+  @media (max-width: 768px) {
+    .logo{
+    margin-left:2rem;
+  }
   }
 `;
 

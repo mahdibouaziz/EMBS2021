@@ -7,6 +7,7 @@ const UL = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
+  margin-right: 25rem;
 
   a {
     margin-top: 0.7rem;
@@ -25,6 +26,7 @@ const UL = styled.ul`
   }
 
   @media (max-width: 768px) {
+    margin-right: 0rem;
     flex-flow: column nowrap;
     background-color: rgba(16, 66, 143, 0.6);
     z-index: 19;
