@@ -18,7 +18,21 @@ footer {
 }
 
 /* font awesome icons */
-.fab {
-  font-size: 1.5rem;
-  padding: 0.5rem;
+.social-footer a {
+  color: #030c1d;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  padding: 0px 7px;
+  padding-top: 0.8rem;
+  padding-bottom: 7px;
+  margin: 2px;
+  transition: background-color 0.3s ease-in-out, color 0.4s ease-in-out;
+}
+.social-footer a:hover {
+  background-color: #0b378a;
+  color: #fff;
+}
+
+.social-footer i {
+  font-size: 1.6rem;
 }

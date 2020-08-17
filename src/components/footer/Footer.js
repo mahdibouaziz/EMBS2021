@@ -28,9 +28,17 @@ const Footer = () => {
             <p>
               <i className="fas fa-envelope-square"> embs-insat@outlook.com</i>
             </p>
-            <i className="fab fa-facebook"></i>
-            <i className="fab fa-instagram"></i>
-            <i className="fab fa-linkedin-in"></i>
+            <p className="social-footer">
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-facebook"></i>
+              </a>
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-instagram"></i>
+              </a>
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-linkedin-in"></i>
+              </a>
+            </p>
           </Col>
         </Row>
       </Container>
