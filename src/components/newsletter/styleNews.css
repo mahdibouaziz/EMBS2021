@@ -1,0 +1,56 @@
+.char-box {
+  display: inline-block;
+  width: 31%;
+  margin: 0 auto;
+  box-shadow: 4px 4px 10px 5px rgb(216, 212, 212);
+  border-radius: 4px;
+  text-align: center;
+  height: 100%;
+}
+
+.char-box img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1.4rem;
+}
+
+.char-box h2 {
+  margin-top: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.char-box p {
+  padding: 0.8rem 1rem;
+  color: rgb(53, 53, 53);
+}
+
+.char-box p:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.box1,
+.box3 {
+  margin-top: 2rem;
+}
+
+.box2 h2 {
+  margin-top: 2.4rem;
+}
+
+.box2 h3 {
+  margin-top: 2.4rem;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .char-box {
+    display: inline-block;
+    width: 80%;
+    margin: 1rem auto;
+  }
+  .box1,
+  .box3 {
+    margin-top: 0rem;
+  }
+}
