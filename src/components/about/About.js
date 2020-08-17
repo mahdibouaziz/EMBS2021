@@ -9,6 +9,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./aboutStyle.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Sponsors from "./Sponsors";
 
 const About = () => {
   useEffect(() => {
@@ -145,6 +146,7 @@ const About = () => {
           </Col>
         </Row>
       </Container>
+      <Sponsors />
     </div>
   );
 };

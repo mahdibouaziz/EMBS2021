@@ -37,3 +37,14 @@
 .ieee-insat-logo {
   width: 90%;
 }
+
+.sponsor {
+  display: flex;
+  justify-content: center;
+}
+
+.sponsor img {
+  display: inline-block;
+  box-shadow: 2px 2px 2px 2px rgb(221, 219, 219);
+  margin: 0.8rem;
+}
