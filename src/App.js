@@ -4,7 +4,7 @@ import NavBar from "./components/navbar/NavBar";
 import Home from "./components/home/Home";
 import About from "./components/about/About";
 import Activities from "./components/activities/Activities";
-import NewsLetter from "./components/NewsLetter";
+import NewsLetter from "./components/newsletter/NewsLetter";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";

@@ -116,13 +116,10 @@
   margin: 1rem;
   box-shadow: 4px 4px 4px 4px #e7e7e7f2;
   border-radius: 5px;
-  transition: 0.3s ease-in-out;
 }
 
 .team-section .box:hover {
-  position: relative;
-  top: -6px;
-  box-shadow: 8px 10px 6px 6px #e7e7e7f2;
+  box-shadow: 8px 6px 6px 6px #e7e7e7f2;
 }
 
 .team-section .box img {
