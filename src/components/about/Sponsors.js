@@ -10,8 +10,6 @@ import spr7 from "./img/sponsors/7.png";
 import spr8 from "./img/sponsors/8.png";
 import spr9 from "./img/sponsors/9.png";
 import spr10 from "./img/sponsors/10.png";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const Sponsors = () => {
   return (
