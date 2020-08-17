@@ -1,31 +1,18 @@
-import React, { useEffect } from "react";
-import { Row, Col } from "react-bootstrap";
+import React from "react";
+import { Row } from "react-bootstrap";
 import "./homeStyle.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import pic from "./img/team/pic.png";
 
 const Team = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1100 });
-  }, []);
   return (
     <section className="team-section">
       {/* check https://github.com/michalsnik/aos#animations for the animation */}
       <Row>
-        <h1 className="title">
-          Our<span> Team</span>
-        </h1>
+        <h1 className="title">Our Team</h1>
       </Row>
 
       <Row className="main-row">
-        <Col
-          data-aos="fade-right"
-          className="box"
-          lg={{ span: 3 }}
-          md={{ span: 5 }}
-          sm={{ span: 5 }}
-        >
+        <div>
           <img src={pic} alt="pic" />
           <p className="name">Farouk Saaidia</p>
           <p className="post">Chairmain</p>
@@ -52,14 +39,8 @@ const Team = () => {
               <i className="fab fa-linkedin-in"></i>
             </a>
           </p>
-        </Col>
-        <Col
-          data-aos="fade-right"
-          className="box"
-          lg={{ span: 3 }}
-          md={{ span: 5 }}
-          sm={{ span: 5 }}
-        >
+        </div>
+        <div>
           <img src={pic} alt="pic" />
           <p className="name">Emna Guesmi</p>
           <p className="post">Vice Chair</p>
@@ -86,14 +67,8 @@ const Team = () => {
               <i className="fab fa-linkedin-in"></i>
             </a>
           </p>
-        </Col>
-        <Col
-          data-aos="fade-right"
-          className="box"
-          lg={{ span: 3 }}
-          md={{ span: 5 }}
-          sm={{ span: 5 }}
-        >
+        </div>
+        <div>
           <img src={pic} alt="pic" />
           <p className="name">Emna Hdili</p>
           <p className="post">HR Manager</p>
@@ -120,14 +95,8 @@ const Team = () => {
               <i className="fab fa-linkedin-in"></i>
             </a>
           </p>
-        </Col>
-        <Col
-          data-aos="fade-right"
-          className="box"
-          lg={{ span: 3 }}
-          md={{ span: 5 }}
-          sm={{ span: 5 }}
-        >
+        </div>
+        <div>
           <img src={pic} alt="pic" />
           <p className="name">Houssem Zitoun</p>
           <p className="post">General Secretary</p>
@@ -154,14 +123,8 @@ const Team = () => {
               <i className="fab fa-linkedin-in"></i>
             </a>
           </p>
-        </Col>
-        <Col
-          data-aos="fade-right"
-          className="box"
-          lg={{ span: 3 }}
-          md={{ span: 5 }}
-          sm={{ span: 5 }}
-        >
+        </div>
+        <div>
           <img src={pic} alt="pic" />
           <p className="name">Rihab Darghouthi</p>
           <p className="post">Training Manager</p>
@@ -188,14 +151,8 @@ const Team = () => {
               <i className="fab fa-linkedin-in"></i>
             </a>
           </p>
-        </Col>
-        <Col
-          data-aos="fade-right"
-          className="box"
-          lg={{ span: 3 }}
-          md={{ span: 5 }}
-          sm={{ span: 5 }}
-        >
+        </div>
+        <div>
           <img src={pic} alt="pic" />
           <p className="name">Selma Ayechi</p>
           <p className="post">Media Manager</p>
@@ -222,14 +179,8 @@ const Team = () => {
               <i className="fab fa-linkedin-in"></i>
             </a>
           </p>
-        </Col>
-        <Col
-          data-aos="fade-right"
-          className="box"
-          lg={{ span: 3 }}
-          md={{ span: 5 }}
-          sm={{ span: 5 }}
-        >
+        </div>
+        <div>
           <img src={pic} alt="pic" />
           <p className="name">Aicha Hedda</p>
           <p className="post">Treasurer</p>
@@ -256,14 +207,8 @@ const Team = () => {
               <i className="fab fa-linkedin-in"></i>
             </a>
           </p>
-        </Col>
-        <Col
-          data-aos="fade-right"
-          className="box"
-          lg={{ span: 3 }}
-          md={{ span: 5 }}
-          sm={{ span: 5 }}
-        >
+        </div>
+        <div>
           <img src={pic} alt="pic" />
           <p className="name">Med Mahdi Bouaziz</p>
           <p className="post">Webmaster</p>
@@ -290,7 +235,7 @@ const Team = () => {
               <i className="fab fa-linkedin-in"></i>
             </a>
           </p>
-        </Col>
+        </div>
       </Row>
     </section>
   );

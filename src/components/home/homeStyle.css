@@ -41,7 +41,7 @@
 }
 /* Raka7 text el caroussel wel position mte3ou  3al mobile wel ipad */
 /* ipad */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 421px) and (max-width: 991px) {
   .carousel-caption {
     top: 10vh;
   }
@@ -55,7 +55,7 @@
 }
 
 /* Mobile li akbar mel iphone 5*/
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 420px) {
   .carousel-caption {
     top: 1.8vh;
   }
@@ -92,75 +92,95 @@
 }
 
 /* Team section */
-
 .team-section {
-  margin-top: 2.7rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
-
 .team-section .title {
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-weight: 10rem;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+}
+
+.team-section .main-row > div {
   display: inline-block;
-  margin: auto;
-  margin-bottom: 3.1rem;
-  font-size: 4rem;
-}
-
-.team-section .title span {
-  color: rgb(6, 6, 144);
-}
-
-.team-section .box {
-  background-color: rgb(255, 255, 255);
+  width: 23%;
+  margin: 2rem auto;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 12px 8px rgb(209, 209, 209);
   position: relative;
   top: 0;
-  padding: 0;
-  margin: 1rem;
-  box-shadow: 4px 4px 4px 4px #e7e7e7f2;
-  border-radius: 5px;
+  transition: 0.3s ease-in-out;
 }
 
-.team-section .box:hover {
-  box-shadow: 8px 6px 6px 6px #e7e7e7f2;
+.team-section .main-row > div:hover {
+  top: -8px;
+  box-shadow: 2px 2px 20px 15px rgb(209, 209, 209);
 }
 
-.team-section .box img {
+.team-section .main-row > div > img {
   width: 100%;
   border-radius: 5px;
 }
 
-.team-section .box p {
+.team-section .main-row .name {
+  margin-top: 1.2rem;
+  margin-bottom: 0.7rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #263238;
+  line-height: 1.2;
   text-align: center;
 }
 
-.team-section .box .name {
-  font-size: 1.2rem;
-  margin-top: 1rem;
-  color: rgb(0, 0, 0);
+.team-section .main-row .post {
+  margin-bottom: 1.1rem;
+  font-size: 1.1rem;
+  color: #546e7a;
+  line-height: 1.8rem;
+  text-align: center;
 }
 
-.team-section .box .post {
-  font-size: 0.9rem;
-  color: rgb(119, 117, 117);
+.team-section .main-row .social {
+  text-align: center;
+  margin-bottom: 1.2rem;
 }
 
-.team-section .box .social i {
-  font-size: 1.2rem;
-}
-
-.team-section .box .social a {
-  color: #083890;
+.team-section .main-row .social a {
+  display: inline-block;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  width: 3rem;
+  color: #0000a0;
+  background: #fff;
   border-radius: 50%;
-  border: 1px solid transparent;
-  padding: 9px 3px;
-  margin: 2px;
-  transition: background-color 0.3s ease-in-out, color 0.4s ease-in-out;
+  font-size: 1.4rem;
+  transition: 0.5s ease-in-out;
+  text-decoration: none;
 }
 
-.team-section .box .social a:hover {
-  background-color: #083890;
+.team-section .main-row .social a:hover {
+  background-color: #1768c5;
   color: #fff;
 }
 
-.main-row {
-  display: flex;
-  justify-content: center;
+/* ipad */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .team-section .main-row > div {
+    width: 46%;
+  }
+
+  .team-section .main-row .name {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .team-section .main-row > div {
+    width: 90%;
+  }
 }
