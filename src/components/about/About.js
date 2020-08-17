@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import pic from "./img/about.jpg";
+import pic from "./img/act.png";
 import ieee from "./img/ieee.png";
 import embs from "./img/embs.png";
 import ieee_tunisia from "./img/ieee_tunisia.png";
