@@ -31,8 +31,14 @@
   color: #fff;
   text-transform: uppercase;
   border-radius: 1.4rem;
+  transition: background-color 0.3s ease-in-out;
 }
 
+.carousel-caption a:hover {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #0f45a8;
+}
 /* Raka7 text el caroussel wel position mte3ou  3al mobile wel ipad */
 /* ipad */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -99,10 +105,19 @@
 
 .team-section .box {
   background-color: rgb(255, 255, 255);
+  position: relative;
+  top: 0;
   padding: 0;
   margin: 1rem;
   box-shadow: 4px 4px 4px 4px #e7e7e7f2;
   border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.team-section .box:hover {
+  position: relative;
+  top: -6px;
+  box-shadow: 8px 10px 6px 6px #e7e7e7f2;
 }
 
 .team-section .box img {
@@ -125,9 +140,22 @@
   color: rgb(119, 117, 117);
 }
 
-.team-section .box .social {
-  font-size: 1.3rem;
-  color: rgb(0, 0, 0);
+.team-section .box .social i {
+  font-size: 1.2rem;
+}
+
+.team-section .box .social a {
+  color: #083890;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  padding: 9px 3px;
+  margin: 2px;
+  transition: background-color 0.3s ease-in-out, color 0.4s ease-in-out;
+}
+
+.team-section .box .social a:hover {
+  background-color: #083890;
+  color: #fff;
 }
 
 .main-row {

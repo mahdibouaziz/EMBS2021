@@ -10,7 +10,7 @@ const CarouselPage = () => {
   return (
     <Carousel
       indicators={false}
-      interval={3000}
+      interval={4200}
       style={{ position: "relative", zIndex: "0" }}
     >
       <Carousel.Item className="item">
@@ -37,7 +37,7 @@ const CarouselPage = () => {
               className="animate__animated animate__fadeInDown"
               style={{ animationDelay: "1s" }}
             >
-              <Link to="#">GET TO KNOW US</Link>
+              <Link to="/about">GET TO KNOW US</Link>
             </p>
           </div>
         </Carousel.Caption>
