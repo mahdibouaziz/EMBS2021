@@ -4,7 +4,6 @@ import "./homeStyle.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import pic from "./img/team/pic.png";
-import { Link } from "react-router-dom";
 
 const Team = () => {
   useEffect(() => {
@@ -20,7 +19,13 @@ const Team = () => {
       </Row>
 
       <Row className="main-row">
-        <Col className="box" lg={{ span: 3 }} md={{ span: 5 }} sm={{ span: 5 }}>
+        <Col
+          data-aos="fade-right"
+          className="box"
+          lg={{ span: 3 }}
+          md={{ span: 5 }}
+          sm={{ span: 5 }}
+        >
           <img src={pic} alt="pic" />
           <p className="name">Farouk Saaidia</p>
           <p className="post">Chairmain</p>
@@ -48,7 +53,13 @@ const Team = () => {
             </a>
           </p>
         </Col>
-        <Col className="box" lg={{ span: 3 }} md={{ span: 5 }} sm={{ span: 5 }}>
+        <Col
+          data-aos="fade-right"
+          className="box"
+          lg={{ span: 3 }}
+          md={{ span: 5 }}
+          sm={{ span: 5 }}
+        >
           <img src={pic} alt="pic" />
           <p className="name">Emna Guesmi</p>
           <p className="post">Vice Chair</p>
@@ -76,7 +87,13 @@ const Team = () => {
             </a>
           </p>
         </Col>
-        <Col className="box" lg={{ span: 3 }} md={{ span: 5 }} sm={{ span: 5 }}>
+        <Col
+          data-aos="fade-right"
+          className="box"
+          lg={{ span: 3 }}
+          md={{ span: 5 }}
+          sm={{ span: 5 }}
+        >
           <img src={pic} alt="pic" />
           <p className="name">Emna Hdili</p>
           <p className="post">HR Manager</p>
@@ -104,7 +121,13 @@ const Team = () => {
             </a>
           </p>
         </Col>
-        <Col className="box" lg={{ span: 3 }} md={{ span: 5 }} sm={{ span: 5 }}>
+        <Col
+          data-aos="fade-right"
+          className="box"
+          lg={{ span: 3 }}
+          md={{ span: 5 }}
+          sm={{ span: 5 }}
+        >
           <img src={pic} alt="pic" />
           <p className="name">Houssem Zitoun</p>
           <p className="post">General Secretary</p>
@@ -132,7 +155,13 @@ const Team = () => {
             </a>
           </p>
         </Col>
-        <Col className="box" lg={{ span: 3 }} md={{ span: 5 }} sm={{ span: 5 }}>
+        <Col
+          data-aos="fade-right"
+          className="box"
+          lg={{ span: 3 }}
+          md={{ span: 5 }}
+          sm={{ span: 5 }}
+        >
           <img src={pic} alt="pic" />
           <p className="name">Rihab Darghouthi</p>
           <p className="post">Training Manager</p>
@@ -160,7 +189,13 @@ const Team = () => {
             </a>
           </p>
         </Col>
-        <Col className="box" lg={{ span: 3 }} md={{ span: 5 }} sm={{ span: 5 }}>
+        <Col
+          data-aos="fade-right"
+          className="box"
+          lg={{ span: 3 }}
+          md={{ span: 5 }}
+          sm={{ span: 5 }}
+        >
           <img src={pic} alt="pic" />
           <p className="name">Selma Ayechi</p>
           <p className="post">Media Manager</p>
@@ -188,7 +223,13 @@ const Team = () => {
             </a>
           </p>
         </Col>
-        <Col className="box" lg={{ span: 3 }} md={{ span: 5 }} sm={{ span: 5 }}>
+        <Col
+          data-aos="fade-right"
+          className="box"
+          lg={{ span: 3 }}
+          md={{ span: 5 }}
+          sm={{ span: 5 }}
+        >
           <img src={pic} alt="pic" />
           <p className="name">Aicha Hedda</p>
           <p className="post">Treasurer</p>
@@ -216,7 +257,13 @@ const Team = () => {
             </a>
           </p>
         </Col>
-        <Col className="box" lg={{ span: 3 }} md={{ span: 5 }} sm={{ span: 5 }}>
+        <Col
+          data-aos="fade-right"
+          className="box"
+          lg={{ span: 3 }}
+          md={{ span: 5 }}
+          sm={{ span: 5 }}
+        >
           <img src={pic} alt="pic" />
           <p className="name">Med Mahdi Bouaziz</p>
           <p className="post">Webmaster</p>

@@ -12,6 +12,7 @@
     "bootstrap": "^4.5.0",
     "google-map-react": "^2.0.8",
     "google-maps-react": "^2.0.6",
+    "gsap": "^3.5.0",
     "ios": "0.0.1",
     "mdbreact": "^4.27.0",
     "node-sass": "^4.14.1",

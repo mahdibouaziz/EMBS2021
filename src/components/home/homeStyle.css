@@ -66,6 +66,10 @@
   .carousel-caption a {
     padding: 10px 25px;
   }
+
+  .team-section .title {
+    font-size: 3rem !important;
+  }
 }
 
 /* mobile iphone 5 / se */
@@ -90,13 +94,14 @@
 /* Team section */
 
 .team-section {
-  margin-top: 2.5rem;
+  margin-top: 2.7rem;
 }
 
 .team-section .title {
   display: inline-block;
   margin: auto;
-  margin-bottom: 3rem;
+  margin-bottom: 3.1rem;
+  font-size: 4rem;
 }
 
 .team-section .title span {

@@ -14,7 +14,6 @@ const Footer = () => {
               If you think you have the passion, attitude and capability to join
               us, don't hesitate.
             </p>
-            <p>Tnajam t7ot ktiba houni</p>
           </Col>
           <Col className="footer-col" sm={{ span: 5, offset: 1 }}>
             <p>CONTACT US</p>
