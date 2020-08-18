@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import community_management_training from "./img/trainings/community_management_training.jpg";
 import iso_training from "./img/trainings/iso_training.jpg";
 import public_speaking_training from "./img/trainings/public_speaking_training.png";
@@ -7,18 +7,20 @@ import python_training from "./img/trainings/python_training.jpg";
 
 const Trainings = () => {
   return (
-    <div className="training-div" style={{ backgroundColor: "#f2f2f2f2" }}>
-      <Container className="section">
+    <div className="training-section">
+      <Container>
         {/* check https://github.com/michalsnik/aos#animations for the animation */}
         <Row>
-          <h1 className="title training-header">
-            <span>Trainings</span> We Provide
-          </h1>
+          <h1 className="title">Trainings We Provide</h1>
+          <p className="body">
+            IEEE INSAT EMBS Chapter often provides several events in different
+            domains, here are our top 4 for the previous years.
+          </p>
         </Row>
 
         <Row className="main-row">
-          <Col className="box" md={{ span: 5 }} sm={{ span: 12 }}>
-            <p className="training-icon">
+          <div>
+            <p className="training-icon  training-icon-1">
               <i className="fas fa-cogs"></i>
             </p>
             <p className="training-title">Technical Skills Trainings</p>
@@ -40,15 +42,15 @@ const Trainings = () => {
               mathematics conducted by Mr Ali Chamkhi
             </p>
             <img className="training-img" src={python_training} alt="pic" />
-          </Col>
+          </div>
 
-          <Col className="box" md={{ span: 5 }} sm={{ span: 12 }}>
+          <div>
             <p className="training-icon">
               <i className="fas fa-briefcase"></i>
             </p>
-            <p className="training-title">Technical Skills Trainings</p>
+            <p className="training-title">Soft Skills Trainings</p>
             <p className="training-date">
-              <i className="far fa-calendar-check"></i> February 2018
+              <i className="far fa-calendar-check"></i> November 2017
             </p>
             <p className="training-desc">
               In collaboration with the IMDTEC Tunisie, IEEE EMBS INSAT SB has
@@ -61,7 +63,7 @@ const Trainings = () => {
               alt="pic"
             />
             <p className="training-date">
-              <i className="far fa-calendar-check"></i> November, 2018
+              <i className="far fa-calendar-check"></i> November 2017
             </p>
             <p className="training-desc">
               IEEE EMBS chapter INSAT gave an introduction to Bio-informatics
@@ -73,7 +75,7 @@ const Trainings = () => {
               src={public_speaking_training}
               alt="pic"
             />
-          </Col>
+          </div>
         </Row>
       </Container>
     </div>
