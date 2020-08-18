@@ -106,11 +106,9 @@
     width: 85%;
   }
   .event-section .title {
-    margin: 0 auto;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 0.6rem;
-    font-size: 1.6rem;
+    text-align: center;
+    padding-left: 7px;
+    padding-right: 7px;
   }
 
   .event-section .body {
@@ -206,11 +204,9 @@
   }
 
   .training-section .title {
-    margin: 0 auto;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 0.6rem;
-    font-size: 1.6rem;
+    text-align: center;
+    padding-left: 7px;
+    padding-right: 7px;
   }
 
   .training-section .body {
