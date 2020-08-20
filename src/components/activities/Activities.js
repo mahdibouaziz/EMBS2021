@@ -3,7 +3,7 @@ import "./styleAct.css";
 import Events from "./Events";
 import Trainings from "./Trainings";
 import Visits from "./Visits";
-import act from "./img/events/biiot_challenge.jpg";
+import act from "./img/act.png";
 
 const Activities = () => {
   return (

@@ -18,10 +18,18 @@
   font-size: 3.3rem;
   font-weight: bold;
   text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+}
+
+.carousel-caption h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .carousel-caption h2 span {
-  color: #083890;
+  color: #082f77;
 }
 .carousel-caption a {
   background: #083890;

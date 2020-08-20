@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div>
       <div className="banner" style={{ backgroundImage: `url(${pic})` }}>
-        <h1 className=" banner-text-contact">Contact Us</h1>
+        <h1 className="banner-text">Contact Us</h1>
       </div>
       <Container className="section">
         <Row>

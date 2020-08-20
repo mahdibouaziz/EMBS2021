@@ -164,14 +164,16 @@
 
 .collab-section .main-row .main-row-text h2 {
   line-height: 26px;
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   font-weight: 500;
   margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
 }
 .collab-section .main-row .views {
   color: #999;
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin-right: 10px;
+  font-family: "Montserrat", sans-serif;
 }
 /* ipad */
 @media only screen and (min-width: 768px) and (max-width: 991px) {

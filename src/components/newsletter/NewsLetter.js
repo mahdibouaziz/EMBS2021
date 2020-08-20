@@ -7,7 +7,7 @@ const NewsLetter = () => {
   return (
     <div>
       <div className="banner" style={{ backgroundImage: `url(${pic})` }}>
-        <h1 className="banner-text">NewsLetter Page</h1>
+        <h1 className="banner-text">NewsLetter</h1>
       </div>
       <Charity />
       <Collaboration />

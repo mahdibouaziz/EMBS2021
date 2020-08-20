@@ -1,5 +1,9 @@
+.about-section {
+  background-color: #ffffff;
+}
+
 .row-about {
-  margin-top: 2rem;
+  padding-top: 2rem;
   margin-bottom: 3rem;
 }
 
@@ -45,10 +49,37 @@
 .sponsor {
   display: flex;
   justify-content: center;
+  margin-bottom: 3rem;
 }
 
 .sponsor img {
   display: inline-block;
   box-shadow: 2px 2px 2px 2px rgb(221, 219, 219);
   margin: 0.8rem;
+}
+
+.sponsors-section .title {
+  margin-bottom: 0.6rem;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #263238;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* ipad */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .sponsors-section .title {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .sponsors-section .title {
+    text-align: center;
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: 1.6rem;
+  }
 }

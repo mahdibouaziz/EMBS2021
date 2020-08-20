@@ -13,14 +13,14 @@ import spr10 from "./img/sponsors/10.png";
 
 const Sponsors = () => {
   return (
-    <section className="section">
+    <section className="sponsors-section">
       <Container>
         <Row>
-          <h1 data-aos="fade-right" className="title">
+          <h1 className="title">
             Our<span> Sponsors</span>
           </h1>
         </Row>
-        <Row data-aos="fade-up" className="sponsor">
+        <Row className="sponsor">
           <img src={spr6} alt="" />
           <img src={spr2} alt="" />
           <img src={spr3} alt="" />
