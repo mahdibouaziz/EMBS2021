@@ -46,10 +46,15 @@
   width: 90%;
 }
 
+.sponsors-section {
+  background-color: #f9f9f9;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
 .sponsor {
   display: flex;
   justify-content: center;
-  margin-bottom: 3rem;
 }
 
 .sponsor img {
@@ -66,6 +71,17 @@
   font-weight: 700;
   color: #263238;
   font-family: "Montserrat", sans-serif;
+}
+
+.sponsors-section .body {
+  margin: 0.2rem auto;
+  text-align: center;
+  padding: 0rem 2rem;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+  color: #546e7a;
+  line-height: 26px;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* ipad */

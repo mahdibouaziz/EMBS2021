@@ -16,9 +16,13 @@ const Sponsors = () => {
     <section className="sponsors-section">
       <Container>
         <Row>
-          <h1 className="title">
-            Our<span> Sponsors</span>
-          </h1>
+          <h1 className="title">Our Sponsors</h1>
+        </Row>
+        <Row>
+          <p className="body">
+            You can find below the list of our sponsors who helped us reach our
+            current success.
+          </p>
         </Row>
         <Row className="sponsor">
           <img src={spr6} alt="" />
