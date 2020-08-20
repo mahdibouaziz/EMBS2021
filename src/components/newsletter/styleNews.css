@@ -4,10 +4,13 @@
 }
 
 .charity-section .title {
+  margin-bottom: 0.6rem;
   margin: 0 auto;
   text-transform: uppercase;
-  font-weight: bold;
-  margin-bottom: 0.6rem;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #263238;
+  font-family: "Montserrat", sans-serif;
 }
 
 .charity-section .body {
@@ -15,10 +18,10 @@
   text-align: center;
   padding: 0rem 2rem;
   margin-bottom: 1.2rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #546e7a;
   line-height: 26px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .charity-section .main-row > div {
@@ -57,11 +60,12 @@
 
 .charity-section .char-box p {
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #546e7a;
   font-weight: 500;
   padding: 0.8rem 1rem;
   margin-bottom: 0rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 .charity-section .char-box p:nth-child(odd) {
@@ -80,6 +84,13 @@
   padding-bottom: 40px;
 }
 
+/* ipad */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .charity-section .title {
+    font-size: 2rem;
+  }
+}
+
 /* Mobile */
 @media only screen and (max-width: 767px) {
   .charity-section .main-row > div {
@@ -93,6 +104,7 @@
     text-align: center;
     padding-left: 7px;
     padding-right: 7px;
+    font-size: 1.6rem;
   }
 }
 
@@ -104,10 +116,13 @@
 }
 
 .collab-section .title {
+  margin-bottom: 0.6rem;
   margin: 0 auto;
   text-transform: uppercase;
-  font-weight: bold;
-  margin-bottom: 0.6rem;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #263238;
+  font-family: "Montserrat", sans-serif;
 }
 
 .collab-section .body {
@@ -115,10 +130,10 @@
   text-align: center;
   padding: 0rem 2rem;
   margin-bottom: 1.2rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #546e7a;
   line-height: 26px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .collab-section .main-row .collab-box {
@@ -163,6 +178,9 @@
   .collab-section .main-row .collab-box {
     width: 47%;
   }
+  .collab-section .title {
+    font-size: 2rem;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -173,5 +191,6 @@
     text-align: center;
     padding-left: 7px;
     padding-right: 7px;
+    font-size: 1.6rem;
   }
 }

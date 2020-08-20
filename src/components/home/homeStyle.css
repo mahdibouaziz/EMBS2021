@@ -99,9 +99,11 @@
 .team-section .title {
   margin: 0 auto;
   text-transform: uppercase;
-  font-weight: 10rem;
-  font-weight: bold;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #263238;
   margin-bottom: 1.2rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 .team-section .main-row > div {
@@ -129,19 +131,21 @@
 .team-section .main-row .name {
   margin-top: 1.2rem;
   margin-bottom: 0.7rem;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 500;
   color: #263238;
   line-height: 1.2;
   text-align: center;
+  font-family: "Montserrat", sans-serif;
 }
 
 .team-section .main-row .post {
   margin-bottom: 1.1rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #546e7a;
   line-height: 1.8rem;
   text-align: center;
+  font-family: "Montserrat", sans-serif;
 }
 
 .team-section .main-row .social {
@@ -170,17 +174,29 @@
 
 /* ipad */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .team-section .title {
+    font-size: 2rem;
+  }
+
   .team-section .main-row > div {
     width: 46%;
   }
 
   .team-section .main-row .name {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .team-section .main-row .post {
+    font-size: 0.9rem;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .team-section .main-row > div {
     width: 90%;
+  }
+
+  .team-section .title {
+    font-size: 1.6rem !important;
   }
 }

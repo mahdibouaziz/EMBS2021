@@ -34,10 +34,13 @@
 }
 
 .event-section .title {
+  margin-bottom: 0.6rem;
   margin: 0 auto;
   text-transform: uppercase;
-  font-weight: bold;
-  margin-bottom: 0.6rem;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #263238;
+  font-family: "Montserrat", sans-serif;
 }
 
 .event-section .body {
@@ -99,6 +102,9 @@
   .event-section .main-row > div {
     width: 47%;
   }
+  .event-section .title {
+    font-size: 2rem;
+  }
 }
 /* Mobile */
 @media only screen and (max-width: 767px) {
@@ -109,6 +115,7 @@
     text-align: center;
     padding-left: 7px;
     padding-right: 7px;
+    font-size: 1.6rem;
   }
 
   .event-section .body {
@@ -124,10 +131,13 @@
 }
 
 .training-section .title {
+  margin-bottom: 0.6rem;
   margin: 0 auto;
   text-transform: uppercase;
-  font-weight: bold;
-  margin-bottom: 0.6rem;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #263238;
+  font-family: "Montserrat", sans-serif;
 }
 
 .training-section .body {
@@ -197,6 +207,13 @@
   color: #445157;
 }
 
+/* ipad */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .training-section .title {
+    font-size: 2rem;
+  }
+}
+
 /* Mobile */
 @media only screen and (max-width: 767px) {
   .training-section .main-row > div {
@@ -207,6 +224,7 @@
     text-align: center;
     padding-left: 7px;
     padding-right: 7px;
+    font-size: 1.6rem;
   }
 
   .training-section .body {
@@ -223,10 +241,13 @@
 }
 
 .visits-section .title {
+  margin-bottom: 0.6rem;
   margin: 0 auto;
   text-transform: uppercase;
-  font-weight: bold;
-  margin-bottom: 0.6rem;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #263238;
+  font-family: "Montserrat", sans-serif;
 }
 
 .visits-section .body {
@@ -255,10 +276,18 @@
   margin: 0 auto;
   width: 80%;
 }
+
+/* ipad */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .visits-section .title {
+    font-size: 2rem;
+  }
+}
+
 /* Mobile */
 @media only screen and (max-width: 767px) {
   .visits-section .title {
-    font-size: 1.55rem;
+    font-size: 1.6rem;
   }
 
   .visits-section .visit-date {

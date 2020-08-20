@@ -7,10 +7,10 @@ const UL = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
-  margin-right: 12%;
+  margin-right: 10%;
 
-  @media only screen and (min-width: 769px) and (max-width: 1199px) {
-    margin-right: 5%;
+  @media (max-width: 849px) {
+    margin-right: 0%;
   }
 
   a {
@@ -22,7 +22,8 @@ const UL = styled.ul`
     transition: all 0.4s ease-in-out;
     border-radius: 6px;
     text-transform: uppercase;
-    font-weight: bold;
+    font-family: "Itim", cursive;
+    font-weight: 600;
   }
 
   a:hover {

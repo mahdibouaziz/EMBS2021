@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import pic from "./img/act.png";
 import ieee from "./img/ieee.png";
 import embs from "./img/embs.png";
@@ -7,14 +7,9 @@ import ieee_insat from "./img/ieee_insat.png";
 import embs_logo from "./img/embs_logo.png";
 import { Container, Row, Col } from "react-bootstrap";
 import "./aboutStyle.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import Sponsors from "./Sponsors";
 
 const About = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1100 });
-  }, []);
   return (
     <div>
       <div className="banner" style={{ backgroundImage: `url(${pic})` }}>
@@ -26,8 +21,8 @@ const About = () => {
             <img className="ieee-logo" src={ieee} alt="ieee" />
           </Col>
           <Col sm={12} md={8}>
-            <h1 data-aos="fade-right">WHO ARE IEEE ?</h1>
-            <p data-aos="fade-up">
+            <h1>WHO ARE IEEE ?</h1>
+            <p>
               IEEE is the world’s largest technical professional organization
               dedicated to advancing technology for the benefit of humanity.
               <br />
@@ -44,8 +39,8 @@ const About = () => {
 
         <Row className="row-about">
           <Col sm={12} md={8}>
-            <h1 data-aos="fade-right">AND WHAT IS EMBS CHAPTER ?</h1>
-            <p data-aos="fade-up">
+            <h1>AND WHAT IS EMBS CHAPTER ?</h1>
+            <p>
               IEEE Engineering in Medicine and Biology Society (EMBS) is the
               world’s largest international society of biomedical engineers.
               <br />
@@ -57,15 +52,15 @@ const About = () => {
               fastest growing fields in science.
             </p>
           </Col>
-          <Col data-aos="fade-right" className="col-about" sm={12} md={4}>
+          <Col className="col-about" sm={12} md={4}>
             <img className="embs-logo" src={embs} alt="ieee" />
           </Col>
         </Row>
 
         <Row className="row-about">
           <Col sm={12} md={{ span: 8, order: 2 }}>
-            <h1 data-aos="fade-right">EMBS TUNISIA SECTION</h1>
-            <p data-aos="fade-up">
+            <h1>EMBS TUNISIA SECTION</h1>
+            <p>
               The IEEE Tunisia EMB Chapter is established in January 2009.
               <br />
               The objectives are:
@@ -85,20 +80,15 @@ const About = () => {
               seminars, lectures, schools, conferences, and other events.
             </p>
           </Col>
-          <Col
-            data-aos="fade-right"
-            className="col-about"
-            sm={12}
-            md={{ span: 4, order: 1 }}
-          >
+          <Col className="col-about" sm={12} md={{ span: 4, order: 1 }}>
             <img className="ieee-tunisia-logo" src={ieee_tunisia} alt="ieee" />
           </Col>
         </Row>
 
         <Row className="row-about">
           <Col sm={12} md={8}>
-            <h1 data-aos="fade-right">EMBS IN INSAT !</h1>
-            <p data-aos="fade-up">
+            <h1>EMBS IN INSAT !</h1>
+            <p>
               INSAT Student Branch EMBS Chapter is the latest chapter within our
               Student Branch , it was created on 2017, By students from
               different Specialties : Biological Engineering and Chemical
@@ -110,15 +100,15 @@ const About = () => {
               share what they learned with their environement.
             </p>
           </Col>
-          <Col data-aos="fade-right" className="col-about" sm={12} md={4}>
+          <Col className="col-about" sm={12} md={4}>
             <img className="ieee-insat-logo" src={ieee_insat} alt="ieee" />
           </Col>
         </Row>
 
         <Row className="row-about">
           <Col sm={12} md={{ span: 8, order: 2 }}>
-            <h1 data-aos="fade-right">WELCOME TO OUR COMMUNITY !</h1>
-            <p data-aos="fade-up">
+            <h1>WELCOME TO OUR COMMUNITY !</h1>
+            <p>
               Do you want to know how to design the electrical circuits that
               make a pacemaker run ? or create the software that reads an MRI ?
               <br />
@@ -136,12 +126,7 @@ const About = () => {
               healthcare technology for the benefit of all humanity.
             </p>
           </Col>
-          <Col
-            data-aos="fade-right"
-            className="col-about"
-            sm={12}
-            md={{ span: 4, order: 1 }}
-          >
+          <Col className="col-about" sm={12} md={{ span: 4, order: 1 }}>
             <img className="embs-logo" src={embs_logo} alt="ieee" />
           </Col>
         </Row>

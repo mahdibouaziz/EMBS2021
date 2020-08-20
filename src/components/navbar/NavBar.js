@@ -25,7 +25,7 @@ const Nav = styled.nav`
   transition: background-color 1s;
 
   .logo{
-    margin-left:20%;
+    margin-left:12%;
   }
 
   .logo img {
@@ -33,15 +33,11 @@ const Nav = styled.nav`
     padding-top: 9px;
   }
 
-  @media only screen and (min-width: 1200px) and (max-width: 1550px) {
-    .logo{
-    margin-left:15%;
-    }
-  }
 
-  @media only screen and (min-width: 850px) and (max-width: 1199px) {
+
+  @media only screen and (min-width: 850px) and (max-width: 1000px) {
     .logo{
-    margin-left:4%;
+    margin-left:9%;
     }
   }
 
