@@ -101,8 +101,11 @@
 
 /* Team section */
 .team-section {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  background-color: #f9f9f9;
+  position: relative;
+  top: -3rem;
 }
 .team-section .title {
   margin: 0 auto;

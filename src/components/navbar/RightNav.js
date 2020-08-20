@@ -27,7 +27,7 @@ const UL = styled.ul`
   }
 
   a:hover {
-    color: #09a3bb;
+    color: rgb(18, 18, 225);
   }
 
   @media (max-width: 768px) {

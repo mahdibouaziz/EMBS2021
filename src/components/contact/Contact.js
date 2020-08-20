@@ -73,7 +73,7 @@ const Contact = () => {
                 <p>(+216) 58 869 350</p>
                 <p className="social">
                   <a href="http://" target="_blank" rel="noopener noreferrer">
-                    <i className="fab fa-facebook"></i>
+                    <i className="fab fa-facebook-f"></i>
                   </a>
                   <a href="http://" target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-instagram"></i>

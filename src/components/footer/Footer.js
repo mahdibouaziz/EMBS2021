@@ -1,47 +1,45 @@
 import React from "react";
-import { Container, Col, Row } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import "./footer.css";
 import logo from "./embs_logo.png";
 
 const Footer = () => {
   return (
     <footer>
-      <Container fluid>
-        <Row className="footer-row">
-          <Col className="footer-col" sm={{ span: 4, offset: 1 }}>
-            <img src={logo} alt="" />
-            <p>
-              If you think you have the passion, attitude and capability to join
-              us, don't hesitate.
-            </p>
-          </Col>
-          <Col className="footer-col" sm={{ span: 5, offset: 1 }}>
-            <p>CONTACT US</p>
-            <p>
-              <i className="fas fa-location-arrow">
-                INSAT Centre Urbain Nord BP 676 - 1080 Tunis Cedex{" "}
-              </i>
-            </p>
-            <p>
-              <i className="fas fa-phone-square-alt"> (+216) 58 869 350</i>
-            </p>
-            <p>
-              <i className="fas fa-envelope-square"> embs-insat@outlook.com</i>
-            </p>
-            <p className="social-footer">
-              <a href="http://" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-facebook"></i>
-              </a>
-              <a href="http://" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-instagram"></i>
-              </a>
-              <a href="http://" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-linkedin-in"></i>
-              </a>
-            </p>
-          </Col>
-        </Row>
-      </Container>
+      <div className="wrapper">
+        <div className="footer-col">
+          <img src={logo} alt="" />
+          <p className="footer-col-desc">
+            If you think you have the passion, attitude and capability to join
+            us, don't hesitate
+          </p>
+        </div>
+
+        <div className="footer-col">
+          <p className="title">CONTACT US</p>
+          <p className="body">
+            <i className="fas fa-location-arrow"></i>
+            INSAT Centre Urbain Nord BP 676 - 1080 Tunis Cedex{" "}
+          </p>
+          <p className="body">
+            <i className="fas fa-phone-square-alt"></i> (+216) 58 869 350
+          </p>
+          <p className="body">
+            <i className="fas fa-envelope-square"></i> embs-insat@outlook.com
+          </p>
+          <p className="social-footer">
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-facebook-f"></i>
+            </a>
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-instagram"></i>
+            </a>
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-linkedin-in"></i>
+            </a>
+          </p>
+        </div>
+      </div>
     </footer>
   );
 };
