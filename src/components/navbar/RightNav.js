@@ -9,6 +9,10 @@ const UL = styled.ul`
   flex-flow: row nowrap;
   margin-right: 10%;
 
+  @media (max-width: 1024px) {
+    margin-right: 5%;
+  }
+
   @media (max-width: 849px) {
     margin-right: 0%;
   }
@@ -21,9 +25,8 @@ const UL = styled.ul`
     font-size: 20px;
     transition: all 0.4s ease-in-out;
     border-radius: 6px;
-    text-transform: uppercase;
-    font-family: "Itim", cursive;
-    font-weight: 600;
+    font-family: "Lato", sans-serif;
+    font-weight: 580;
   }
 
   a:hover {

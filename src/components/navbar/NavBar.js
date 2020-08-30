@@ -33,9 +33,9 @@ const Nav = styled.nav`
     padding-top: 9px;
   }
 
-  @media only screen and (min-width: 850px) and (max-width: 1000px) {
+  @media only screen and (min-width: 850px) and (max-width: 1024px) {
     .logo {
-      margin-left: 9%;
+      margin-left: 5%;
     }
   }
 

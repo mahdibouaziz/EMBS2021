@@ -44,7 +44,7 @@ const StyledBurger = styled.div`
   }
 
   .burger-line {
-    background-color: ${(props) => (props.posit ? "#333" : "#fff")};
+    background-color: ${(props) => (props.posit ? "#222" : "#fff")};
   }
 `;
 
