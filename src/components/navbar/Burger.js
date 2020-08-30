@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import styled from "styled-components";
 import RightNav from "./RightNav";
 import { ContextNav } from "./ContextNav";
@@ -42,21 +42,43 @@ const StyledBurger = styled.div`
       transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0deg)")};
     }
   }
+
+  .burger-line {
+    background-color: ${(props) => (props.posit ? "#333" : "#fff")};
+  }
 `;
 
 const Burger = () => {
   const { open, setOpen } = useContext(ContextNav);
 
+  const [headerShow, setHeaderShow] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", scrollEffect);
+  });
+
+  // Scroll effect
+  const scrollEffect = () => {
+    if (window.scrollY > 70) {
+      setHeaderShow(true);
+    } else {
+      setHeaderShow(false);
+    }
+  };
+
   return (
     <>
       <StyledBurger
-        style={{ backgroundColor: "rgba(16, 66, 143, 1)", width: "45px" }}
+        style={{
+          width: "35px",
+        }}
         open={open}
         onClick={() => setOpen(!open)}
+        posit={headerShow}
       >
-        <div style={{ backgroundColor: "#fff", margin: "2px 6px" }}></div>
-        <div style={{ backgroundColor: "#fff", margin: "2px 6px" }}></div>
-        <div style={{ backgroundColor: "#fff", margin: "2px 6px" }}></div>
+        <div className="burger-line"></div>
+        <div className="burger-line"></div>
+        <div className="burger-line"></div>
       </StyledBurger>
       <RightNav open={open} />
     </>

@@ -20,12 +20,12 @@ const Nav = styled.nav`
   box-shadow: ${(props) =>
     props.posit
       ? "0px 0px 13px -1px rgba(0,0,0,0.75)"
-      : "0px 0px 0px 0px rgba(0,0,0,0.75)"}; 
+      : "0px 0px 0px 0px rgba(0,0,0,0.75)"};
 
   transition: background-color 1s;
 
-  .logo{
-    margin-left:12%;
+  .logo {
+    margin-left: 12%;
   }
 
   .logo img {
@@ -33,19 +33,15 @@ const Nav = styled.nav`
     padding-top: 9px;
   }
 
-
-
   @media only screen and (min-width: 850px) and (max-width: 1000px) {
-    .logo{
-    margin-left:9%;
+    .logo {
+      margin-left: 9%;
     }
   }
 
-
-
   @media (max-width: 849px) {
-    .logo{
-    margin-left:0rem;
+    .logo {
+      margin-left: 0rem;
     }
   }
 `;
