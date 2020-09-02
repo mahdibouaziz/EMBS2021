@@ -2,6 +2,7 @@ import React from "react";
 import CarouselPage from "./CarouselPage";
 import Team from "./Team";
 import Sponsors from "./Sponsors";
+import FeedBack from "./FeedBack";
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <CarouselPage />
       <Team />
       <Sponsors />
+      <FeedBack />
     </div>
   );
 };
