@@ -26,14 +26,14 @@ const Contact = () => {
             <Col md={8}>
               <form>
                 <input
-                  className="input"
+                  className="input input-name"
                   type="text"
                   id="name"
                   name="name"
                   placeholder="Name"
                 />
                 <input
-                  className="input"
+                  className="input input-email"
                   type="text"
                   id="email"
                   name="email"
@@ -42,9 +42,9 @@ const Contact = () => {
                 <input
                   className="input"
                   type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Name"
+                  id="subject"
+                  name="subject"
+                  placeholder="Subject"
                 />
                 <textarea
                   className="input"
