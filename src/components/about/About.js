@@ -7,7 +7,6 @@ import ieee_insat from "./img/ieee_insat.png";
 import embs_logo from "./img/embs_logo.png";
 import { Container, Row, Col } from "react-bootstrap";
 import "./aboutStyle.css";
-import Sponsors from "./Sponsors";
 
 const About = () => {
   return (
@@ -139,7 +138,6 @@ const About = () => {
           </Row>
         </Container>
       </div>
-      <Sponsors />
     </div>
   );
 };

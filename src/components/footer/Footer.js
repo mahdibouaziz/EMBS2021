@@ -1,5 +1,4 @@
 import React from "react";
-import { Container, Row } from "react-bootstrap";
 import "./footer.css";
 import logo from "./embs_logo.png";
 

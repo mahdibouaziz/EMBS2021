@@ -25,7 +25,7 @@ const UL = styled.ul`
     font-size: 20px;
     transition: all 0.4s ease-in-out;
     border-radius: 6px;
-    font-family: "Lato", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 580;
   }
 

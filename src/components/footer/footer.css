@@ -48,12 +48,21 @@ footer {
 
 .social-footer a {
   background-color: rgb(7, 7, 139);
+  display: inline-block;
+  width: 2.4rem;
+  height: 2.4rem;
+  line-height: 2.4rem;
+  text-align: center;
   color: #fff;
   margin: 0.6rem;
-  padding: 0.6rem 0.7rem;
+  /* padding: 0.6rem 0.7rem; */
   border-radius: 50%;
   transition: background-color 0.3s ease-in-out;
   text-decoration: none;
+}
+
+.social-footer a {
+  font-size: 1.1rem;
 }
 
 .social-footer a:hover {
