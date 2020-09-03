@@ -7,9 +7,9 @@ import { Link } from "react-router-dom";
 
 const Nav = styled.nav`
   width: 100%;
-  height: 65px;
+  height: ${({ posit }) => (posit ? "4.7rem" : "6.3rem")};
+  padding: 0 1rem;
   border-bottom: 2px solid #f1f1f1;
-  padding: 0 20px;
   display: fixe;
   justify-content: space-between;
   position: fixed;
@@ -20,31 +20,53 @@ const Nav = styled.nav`
   border-color: transparent;
   box-shadow: ${(props) =>
     props.posit
-      ? "0px 0px 13px -1px rgba(0,0,0,0.75)"
-      : "0px 0px 0px 0px rgba(0,0,0,0.75)"};
+      ? "0 1px 3px 0 rgba(0, 0, 0, 0.16), 0 1px 3px 0 rgba(0, 0, 0, 0.12)"
+      : null};
 
-  transition: background-color 1s;
+  transition: all 0.3s ease-in-out;
+`;
 
-  .logo {
-    margin-left: 12%;
+const DefaultContainer = styled.div`
+  width: 100%;
+  padding: 0 0.75rem;
+  margin: auto;
+
+  /* Medium (md) */
+  @media (min-width: 768px) {
+    width: 750px;
+    padding: 0 1rem;
   }
 
-  .logo img {
-    width: 5rem;
-    padding-top: 9px;
+  /* Medium (md+) */
+  @media (min-width: 992px) {
+    width: 970px;
   }
 
-  @media only screen and (min-width: 850px) and (max-width: 1024px) {
-    .logo {
-      margin-left: 5%;
-    }
+  /* Large (lg) */
+  @media (min-width: 1200px) {
+    width: 1170px;
   }
 
-  @media (max-width: 849px) {
-    .logo {
-      margin-left: 0rem;
-    }
+  /* Large (lg) */
+  @media (min-width: 1200px) {
+    width: 1170px;
   }
+
+  /* Large (lg) */
+  @media (min-width: 1600px) {
+    width: 100%;
+    padding: 0 10rem;
+  }
+`;
+
+const Container = styled(DefaultContainer)`
+  height: 100%;
+  display: flex;
+  align-items: center;
+`;
+
+const Spacer = styled.div`
+  flex: 1 1 0;
 `;
 
 const NavBar = () => {
@@ -63,15 +85,20 @@ const NavBar = () => {
     }
   };
 
+  const Logo = styled.img`
+    height: 3.5rem;
+  `;
+
   return (
     <Nav className="nav-style" posit={headerShow}>
       <ContextNavProvider>
-        <div className="logo">
+        <Container>
           <Link to="/">
-            <img src={logo} alt="logo" />
+            <Logo src={logo} alt="logo" />
           </Link>
-        </div>
-        <Burger />
+          <Spacer />
+          <Burger />
+        </Container>
       </ContextNavProvider>
     </Nav>
   );

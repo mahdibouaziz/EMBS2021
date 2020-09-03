@@ -1,25 +1,16 @@
 import React, { useContext, useState, useEffect } from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { ContextNav } from "./ContextNav";
 
 const UL = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
-  margin-right: 10%;
-
-  @media (max-width: 1024px) {
-    margin-right: 5%;
-  }
-
-  @media (max-width: 849px) {
-    margin-right: 0%;
-  }
 
   a {
     margin-top: 0.7rem;
-    padding: 3px 20px;
+    padding: 0px 1rem;
     color: ${(props) => (props.posit ? "#000" : "#fff")};
     text-decoration: none;
     font-size: 1rem;
@@ -53,6 +44,20 @@ const UL = styled.ul`
   }
 `;
 
+const StyledNavlink = styled(NavLink)`
+  &.active {
+    color: rgb(18, 18, 225);
+  }
+`;
+
+const Links = [
+  { name: "Home", href: "/", exact: true },
+  { name: "About", href: "/about" },
+  { name: "Activities", href: "/activities" },
+  { name: "NewsLetter", href: "/newsletter" },
+  { name: "Contact", href: "/contact" },
+];
+
 const RightNav = () => {
   const [headerShow, setHeaderShow] = useState(false);
 
@@ -71,21 +76,36 @@ const RightNav = () => {
   const { open, setOpen } = useContext(ContextNav);
   return (
     <UL posit={headerShow} open={open}>
-      <Link onClick={() => setOpen(!open)} to="/">
+      {Links.map((e) => (
+        <StyledNavlink
+          key={e.href}
+          exact={e.exact}
+          onClick={() => setOpen(!open)}
+          to={e.href}
+        >
+          {e.name}
+        </StyledNavlink>
+      ))}
+
+      {/* <StyledNavlink
+        activeClassName="active"
+        onClick={() => setOpen(!open)}
+        to="/"
+      >
         Home
-      </Link>
-      <Link onClick={() => setOpen(!open)} to="/about">
+      </StyledNavlink>
+      <StyledNavlink onClick={() => setOpen(!open)} to="/about">
         About
-      </Link>
-      <Link onClick={() => setOpen(!open)} to="/activities">
+      </StyledNavlink>
+      <StyledNavlink onClick={() => setOpen(!open)} to="/activities">
         Activities
-      </Link>
-      <Link onClick={() => setOpen(!open)} to="/newsletter">
+      </StyledNavlink>
+      <StyledNavlink onClick={() => setOpen(!open)} to="/newsletter">
         NewsLetter
-      </Link>
-      <Link onClick={() => setOpen(!open)} to="/contact">
+      </StyledNavlink>
+      <StyledNavlink onClick={() => setOpen(!open)} to="/contact">
         Contact
-      </Link>
+      </StyledNavlink> */}
     </UL>
   );
 };
