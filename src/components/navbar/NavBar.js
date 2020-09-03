@@ -69,6 +69,10 @@ const Spacer = styled.div`
   flex: 1 1 0;
 `;
 
+const Logo = styled.img`
+  height: 3.5rem;
+`;
+
 const NavBar = () => {
   const [headerShow, setHeaderShow] = useState(false);
 
@@ -84,10 +88,6 @@ const NavBar = () => {
       setHeaderShow(false);
     }
   };
-
-  const Logo = styled.img`
-    height: 3.5rem;
-  `;
 
   return (
     <Nav className="nav-style" posit={headerShow}>

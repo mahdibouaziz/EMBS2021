@@ -11,7 +11,7 @@ const UL = styled.ul`
   margin: 0;
   a {
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.1rem;
     transition: all 0.4s ease-in-out;
     border-radius: 6px;
     font-family: "Poppins", sans-serif;
@@ -22,7 +22,7 @@ const UL = styled.ul`
     margin-right: 0rem;
     align-items: start;
     flex-flow: column nowrap;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: #f9f9f9;
     z-index: 19;
     position: fixed;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
@@ -54,7 +54,7 @@ const StyledNavlink = styled(NavLink)`
   }
 
   @media (max-width: 768px) {
-    font-size: 1.2rem;
+    margin-top: 0.7rem;
     &.active {
       color: rgb(18, 18, 225);
     }
@@ -93,7 +93,6 @@ const RightNav = () => {
           exact={e.exact}
           onClick={() => setOpen(!open)}
           to={e.href}
-          posit={headerShow}
         >
           {e.name}
         </StyledNavlink>
