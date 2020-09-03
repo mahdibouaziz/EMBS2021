@@ -1,17 +1,15 @@
 import React, { useContext, useState, useEffect } from "react";
 import styled from "styled-components";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { ContextNav } from "./ContextNav";
 
 const UL = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
-
+  align-items: center;
+  margin: 0;
   a {
-    margin-top: 0.7rem;
-    padding: 0px 1rem;
-    color: ${(props) => (props.posit ? "#000" : "#fff")};
     text-decoration: none;
     font-size: 1rem;
     transition: all 0.4s ease-in-out;
@@ -19,14 +17,12 @@ const UL = styled.ul`
     font-family: "Poppins", sans-serif;
   }
 
-  a:hover {
-    color: rgb(18, 18, 225);
-  }
-
   @media (max-width: 768px) {
+    padding-top: 5rem;
     margin-right: 0rem;
+    align-items: start;
     flex-flow: column nowrap;
-    background-color: rgba(16, 66, 143, 0.6);
+    background-color: rgba(255, 255, 255, 1);
     z-index: 19;
     position: fixed;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
@@ -34,19 +30,34 @@ const UL = styled.ul`
     right: 0;
     height: 100vh;
     width: 250px;
-    padding-top: 3.4rem;
     transition: transform 0.3s ease-in-out;
 
     a {
-      color: #fff;
+      color: #000;
       text-decoration: none;
+      width: 100%;
     }
   }
 `;
 
 const StyledNavlink = styled(NavLink)`
+  color: ${(props) => (props.posit ? "#000" : "#fff")};
+  margin: 0 0.25rem;
+  padding: 0.5rem 1rem;
   &.active {
-    color: rgb(18, 18, 225);
+    color: ${(props) => (props.posit ? "rgb(18, 18, 225)" : "#fff")};
+  }
+
+  &:hover {
+    color: ${(props) => (props.posit ? "rgb(18, 18, 225)" : "#fff")};
+    background: ${(props) => (props.posit ? null : "rgba(0,0,0,0.15)")};
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+    &.active {
+      color: rgb(18, 18, 225);
+    }
   }
 `;
 
@@ -82,6 +93,7 @@ const RightNav = () => {
           exact={e.exact}
           onClick={() => setOpen(!open)}
           to={e.href}
+          posit={headerShow}
         >
           {e.name}
         </StyledNavlink>

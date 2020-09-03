@@ -6,9 +6,9 @@ import { ContextNav } from "./ContextNav";
 const StyledBurger = styled.div`
   width: 2rem;
   height: 2rem;
-  position: fixed;
-  top: 15px;
-  right: 20px;
+  position: relative;
+  top: 0px;
+  right: 0px;
   display: flex;
   justify-content: space-around;
   flex-flow: column nowrap;
@@ -44,7 +44,8 @@ const StyledBurger = styled.div`
   }
 
   .burger-line {
-    background-color: ${(props) => (props.posit ? "#222" : "#fff")};
+    background-color: ${(props) =>
+      props.posit ? "#222" : ({ open }) => (open ? "#222" : "#fff")};
   }
 `;
 
