@@ -22,11 +22,10 @@ const UL = styled.ul`
     padding: 3px 20px;
     color: ${(props) => (props.posit ? "#000" : "#fff")};
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1rem;
     transition: all 0.4s ease-in-out;
     border-radius: 6px;
     font-family: "Poppins", sans-serif;
-    font-weight: 580;
   }
 
   a:hover {

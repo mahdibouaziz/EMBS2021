@@ -10,7 +10,7 @@ const CarouselPage = () => {
   return (
     <Carousel
       indicators={false}
-      interval={4200}
+      interval={3500}
       style={{ position: "relative", zIndex: "0" }}
     >
       <Carousel.Item className="item">
@@ -23,19 +23,19 @@ const CarouselPage = () => {
             {/* Check this for animation https://animate.style/ */}
             <h2
               className="animate__animated animate__fadeInDown"
-              style={{ animationDelay: "1s" }}
+              style={{ animationDelay: ".5s" }}
             >
               IEEE INSAT <span>EMBS</span> Chapter
             </h2>
             <h3
               className="animate__animated animate__fadeInDown"
-              style={{ animationDelay: "1s" }}
+              style={{ animationDelay: ".7s" }}
             >
               Your Global Connection To The World Of Biomedical Engineering
             </h3>
             <p
               className="animate__animated animate__fadeInDown"
-              style={{ animationDelay: "1s" }}
+              style={{ animationDelay: ".7s" }}
             >
               <Link to="/about">GET TO KNOW US</Link>
             </p>
@@ -51,14 +51,14 @@ const CarouselPage = () => {
           <div className="carousel-caption">
             <h2
               className="animate__animated animate__fadeInDown"
-              style={{ animationDelay: "1s" }}
+              style={{ animationDelay: ".5s" }}
             >
               We work to enhance <br />
               <span>Students Skills</span>
             </h2>
             <h3
               className="animate__animated animate__fadeInDown"
-              style={{ animationDelay: "1s" }}
+              style={{ animationDelay: ".7s" }}
             >
               Through Workshops, Events, Conferences, Magasines and More...
             </h3>
@@ -74,14 +74,14 @@ const CarouselPage = () => {
           <div className="carousel-caption">
             <h2
               className="animate__animated animate__fadeInDown"
-              style={{ animationDelay: "1s" }}
+              style={{ animationDelay: ".5s" }}
             >
               <span>Ready To</span> <br />
               Be part of our journey?
             </h2>
             <h3
               className="animate__animated animate__fadeInDown"
-              style={{ animationDelay: "1s" }}
+              style={{ animationDelay: ".7s" }}
             >
               Your Global Connection To The World Of Biomedical Engineering
             </h3>

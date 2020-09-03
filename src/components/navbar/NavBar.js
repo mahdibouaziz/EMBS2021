@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Burger from "./Burger";
 import ContextNavProvider from "./ContextNav";
 import logo from "./embs_logo.png";
+import { Link } from "react-router-dom";
 
 const Nav = styled.nav`
   width: 100%;
@@ -66,7 +67,9 @@ const NavBar = () => {
     <Nav className="nav-style" posit={headerShow}>
       <ContextNavProvider>
         <div className="logo">
-          <img src={logo} alt="logo" />
+          <Link to="/">
+            <img src={logo} alt="logo" />
+          </Link>
         </div>
         <Burger />
       </ContextNavProvider>

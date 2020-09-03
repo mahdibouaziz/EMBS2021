@@ -185,7 +185,7 @@
 
 /* FeedBack */
 .Feedback {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   background-color: rgb(75, 164, 224);
   position: relative;
 }
@@ -225,7 +225,7 @@
 
 .Feedback .carousel-indicators {
   position: absolute !important;
-  bottom: -1rem;
+  bottom: 0rem;
 }
 
 /* ipad */
