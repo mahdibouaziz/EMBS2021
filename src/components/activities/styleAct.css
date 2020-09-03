@@ -184,7 +184,8 @@
 }
 
 .training-section .main-row > div img {
-  width: 90%;
+  width: 20rem;
+  height: 20rem;
   border-radius: 50%;
 }
 
@@ -223,10 +224,21 @@
   font-family: "Montserrat", sans-serif;
 }
 
+@media only screen and (max-width: 1199px) {
+  .training-section .main-row > div img {
+    width: 18rem;
+    height: 18rem;
+  }
+}
+
 /* ipad */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .training-section .title {
     font-size: 2rem;
+  }
+  .training-section .main-row > div img {
+    width: 14rem;
+    height: 14rem;
   }
 }
 
@@ -234,6 +246,11 @@
 @media only screen and (max-width: 767px) {
   .training-section .main-row > div {
     width: 90%;
+  }
+
+  .training-section .main-row > div img {
+    width: 15rem;
+    height: 15rem;
   }
 
   .training-section .title {

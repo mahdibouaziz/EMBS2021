@@ -142,7 +142,8 @@
   margin: 2rem auto;
   border-radius: 5px;
   background-color: #f9f9f9;
-  box-shadow: 2px 2px 12px 8px rgb(209, 209, 209);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
   position: relative;
   top: 0;
   transition: 0.3s ease-in-out;
