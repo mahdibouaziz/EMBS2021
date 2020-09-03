@@ -86,13 +86,14 @@ const RightNav = () => {
   };
   const { open, setOpen } = useContext(ContextNav);
   return (
-    <UL posit={headerShow} open={open}>
+    <UL open={open}>
       {Links.map((e) => (
         <StyledNavlink
           key={e.href}
           exact={e.exact}
           onClick={() => setOpen(!open)}
           to={e.href}
+          posit={headerShow}
         >
           {e.name}
         </StyledNavlink>
