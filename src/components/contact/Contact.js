@@ -17,7 +17,7 @@ const Contact = () => {
             </h1>
           </Row>
           <Row>
-            <p className="body">
+            <p className="body paragraph">
               Do you wanna know more about IEEE EMBS INSAT? Don't hesitate to
               contact us!.
             </p>
@@ -59,18 +59,20 @@ const Contact = () => {
             </Col>
             <Col md={4}>
               <div className="info">
-                <h3>
+                <h3 className="title">
                   <i className="fas fa-location-arrow"></i> Location
                 </h3>
-                <p>INSAT Centre Urbain Nord BP 676 - 1080 Tunis Cedex</p>
-                <h3>
+                <p className="paragraph">
+                  INSAT Centre Urbain Nord BP 676 - 1080 Tunis Cedex
+                </p>
+                <h3 className="title">
                   <i className="far fa-envelope"></i> E-mail
                 </h3>
-                <p>embs-insat@outlook.com</p>
-                <h3>
+                <p className="paragraph">embs-insat@outlook.com</p>
+                <h3 className="title">
                   <i className="fas fa-phone-square-alt"></i> Phone
                 </h3>
-                <p>(+216) 58 869 350</p>
+                <p className="paragraph">(+216) 58 869 350</p>
                 <p className="social">
                   <a href="http://" target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-facebook-f"></i>

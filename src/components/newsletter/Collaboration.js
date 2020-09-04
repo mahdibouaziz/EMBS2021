@@ -13,7 +13,7 @@ const Collaboration = () => {
           <h1 className="title">Events We Participed In</h1>
         </Row>
         <Row>
-          <p className="body">
+          <p className="body paragraph">
             Our chapter takes part in yearly events, such as IEEE day, TSYP.. by
             organising and attending them along with other INSAT student branch
             chapters.

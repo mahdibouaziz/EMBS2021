@@ -37,7 +37,6 @@
 }
 /* Events */
 .event-section {
-  background-color: #ecf0f1;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -48,7 +47,6 @@
   text-transform: uppercase;
   font-size: 2.3rem;
   font-weight: 700;
-  color: #263238;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -58,7 +56,7 @@
   padding: 0rem 2rem;
   margin-bottom: 1.2rem;
   font-size: 1rem;
-  color: #546e7a;
+
   line-height: 26px;
   font-family: "Montserrat", sans-serif;
 }
@@ -68,7 +66,7 @@
   width: 23%;
   margin: 2rem auto;
   border-radius: 4px;
-  background-color: #fff;
+
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
   position: relative;
@@ -78,7 +76,6 @@
 
 .event-section .main-row > div:hover {
   top: -7px;
-  box-shadow: 0px 20px 50px 20px rgba(84, 110, 122, 0.15);
 }
 
 .event-section .main-row > div img {
@@ -93,7 +90,6 @@
 .event-section .main-row .date {
   font-size: 0.9rem;
   margin-bottom: 10px;
-  color: #546e7a;
   font-family: "Montserrat", sans-serif;
 }
 .event-section .main-row .desc {
@@ -149,7 +145,6 @@
   text-transform: uppercase;
   font-size: 2.3rem;
   font-weight: 700;
-  color: #263238;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -159,7 +154,7 @@
   padding: 0rem 2rem;
   margin-bottom: 1.2rem;
   font-size: 0.9rem;
-  color: #546e7a;
+
   line-height: 26px;
   font-family: "Montserrat", sans-serif;
 }
@@ -169,7 +164,7 @@
   width: 47%;
   margin: 2rem auto;
   border-radius: 4px;
-  background-color: #fff;
+
   border: 1px solid #ececec;
   position: relative;
   top: 0px;
@@ -177,10 +172,6 @@
   padding: 30px 15px;
   text-align: center;
   margin-bottom: 2rem;
-}
-
-.training-section .main-row > div:hover {
-  box-shadow: 0px 2px 50px 10px rgb(207, 207, 207);
 }
 
 .training-section .main-row > div img {
@@ -192,16 +183,13 @@
 .training-section .main-row .training-icon {
   width: 60px;
   height: 60px;
-  background: #f9f9f9;
+
   display: inline-block;
   line-height: 60px;
   font-size: 24px;
   text-align: center;
   border-radius: 50%;
-}
-.training-section .main-row .training-icon-1 {
-  background: #e6f8ed;
-  color: #57d283;
+  transition: all 0.3s ease-out;
 }
 
 .training-section .main-row .training-title {
@@ -214,13 +202,11 @@
 .training-section .main-row .training-date {
   margin-top: 1rem;
   font-size: 0.9rem;
-  color: #546e7a;
   font-family: "Montserrat", sans-serif;
 }
 .training-section .main-row .training-desc {
   padding: 5px 5px;
   font-size: 1rem;
-  color: #5e6d74;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -268,7 +254,6 @@
 
 /* Visits */
 .visits-section {
-  background-color: #ecf0f1;
   padding-top: 2.5rem;
   padding-bottom: 3.5rem;
 }
@@ -279,7 +264,6 @@
   text-transform: uppercase;
   font-size: 2.3rem;
   font-weight: 700;
-  color: #263238;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -289,7 +273,7 @@
   padding: 0rem 2rem;
   margin-bottom: 1.2rem;
   font-size: 0.9rem;
-  color: #546e7a;
+
   line-height: 26px;
   font-family: "Montserrat", sans-serif;
 }

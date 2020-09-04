@@ -9,7 +9,6 @@
   text-transform: uppercase;
   font-size: 2.3rem;
   font-weight: 700;
-  color: #263238;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -19,7 +18,7 @@
   padding: 0rem 2rem;
   margin-bottom: 1.2rem;
   font-size: 0.9rem;
-  color: #546e7a;
+
   line-height: 26px;
   font-family: "Montserrat", sans-serif;
 }
@@ -29,7 +28,7 @@
   width: 30%;
   margin: 2rem auto;
   border-radius: 4px;
-  background-color: #fff;
+
   box-shadow: 0px 10px 50px 0px rgba(84, 110, 122, 0.15);
   position: relative;
   top: 0px;
@@ -52,7 +51,6 @@
 .charity-section .char-box h2 {
   text-align: center;
   font-size: 1.5rem;
-  color: #546e7a;
   font-weight: 500;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -61,26 +59,18 @@
 .charity-section .char-box p {
   text-align: center;
   font-size: 0.9rem;
-  color: #546e7a;
   font-weight: 500;
   padding: 0.8rem 1rem;
   margin-bottom: 0rem;
   font-family: "Montserrat", sans-serif;
 }
 
-.charity-section .char-box p:nth-child(odd) {
-  background-color: #f8f8f8;
-}
-
 .box2 h3 {
   text-align: center;
-  color: #263238;
   font-size: 2.6rem;
   line-height: 40px;
   font-weight: 500;
   letter-spacing: -1px;
-  background-color: #fff !important;
-  border-bottom: 1px solid #e9edf2;
   padding-bottom: 40px;
 }
 
@@ -112,7 +102,6 @@
 .collab-section {
   padding-top: 3.4rem;
   padding-bottom: 3rem;
-  background-color: #ecf0f1;
 }
 
 .collab-section .title {
@@ -121,7 +110,6 @@
   text-transform: uppercase;
   font-size: 2.3rem;
   font-weight: 700;
-  color: #263238;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -131,7 +119,7 @@
   padding: 0rem 2rem;
   margin-bottom: 1.2rem;
   font-size: 0.9rem;
-  color: #546e7a;
+
   line-height: 26px;
   font-family: "Montserrat", sans-serif;
 }
@@ -141,7 +129,6 @@
   width: 23.2%;
   margin: 2rem auto;
   border-radius: 5px;
-  background-color: #f9f9f9;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
   position: relative;
@@ -151,7 +138,6 @@
 
 .collab-section .main-row .collab-box:hover {
   top: -7px;
-  box-shadow: 0px 20px 50px 20px rgba(84, 110, 122, 0.15);
 }
 
 .collab-section .main-row .collab-box img {

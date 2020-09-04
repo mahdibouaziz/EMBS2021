@@ -13,13 +13,13 @@ import spr10 from "./img/sponsors/10.png";
 
 const Sponsors = () => {
   return (
-    <section className="sponsors-section">
+    <section className="sponsors-section section">
       <Container>
         <Row>
           <h1 className="title">Our Sponsors</h1>
         </Row>
         <Row>
-          <p className="body">
+          <p className="body paragraph">
             You can find below the list of our sponsors who helped us reach our
             current success.
           </p>

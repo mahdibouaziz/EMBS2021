@@ -34,20 +34,17 @@ footer {
 .footer-col .title {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  color: rgb(6, 6, 102);
 }
 
 .footer-col .body {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  color: #546e7a;
 }
 .footer-col .fas {
   color: rgb(5, 5, 88);
 }
 
 .social-footer a {
-  background-color: rgb(7, 7, 139);
   display: inline-block;
   width: 2.4rem;
   height: 2.4rem;
@@ -62,11 +59,6 @@ footer {
 
 .social-footer a {
   font-size: 1.1rem;
-}
-
-.social-footer a:hover {
-  background-color: rgb(18, 18, 221);
-  color: #fff;
 }
 
 @media only screen and (max-width: 1250px) {

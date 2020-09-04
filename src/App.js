@@ -10,6 +10,7 @@ import Footer from "./components/footer/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container } from "react-bootstrap";
 import ScrollToTop from "./components/ScrollToTop";
+import GlobalStyle from "./components/GlobalStyles";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route exact path="/contact" component={Contact} />
         </Switch>
         <Footer />
+        <GlobalStyle />
       </Router>
     </div>
   );

@@ -21,8 +21,8 @@ const About = () => {
               <img className="ieee-logo" src={ieee} alt="ieee" />
             </Col>
             <Col sm={12} md={8}>
-              <h1>WHO ARE IEEE ?</h1>
-              <p>
+              <h1 className="title">WHO ARE IEEE ?</h1>
+              <p className="paragraph">
                 IEEE is the world’s largest technical professional organization
                 dedicated to advancing technology for the benefit of humanity.
                 <br />
@@ -40,8 +40,8 @@ const About = () => {
 
           <Row className="row-about">
             <Col sm={12} md={8}>
-              <h1>AND WHAT IS EMBS CHAPTER ?</h1>
-              <p>
+              <h1 className="title">AND WHAT IS EMBS CHAPTER ?</h1>
+              <p className="paragraph">
                 IEEE Engineering in Medicine and Biology Society (EMBS) is the
                 world’s largest international society of biomedical engineers.
                 <br />
@@ -60,8 +60,8 @@ const About = () => {
 
           <Row className="row-about">
             <Col sm={12} md={{ span: 8, order: 2 }}>
-              <h1>EMBS TUNISIA SECTION</h1>
-              <p>
+              <h1 className="title">EMBS TUNISIA SECTION</h1>
+              <p className="paragraph">
                 The IEEE Tunisia EMB Chapter is established in January 2009.
                 <br />
                 The objectives are:
@@ -92,8 +92,8 @@ const About = () => {
 
           <Row className="row-about">
             <Col sm={12} md={8}>
-              <h1>EMBS IN INSAT !</h1>
-              <p>
+              <h1 className="title">EMBS IN INSAT !</h1>
+              <p className="paragraph">
                 INSAT Student Branch EMBS Chapter is the latest chapter within
                 our Student Branch , it was created on 2017, By students from
                 different Specialties : Biological Engineering and Chemical
@@ -112,8 +112,8 @@ const About = () => {
 
           <Row className="row-about">
             <Col sm={12} md={{ span: 8, order: 2 }}>
-              <h1>WELCOME TO OUR COMMUNITY !</h1>
-              <p>
+              <h1 className="title">WELCOME TO OUR COMMUNITY !</h1>
+              <p className="paragraph">
                 Do you want to know how to design the electrical circuits that
                 make a pacemaker run ? or create the software that reads an MRI
                 ?

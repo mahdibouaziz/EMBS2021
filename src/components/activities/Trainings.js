@@ -12,14 +12,14 @@ const Trainings = () => {
         {/* check https://github.com/michalsnik/aos#animations for the animation */}
         <Row>
           <h1 className="title">Trainings We Provide</h1>
-          <p className="body">
+          <p className="body paragraph">
             IEEE INSAT EMBS Chapter often provides several events in different
             domains, here are our top 4 for the previous years.
           </p>
         </Row>
 
         <Row className="main-row">
-          <div>
+          <div className="act-boxes">
             <p className="training-icon  training-icon-1">
               <i className="fas fa-cogs"></i>
             </p>
@@ -44,7 +44,7 @@ const Trainings = () => {
             <img className="training-img" src={python_training} alt="pic" />
           </div>
 
-          <div>
+          <div className="act-boxes">
             <p className="training-icon">
               <i className="fas fa-briefcase"></i>
             </p>

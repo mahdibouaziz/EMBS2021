@@ -10,7 +10,7 @@ const Charity = () => {
       <Container>
         <Row>
           <h1 className="title">Charity Work</h1>
-          <p className="body">
+          <p className="body paragraph">
             Every year EMBS_INSAT organizes a charity day.
             <br />A day where we go visit a children’s hospital. We spend the
             day with them doing a bunch of activities, having fun and putting a

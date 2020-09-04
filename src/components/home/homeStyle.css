@@ -102,7 +102,7 @@
 /* Team section */
 .team-section {
   padding-top: 3rem;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   background-color: #ffffff;
   position: relative;
   top: -3rem;
@@ -112,7 +112,6 @@
   text-transform: uppercase;
   font-size: 2.3rem;
   font-weight: 700;
-  color: #263238;
   margin-bottom: 1.2rem;
   font-family: "Montserrat", sans-serif;
 }
@@ -122,7 +121,6 @@
   width: 23%;
   margin: 2rem auto;
   border-radius: 5px;
-  background-color: #f9f9f9;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
   position: relative;
@@ -132,7 +130,6 @@
 
 .team-section .main-row > div:hover {
   top: -8px;
-  box-shadow: 2px 2px 20px 15px rgb(209, 209, 209);
 }
 
 .team-section .main-row > div > img {
@@ -145,7 +142,6 @@
   margin-bottom: 0.7rem;
   font-size: 1.3rem;
   font-weight: 500;
-  color: #263238;
   line-height: 1.2;
   text-align: center;
   font-family: "Montserrat", sans-serif;
@@ -154,7 +150,6 @@
 .team-section .main-row .post {
   margin-bottom: 1.1rem;
   font-size: 1rem;
-  color: #546e7a;
   line-height: 1.8rem;
   text-align: center;
   font-family: "Montserrat", sans-serif;
@@ -171,23 +166,16 @@
   line-height: 3rem;
   text-align: center;
   width: 3rem;
-  color: #0000a0;
-  background: #fff;
+
   border-radius: 50%;
   font-size: 1.4rem;
   transition: 0.5s ease-in-out;
   text-decoration: none;
 }
 
-.team-section .main-row .social a:hover {
-  background-color: #1768c5;
-  color: #fff;
-}
-
 /* FeedBack */
 .Feedback {
   padding-bottom: 1rem;
-  background-color: rgb(75, 164, 224);
   position: relative;
 }
 

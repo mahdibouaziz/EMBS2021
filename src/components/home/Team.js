@@ -13,7 +13,7 @@ const Team = () => {
         </Row>
 
         <Row className="main-row">
-          <div>
+          <div className="team-boxes">
             <img src={pic} alt="pic" />
             <p className="name">Farouk Saaidia</p>
             <p className="post">Chairmain</p>
@@ -41,7 +41,7 @@ const Team = () => {
               </a>
             </p>
           </div>
-          <div>
+          <div className="team-boxes">
             <img src={pic} alt="pic" />
             <p className="name">Emna Guesmi</p>
             <p className="post">Vice Chair</p>
@@ -69,7 +69,7 @@ const Team = () => {
               </a>
             </p>
           </div>
-          <div>
+          <div className="team-boxes">
             <img src={pic} alt="pic" />
             <p className="name">Emna Hdili</p>
             <p className="post">HR Manager</p>
@@ -97,7 +97,7 @@ const Team = () => {
               </a>
             </p>
           </div>
-          <div>
+          <div className="team-boxes">
             <img src={pic} alt="pic" />
             <p className="name">Houssem Zitoun</p>
             <p className="post">General Secretary</p>
@@ -125,7 +125,7 @@ const Team = () => {
               </a>
             </p>
           </div>
-          <div>
+          <div className="team-boxes">
             <img src={pic} alt="pic" />
             <p className="name">Rihab Darghouthi</p>
             <p className="post">Training Manager</p>
@@ -153,7 +153,7 @@ const Team = () => {
               </a>
             </p>
           </div>
-          <div>
+          <div className="team-boxes">
             <img src={pic} alt="pic" />
             <p className="name">Selma Ayechi</p>
             <p className="post">Media Manager</p>
@@ -181,7 +181,7 @@ const Team = () => {
               </a>
             </p>
           </div>
-          <div>
+          <div className="team-boxes">
             <img src={pic} alt="pic" />
             <p className="name">Aicha Hedda</p>
             <p className="post">Treasurer</p>
@@ -209,7 +209,7 @@ const Team = () => {
               </a>
             </p>
           </div>
-          <div>
+          <div className="team-boxes">
             <img src={pic} alt="pic" />
             <p className="name">Med Mahdi Bouaziz</p>
             <p className="post">Webmaster</p>

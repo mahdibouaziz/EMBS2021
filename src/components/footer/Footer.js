@@ -4,11 +4,11 @@ import logo from "./embs_logo.png";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="footer-section">
       <div className="wrapper">
         <div className="footer-col">
           <img src={logo} alt="" />
-          <p className="footer-col-desc">
+          <p className="footer-col-desc paragraph">
             If you think you have the passion, attitude and capability to join
             us, don't hesitate
           </p>
@@ -16,14 +16,14 @@ const Footer = () => {
 
         <div className="footer-col">
           <p className="title">CONTACT US</p>
-          <p className="body">
+          <p className="body paragraph">
             <i className="fas fa-location-arrow"></i>
             INSAT Centre Urbain Nord BP 676 - 1080 Tunis Cedex{" "}
           </p>
-          <p className="body">
+          <p className="body paragraph">
             <i className="fas fa-phone-square-alt"></i> (+216) 58 869 350
           </p>
-          <p className="body">
+          <p className="body paragraph">
             <i className="fas fa-envelope-square"></i> embs-insat@outlook.com
           </p>
           <p className="social-footer">

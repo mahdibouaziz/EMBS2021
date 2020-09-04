@@ -12,7 +12,9 @@ const Visits = () => {
           <h1 className="title">Our Industrial Visits </h1>
         </Row>
         <Row>
-          <p className="body">EMBS Chapter makes several Industrial visits</p>
+          <p className="body paragraph">
+            EMBS Chapter makes several Industrial visits
+          </p>
         </Row>
         <Row>
           <p className="visit-date">2018/2019</p>

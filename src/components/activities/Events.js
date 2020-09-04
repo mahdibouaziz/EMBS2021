@@ -12,14 +12,14 @@ const Events = () => {
         {/* check https://github.com/michalsnik/aos#animations for the animation */}
         <Row>
           <h1 className="title">Events We Organize</h1>
-          <p className="body">
+          <p className="body paragraph">
             IEEE INSAT EMBS Chapter organizes annually multiple events, here is
             a glimpse of our annual events.
           </p>
         </Row>
 
         <Row className="main-row">
-          <div>
+          <div className="act-boxes">
             <a
               href="https://www.facebook.com/pg/EMBS.INSAT/photos/?tab=album&album_id=313884439292827"
               target="_blank"
@@ -40,7 +40,7 @@ const Events = () => {
               </p>
             </div>
           </div>
-          <div>
+          <div className="act-boxes">
             <a
               href="https://www.facebook.com/pg/EMBS.INSAT/photos/?tab=album&album_id=297151707632767&ref=page_internal"
               target="_blank"
@@ -62,7 +62,7 @@ const Events = () => {
               </p>
             </div>
           </div>
-          <div>
+          <div className="act-boxes">
             <a
               href="https://www.facebook.com/pg/EMBS.INSAT/photos/?tab=album&album_id=378824322798838&ref=page_internal"
               target="_blank"
@@ -83,7 +83,7 @@ const Events = () => {
               </p>
             </div>
           </div>
-          <div>
+          <div className="act-boxes">
             <img src={nanobang} alt="pic" />
             <div className="main-row-text">
               <p className="date">
