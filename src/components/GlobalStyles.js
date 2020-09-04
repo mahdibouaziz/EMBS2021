@@ -2,17 +2,14 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
    
-
     ${"" /* For all the titles */}
     .title{
         color: #263238;
     }
-
     ${"" /* Far all titles descriptions */}
     .paragraph{
         color: #546e7a;
     }
-
     ${"" /* Backgrounds */}
     .team-section,.about-section, 
     .training-section, .charity-section,
@@ -32,14 +29,11 @@ const GlobalStyle = createGlobalStyle`
         background-color: rgb(75, 164, 224);
     }
     ${"" /* Navbar 7el l Navbar ligne 19 badel men ghadi */}
-
-
     ${"" /* Hover effect for boxes */}
     .team-boxes:hover , .collab-box:hover,
     .act-boxes:hover {
         box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     }
-
     ${"" /* team-boxes + Collaboration */}
     .team-boxes , .collab-box{
       background-color:#f9f9f9;
@@ -58,8 +52,6 @@ const GlobalStyle = createGlobalStyle`
         background-color: #1768c5;
         color: #f2f2f2;
     }
-
-
     ${"" /* Activities Boxes + charity boxes*/}
     .act-boxes,.char-box{
         background-color: #fff;
@@ -82,8 +74,6 @@ const GlobalStyle = createGlobalStyle`
     .act-boxes:hover  .training-icon{
         background: #f9f9f9;
     }
-
-
     ${"" /* Charity boxes */}
     .char-box h2, .char-box p{
         color: #546e7a;
@@ -91,21 +81,17 @@ const GlobalStyle = createGlobalStyle`
     .box2 h3{
         color: #263238;
     }
-
     .char-box p:nth-child(odd) {
         background-color: #f8f8f8;
     }
-
     ${"" /* Contact Page social + footer  */}
     .info .social a, .social-footer a {
         background-color: rgb(7, 7, 139);
     }
-
     .info .social a:hover,.social-footer a:hover {
          background-color: rgb(18, 18, 221);
          color: #fff;
     }
-
 `;
 
 export default GlobalStyle;

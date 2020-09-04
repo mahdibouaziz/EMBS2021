@@ -11,6 +11,19 @@ import spr8 from "./img/sponsors/8.png";
 import spr9 from "./img/sponsors/9.png";
 import spr10 from "./img/sponsors/10.png";
 
+const imgSponsors = [
+  { source: spr1, alt: "sponsor image", id: "1" },
+  { source: spr2, alt: "sponsor image", id: "2" },
+  { source: spr3, alt: "sponsor image", id: "3" },
+  { source: spr4, alt: "sponsor image", id: "4" },
+  { source: spr5, alt: "sponsor image", id: "5" },
+  { source: spr6, alt: "sponsor image", id: "6" },
+  { source: spr7, alt: "sponsor image", id: "7" },
+  { source: spr8, alt: "sponsor image", id: "8" },
+  { source: spr9, alt: "sponsor image", id: "9" },
+  { source: spr10, alt: "sponsor image", id: "10" },
+];
+
 const Sponsors = () => {
   return (
     <section className="sponsors-section section">
@@ -25,16 +38,9 @@ const Sponsors = () => {
           </p>
         </Row>
         <Row className="sponsor">
-          <img src={spr6} alt="" />
-          <img src={spr2} alt="" />
-          <img src={spr3} alt="" />
-          <img src={spr4} alt="" />
-          <img src={spr5} alt="" />
-          <img src={spr1} alt="" />
-          <img src={spr7} alt="" />
-          <img src={spr8} alt="" />
-          <img src={spr9} alt="" />
-          <img src={spr10} alt="" />
+          {imgSponsors.map((e) => (
+            <img key={e.id} src={e.source} alt="" />
+          ))}
         </Row>
       </Container>
     </section>
