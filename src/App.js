@@ -10,26 +10,42 @@ import Footer from "./components/footer/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container } from "react-bootstrap";
 import ScrollToTop from "./components/ScrollToTop";
+import { ThemeProvider } from "styled-components";
 import GlobalStyle from "./components/GlobalStyles";
+import { lightTheme, darkTheme } from "./components/Themes";
+import { useState } from "react";
 
 function App() {
+  const [theme, setTheme] = useState("dark");
+  const themeToggler = () => {
+    theme === "light" ? setTheme("dark") : setTheme("light");
+  };
+
   return (
     <div className="App">
-      <Router>
-        <ScrollToTop />
-        <Container>
-          <NavBar />
-        </Container>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/activities" component={Activities} />
-          <Route exact path="/newsletter" component={NewsLetter} />
-          <Route exact path="/contact" component={Contact} />
-        </Switch>
-        <Footer />
-        <GlobalStyle />
-      </Router>
+      <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+        <Router>
+          <ScrollToTop />
+          <button
+            style={{ position: "fixed", zIndex: "100" }}
+            onClick={themeToggler}
+          >
+            Test Theme
+          </button>
+          <Container>
+            <NavBar />
+          </Container>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/activities" component={Activities} />
+            <Route exact path="/newsletter" component={NewsLetter} />
+            <Route exact path="/contact" component={Contact} />
+          </Switch>
+          <Footer />
+          <GlobalStyle />
+        </Router>
+      </ThemeProvider>
     </div>
   );
 }

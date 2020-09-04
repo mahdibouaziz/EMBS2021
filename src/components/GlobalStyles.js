@@ -2,28 +2,42 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
    
+   *{
+    transition: color 0.3s linear,background-color 0.5s linear;
+   }
+
     ${"" /* For all the titles */}
     .title{
-        color: #263238;
+        ${"" /* color: #263238; */}
+        color:${({ theme }) => theme.title};
     }
     ${"" /* Far all titles descriptions */}
     .paragraph{
-        color: #546e7a;
+        ${"" /* color: #546e7a; */}
+        color:${({ theme }) => theme.paragraph}
     }
     ${"" /* Backgrounds */}
-    .team-section,.about-section, 
-    .training-section, .charity-section,
-    .contact-section{
-        background-color:#fff;
+    .team-section, 
+    .training-section, .charity-section{
+        ${"" /* background-color:#fff; */}
+        background-color:${({ theme }) => theme.bg1};
     }
     .sponsors-section {
-         background-color: #f9f9f9;
+         ${"" /* background-color: #f9f9f9; */}
+         background-color:${({ theme }) => theme.bg2};
     }
     .event-section , .visits-section, .collab-section{
-        background-color: #ecf0f1;
+        ${"" /* background-color: #ecf0f1; */}
+        background-color:${({ theme }) => theme.bg3}
     }
+    .about-section, .contact-section{
+        ${"" /* background-color:#fff; */}
+        background-color:${({ theme }) => theme.bgContact};
+    }
+
     .footer-section{
-        background-color: #fff;
+        ${"" /* background-color: #fff; */}
+        background-color:${({ theme }) => theme.bg1};
     }
     .Feedback {
         background-color: rgb(75, 164, 224);
@@ -36,36 +50,45 @@ const GlobalStyle = createGlobalStyle`
     }
     ${"" /* team-boxes + Collaboration */}
     .team-boxes , .collab-box{
-      background-color:#f9f9f9;
+      ${"" /* background-color:#f9f9f9; */}
+      background-color:${({ theme }) => theme.bg2};
     }
     .team-boxes .name{
-        color: #263238;
+        ${"" /* color: #263238; */}
+        color:${({ theme }) => theme.text1}
     }
     .team-boxes .post ,.collab-box h2{
-        color: #222;
+        ${"" /* color: #222; */}
+        color:${({ theme }) => theme.text2};
     }
     .team-boxes  .social a{
-        color: #0000a0;
-        background: #f2f2f2;
+        ${"" /* color: #0000a0;
+        background: #f2f2f2; */}
+        color:${({ theme }) => theme.teamSocialColor};
+        background-color:${({ theme }) => theme.teamSocialbg};
     }
     .team-boxes  .social a:hover {
-        background-color: #1768c5;
-        color: #f2f2f2;
+        color:${({ theme }) => theme.teamSocialColorHover};
+        background-color:${({ theme }) => theme.teamSocialbgHover};
     }
     ${"" /* Activities Boxes + charity boxes*/}
     .act-boxes,.char-box{
-        background-color: #fff;
+        ${"" /* background-color: #fff; */}
+        background-color:${({ theme }) => theme.bg1};
     }
     .act-boxes .date,
     .act-boxes .training-date{
-        color: #546e7a;
+        ${"" /* color: #546e7a; */}
+        color:${({ theme }) => theme.text3};
     }
     .act-boxes .desc , 
     .act-boxes .training-title{
-        color:#222;
+        ${"" /* color:#222; */}
+        color:${({ theme }) => theme.text2};
     }
     .act-boxes .training-desc{
-        color: #5e6d74;
+        ${"" /* color: #5e6d74; */}
+        color:${({ theme }) => theme.text3};
     }
     .act-boxes:hover .training-icon-1 {
         background: #e6f8ed;
@@ -76,21 +99,23 @@ const GlobalStyle = createGlobalStyle`
     }
     ${"" /* Charity boxes */}
     .char-box h2, .char-box p{
-        color: #546e7a;
+        ${"" /* color: #546e7a; */}
+        color:${({ theme }) => theme.text3};
     }
     .box2 h3{
-        color: #263238;
+        ${"" /* color: #263238; */}
+        color:${({ theme }) => theme.text1};
     }
     .char-box p:nth-child(odd) {
-        background-color: #f8f8f8;
+        background-color: ${({ theme }) => theme.charityOdd};
     }
     ${"" /* Contact Page social + footer  */}
     .info .social a, .social-footer a {
-        background-color: rgb(7, 7, 139);
+        background-color: ${({ theme }) => theme.socialFooterbg};
+        color:${({ theme }) => theme.socialFooterColor};
     }
     .info .social a:hover,.social-footer a:hover {
-         background-color: rgb(18, 18, 221);
-         color: #fff;
+         background-color: ${({ theme }) => theme.socialFooterColorHover};
     }
 `;
 
