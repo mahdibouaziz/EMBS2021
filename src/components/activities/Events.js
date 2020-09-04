@@ -5,6 +5,48 @@ import biiot_challenge from "./img/events/biiot_challenge.jpg";
 import health_tech from "./img/events/health_tech.jpg";
 import nanobang from "./img/events/nanobang.jpg";
 
+const events = [
+  {
+    link:
+      "https://www.facebook.com/pg/EMBS.INSAT/photos/?tab=album&album_id=313884439292827",
+    image: biiot,
+    date: 2019,
+    desc: "BIIOT Challenge",
+    views: "2k Views",
+    comments: "02",
+    share: "06",
+  },
+  {
+    link:
+      "https://www.facebook.com/pg/EMBS.INSAT/photos/?tab=album&album_id=297151707632767&ref=page_internal",
+    image: health_tech,
+    date: "2018",
+    desc: "Health Tech",
+    views: "1k Views",
+    comments: "02",
+    share: "04",
+  },
+  {
+    link:
+      "https://www.facebook.com/pg/EMBS.INSAT/photos/?tab=album&album_id=378824322798838&ref=page_internal",
+    image: biiot_challenge,
+    date: "2019",
+    desc: "BIIOT",
+    views: "2k Views",
+    comments: "05",
+    share: "07",
+  },
+  {
+    link: "#",
+    image: nanobang,
+    date: "2017",
+    desc: "NanoBang",
+    views: "1.6k Views",
+    comments: "04",
+    share: "05",
+  },
+];
+
 const Events = () => {
   return (
     <section className="event-section">
@@ -19,85 +61,26 @@ const Events = () => {
         </Row>
 
         <Row className="main-row">
-          <div className="act-boxes">
-            <a
-              href="https://www.facebook.com/pg/EMBS.INSAT/photos/?tab=album&album_id=313884439292827"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={biiot} alt="pic" />
-            </a>
-            <div className="main-row-text">
-              <p className="date">
-                <i className="far fa-calendar-check"></i> 2019
-              </p>
-              <p className="desc">BIIOT Challenge</p>
-              <p className="views">
-                <i className="far fa-eye"></i> 2k Views
-                <br />
-                <i className="far fa-comments"></i> 02{"  "}
-                <i className="fas fa-share"></i> 06
-              </p>
+          {events.map((e) => (
+            <div key={e.link} className="act-boxes">
+              <a href={e.link} target="_blank" rel="noopener noreferrer">
+                <img src={e.image} alt="pic" />
+              </a>
+              <div className="main-row-text">
+                <p className="date">
+                  <i className="far fa-calendar-check"></i> {e.date}
+                </p>
+                <p className="desc">{e.desc}</p>
+                <p className="views">
+                  <i className="far fa-eye"></i> {e.views}
+                  <br />
+                  <i className="far fa-comments"></i> {e.comments}
+                  {"  "}
+                  <i className="fas fa-share"></i> {e.share}
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="act-boxes">
-            <a
-              href="https://www.facebook.com/pg/EMBS.INSAT/photos/?tab=album&album_id=297151707632767&ref=page_internal"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={health_tech} alt="pic" />
-            </a>
-
-            <div className="main-row-text">
-              <p className="date">
-                <i className="far fa-calendar-check"></i> 2018
-              </p>
-              <p className="desc">Health Tech</p>
-              <p className="views">
-                <i className="far fa-eye"></i> 1k Views
-                <br />
-                <i className="far fa-comments"></i> 02{" "}
-                <i className="fas fa-share"></i> 06
-              </p>
-            </div>
-          </div>
-          <div className="act-boxes">
-            <a
-              href="https://www.facebook.com/pg/EMBS.INSAT/photos/?tab=album&album_id=378824322798838&ref=page_internal"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={biiot_challenge} alt="pic" />
-            </a>
-            <div className="main-row-text">
-              <p className="date">
-                <i className="far fa-calendar-check"></i> 2019
-              </p>
-              <p className="desc">BIIOT</p>
-              <p className="views">
-                <i className="far fa-eye"></i> 1k Views
-                <br />
-                <i className="far fa-comments"></i> 02{" "}
-                <i className="fas fa-share"></i> 06
-              </p>
-            </div>
-          </div>
-          <div className="act-boxes">
-            <img src={nanobang} alt="pic" />
-            <div className="main-row-text">
-              <p className="date">
-                <i className="far fa-calendar-check"></i> 2017
-              </p>
-              <p className="desc">NanoBang</p>
-              <p className="views">
-                <i className="far fa-eye"></i> 209 Views
-                <br />
-                <i className="far fa-comments"></i> 02{" "}
-                <i className="fas fa-share"></i> 06
-              </p>
-            </div>
-          </div>
+          ))}
         </Row>
       </Container>
     </section>

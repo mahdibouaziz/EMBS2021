@@ -5,6 +5,44 @@ import img2 from "./img/collabs/img2.jpg";
 import img3 from "./img/collabs/img3.jpg";
 import img4 from "./img/collabs/img4.jpg";
 
+const collab = [
+  {
+    link:
+      "https://www.facebook.com/pg/IeeeInsatStudentBranch/photos/?tab=album&album_id=1980250082013551&ref=page_internal",
+    image: img1,
+    title: "IEEE Day",
+    views: " 1k Views",
+    comments: "07 ",
+    share: "14",
+  },
+  {
+    link:
+      "https://www.facebook.com/pg/IeeeInsatStudentBranch/photos/?tab=album&album_id=2085121378193087&ref=page_internal",
+    image: img2,
+    title: "TSYP",
+    views: " 2k Views",
+    comments: "14 ",
+    share: "22",
+  },
+  {
+    link:
+      "https://www.facebook.com/pg/IeeeInsatStudentBranch/photos/?tab=album&album_id=1980250082013551&ref=page_internal",
+    image: img3,
+    title: "EMBS Germany",
+    views: " 209 Views",
+    comments: "02 ",
+    share: "06",
+  },
+  {
+    link: "#",
+    image: img4,
+    title: "Summer School",
+    views: "1.8k Views",
+    comments: "14 ",
+    share: "22",
+  },
+];
+
 const Collaboration = () => {
   return (
     <section className="collab-section">
@@ -20,81 +58,25 @@ const Collaboration = () => {
           </p>
         </Row>
         <Row className="main-row">
-          <div className="collab-box">
-            <a
-              href="https://www.facebook.com/pg/IeeeInsatStudentBranch/photos/?tab=album&album_id=1980250082013551&ref=page_internal"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {" "}
-              <img src={img1} alt="" />
-            </a>
+          {collab.map((e) => (
+            <div key={e.link} className="collab-box">
+              <a href={e.link} target="_blank" rel="noopener noreferrer">
+                {" "}
+                <img src={e.image} alt="" />
+              </a>
 
-            <div className="main-row-text">
-              <h2>IEEE Day</h2>
-              <p className="views">
-                <i className="far fa-eye"></i> 1k Views
-                <br />
-                <i className="far fa-comments"></i> 07{"  "}
-                <i className="fas fa-share"></i> 14
-              </p>
+              <div className="main-row-text">
+                <h2>{e.title}</h2>
+                <p className="views">
+                  <i className="far fa-eye"></i> {e.views}
+                  <br />
+                  <i className="far fa-comments"></i> {e.comments}
+                  {"  "}
+                  <i className="fas fa-share"></i> {e.share}
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="collab-box">
-            <a
-              href="https://www.facebook.com/pg/IeeeInsatStudentBranch/photos/?tab=album&album_id=2085121378193087&ref=page_internal"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {" "}
-              <img src={img2} alt="" />
-            </a>
-
-            <div className="main-row-text">
-              <h2>TSYP</h2>
-              <p className="views">
-                <i className="far fa-eye"></i> 2k Views
-                <br />
-                <i className="far fa-comments"></i> 14{"  "}
-                <i className="fas fa-share"></i> 22
-              </p>
-            </div>
-          </div>
-          <div className="collab-box">
-            <a
-              href="https://www.facebook.com/pg/EMBS.INSAT/photos/?tab=album&album_id=313871312627473&ref=page_internal"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={img3} alt="" />
-            </a>
-
-            <div className="main-row-text">
-              <h2>EMBS Germany</h2>
-              <p className="views">
-                <i className="far fa-eye"></i> 209 Views
-                <br />
-                <i className="far fa-comments"></i> 02{"  "}
-                <i className="fas fa-share"></i> 06
-              </p>
-            </div>
-          </div>
-          <div className="collab-box">
-            <a href="http://" target="_blank" rel="noopener noreferrer">
-              {" "}
-              <img src={img4} alt="" />
-            </a>
-
-            <div className="main-row-text">
-              <h2>Summer School</h2>
-              <p className="views">
-                <i className="far fa-eye"></i> 1.8k Views
-                <br />
-                <i className="far fa-comments"></i> 14{"  "}
-                <i className="fas fa-share"></i> 22
-              </p>
-            </div>
-          </div>
+          ))}
         </Row>
       </Container>
     </section>
