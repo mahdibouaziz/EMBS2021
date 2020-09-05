@@ -16,7 +16,18 @@ const Nav = styled.nav`
   z-index: 99;
   left: 0px;
   ${"" /* Loun el navbar */}
-  background-color: ${(props) => (props.posit ? "#fff" : "rgba(0, 0, 0, 0)")};
+  /* background-color: ${(props) =>
+    props.posit ? "#fff" : "rgba(0, 0, 0, 0)"}; */
+  
+  background-color: ${(
+    props
+  ) =>
+    props.posit
+      ? props.theme === "light"
+        ? "#fff"
+        : "#333"
+      : "rgba(0, 0, 0, 0)"};
+
   border-color: transparent;
   box-shadow: ${(props) =>
     props.posit
@@ -73,8 +84,9 @@ const Logo = styled.img`
   height: 3.5rem;
 `;
 
-const NavBar = () => {
+const NavBar = (props) => {
   const [headerShow, setHeaderShow] = useState(false);
+  const { theme } = props;
 
   useEffect(() => {
     window.addEventListener("scroll", scrollEffect);
@@ -90,14 +102,14 @@ const NavBar = () => {
   };
 
   return (
-    <Nav className="nav-style" posit={headerShow}>
+    <Nav className="nav-style" posit={headerShow} theme={theme}>
       <ContextNavProvider>
         <Container>
           <Link to="/">
             <Logo src={logo} alt="logo" />
           </Link>
           <Spacer />
-          <Burger />
+          <Burger theme={theme} />
         </Container>
       </ContextNavProvider>
     </Nav>

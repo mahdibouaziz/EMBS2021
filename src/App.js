@@ -33,7 +33,7 @@ function App() {
             Test Theme
           </button>
           <Container>
-            <NavBar />
+            <NavBar theme={theme} />
           </Container>
           <Switch>
             <Route exact path="/" component={Home} />

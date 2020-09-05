@@ -22,7 +22,9 @@ const UL = styled.ul`
     margin-right: 0rem;
     align-items: start;
     flex-flow: column nowrap;
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
+    background-color: ${(props) =>
+      props.theme === "light" ? "#f9f9f9" : "#333"};
     z-index: 19;
     position: fixed;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
@@ -33,7 +35,6 @@ const UL = styled.ul`
     transition: transform 0.3s ease-in-out;
 
     a {
-      color: #000;
       text-decoration: none;
       width: 100%;
     }
@@ -41,22 +42,42 @@ const UL = styled.ul`
 `;
 
 const StyledNavlink = styled(NavLink)`
-  color: ${(props) => (props.posit ? "#000" : "#fff")};
+  color: ${(props) =>
+    props.posit ? (props.theme === "light" ? "#000" : "#fff") : "#fff"};
   margin: 0 0.25rem;
   padding: 0.5rem 1rem;
   &.active {
-    color: ${(props) => (props.posit ? "rgb(18, 18, 225)" : "#fff")};
+    color: ${(props) =>
+      props.posit
+        ? props.theme === "light"
+          ? "rgb(18, 18, 225)"
+          : "#8defff"
+        : "#fff"};
   }
 
   &:hover {
-    color: ${(props) => (props.posit ? "rgb(18, 18, 225)" : "#fff")};
+    color: ${(props) =>
+      props.posit
+        ? props.theme === "light"
+          ? "rgb(18, 18, 225)"
+          : "#8dffff"
+        : "#fff"};
     background: ${(props) => (props.posit ? null : "rgba(0,0,0,0.15)")};
   }
 
   @media (max-width: 768px) {
     margin-top: 0.7rem;
+    color: ${(props) => (props.theme === "light" ? "#000" : "#fff")};
+
     &.active {
-      color: rgb(18, 18, 225);
+      color: ${(props) =>
+        props.theme === "light" ? "rgb(18, 18, 225)" : "#8defff"};
+    }
+
+    &:hover {
+      color: ${(props) =>
+        props.theme === "light" ? "rgb(18, 18, 225)" : "#8dffff"};
+      background: transparent;
     }
   }
 `;
@@ -69,8 +90,10 @@ const Links = [
   { name: "Contact", href: "/contact" },
 ];
 
-const RightNav = () => {
+const RightNav = (props) => {
   const [headerShow, setHeaderShow] = useState(false);
+  const { theme } = props;
+  console.log(theme);
 
   useEffect(() => {
     window.addEventListener("scroll", scrollEffect);
@@ -86,7 +109,7 @@ const RightNav = () => {
   };
   const { open, setOpen } = useContext(ContextNav);
   return (
-    <UL open={open}>
+    <UL open={open} theme={theme}>
       {Links.map((e) => (
         <StyledNavlink
           key={e.href}
@@ -94,6 +117,7 @@ const RightNav = () => {
           onClick={() => setOpen(!open)}
           to={e.href}
           posit={headerShow}
+          theme={theme}
         >
           {e.name}
         </StyledNavlink>

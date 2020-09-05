@@ -44,13 +44,22 @@ const StyledBurger = styled.div`
   }
 
   .burger-line {
+    /* background-color: ${(props) =>
+      props.posit ? "#222" : ({ open }) => (open ? "#222" : "#fff")}; */
+
     background-color: ${(props) =>
-      props.posit ? "#222" : ({ open }) => (open ? "#222" : "#fff")};
+      props.posit
+        ? props.theme === "light"
+          ? "#222"
+          : "#f2f2f2"
+        : ({ open }) =>
+            open ? (props.theme === "light" ? "#222" : "#f2f2f2") : "#fff"};
   }
 `;
 
-const Burger = () => {
+const Burger = (props) => {
   const { open, setOpen } = useContext(ContextNav);
+  const { theme } = props;
 
   const [headerShow, setHeaderShow] = useState(false);
 
@@ -76,12 +85,13 @@ const Burger = () => {
         open={open}
         onClick={() => setOpen(!open)}
         posit={headerShow}
+        theme={theme}
       >
         <div className="burger-line"></div>
         <div className="burger-line"></div>
         <div className="burger-line"></div>
       </StyledBurger>
-      <RightNav open={open} />
+      <RightNav open={open} theme={theme} />
     </>
   );
 };
