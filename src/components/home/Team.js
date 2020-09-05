@@ -2,6 +2,8 @@ import React from "react";
 import { Row, Container } from "react-bootstrap";
 import "./homeStyle.css";
 import pic from "./img/team/pic.png";
+import { SiFacebook, SiInstagram } from "react-icons/si";
+import { RiLinkedinFill } from "react-icons/ri";
 
 const ourTeam = [
   {
@@ -87,13 +89,16 @@ const Team = () => {
               <p className="post">{e.post}</p>
               <p className="social">
                 <a href={e.fb} target="_blank" rel="noopener noreferrer">
-                  <i className="fab fa-facebook-f"></i>
+                  {/* <i className="fab fa-facebook-f"></i> */}
+                  <SiFacebook className="social-icon" />
                 </a>
                 <a href={e.insta} target="_blank" rel="noopener noreferrer">
-                  <i className="fab fa-instagram"></i>
+                  {/* <i className="fab fa-instagram"></i> */}
+                  <SiInstagram className="social-icon" />
                 </a>
                 <a href={e.linkedin} target="_blank" rel="noopener noreferrer">
-                  <i className="fab fa-linkedin-in"></i>
+                  {/* <i className="fab fa-linkedin-in"></i> */}
+                  <RiLinkedinFill className="social-icon" />
                 </a>
               </p>
             </div>

@@ -4,6 +4,10 @@ import "./styleContact.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import styled from "styled-components";
 import { Wrapper, Content, BgImage } from "../bannerElements";
+import { SiFacebook, SiInstagram } from "react-icons/si";
+import { RiLinkedinFill } from "react-icons/ri";
+import { MdLocationOn, MdMailOutline } from "react-icons/md";
+import { FiPhoneCall } from "react-icons/fi";
 
 const MyWrapper = styled.div`
   display: flex;
@@ -72,7 +76,12 @@ const Contact = () => {
                   name="msg"
                   placeholder="Your Message"
                 />
-                <Button className="btn" variant="primary" size="lg" block>
+                <Button
+                  className="btn btn-contact"
+                  variant="primary"
+                  size="lg"
+                  block
+                >
                   SEND MESSAGE
                 </Button>
               </form>
@@ -80,28 +89,31 @@ const Contact = () => {
             <Col md={4}>
               <div className="info">
                 <h3 className="title">
-                  <i className="fas fa-location-arrow"></i> Location
+                  <MdLocationOn /> Location
                 </h3>
                 <p className="paragraph">
                   INSAT Centre Urbain Nord BP 676 - 1080 Tunis Cedex
                 </p>
                 <h3 className="title">
-                  <i className="far fa-envelope"></i> E-mail
+                  <MdMailOutline /> E-mail
                 </h3>
                 <p className="paragraph">embs-insat@outlook.com</p>
                 <h3 className="title">
-                  <i className="fas fa-phone-square-alt"></i> Phone
+                  <FiPhoneCall /> Phone
                 </h3>
                 <p className="paragraph">(+216) 58 869 350</p>
                 <p className="social">
                   <a href="http://" target="_blank" rel="noopener noreferrer">
-                    <i className="fab fa-facebook-f"></i>
+                    {/* <i className="fab fa-facebook-f"></i> */}
+                    <SiFacebook className="social-icon" />
                   </a>
                   <a href="http://" target="_blank" rel="noopener noreferrer">
-                    <i className="fab fa-instagram"></i>
+                    {/* <i className="fab fa-instagram"></i> */}
+                    <SiInstagram className="social-icon" />
                   </a>
                   <a href="http://" target="_blank" rel="noopener noreferrer">
-                    <i className="fab fa-linkedin-in"></i>
+                    {/* <i className="fab fa-linkedin-in"></i> */}
+                    <RiLinkedinFill className="social-icon" />
                   </a>
                 </p>
               </div>

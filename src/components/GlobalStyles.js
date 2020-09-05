@@ -3,40 +3,33 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
    
    *{
-    transition: color 0.3s linear,background-color 0.5s linear;
+    transition: color 0.25s linear,background-color 0.4s linear;
    }
 
     ${"" /* For all the titles */}
     .title{
-        ${"" /* color: #263238; */}
         color:${({ theme }) => theme.title};
     }
     ${"" /* Far all titles descriptions */}
     .paragraph{
-        ${"" /* color: #546e7a; */}
         color:${({ theme }) => theme.paragraph}
     }
     ${"" /* Backgrounds */}
     .team-section, 
     .training-section, .charity-section{
-        ${"" /* background-color:#fff; */}
         background-color:${({ theme }) => theme.bg1};
     }
     .sponsors-section {
-         ${"" /* background-color: #f9f9f9; */}
          background-color:${({ theme }) => theme.bg2};
     }
     .event-section , .visits-section, .collab-section{
-        ${"" /* background-color: #ecf0f1; */}
         background-color:${({ theme }) => theme.bg3}
     }
     .about-section, .contact-section{
-        ${"" /* background-color:#fff; */}
         background-color:${({ theme }) => theme.bgContact};
     }
 
     .footer-section{
-        ${"" /* background-color: #fff; */}
         background-color:${({ theme }) => theme.bg1};
     }
     .Feedback {
@@ -50,27 +43,24 @@ const GlobalStyle = createGlobalStyle`
     }
     ${"" /* team-boxes + Collaboration */}
     .team-boxes , .collab-box{
-      ${"" /* background-color:#f9f9f9; */}
       background-color:${({ theme }) => theme.bg2};
     }
     .team-boxes .name{
-        ${"" /* color: #263238; */}
         color:${({ theme }) => theme.text1}
     }
     .team-boxes .post ,.collab-box h2{
-        ${"" /* color: #222; */}
         color:${({ theme }) => theme.text2};
     }
-    .team-boxes  .social a{
-        ${"" /* color: #0000a0;
-        background: #f2f2f2; */}
+
+    .social-icon  {
         color:${({ theme }) => theme.teamSocialColor};
-        background-color:${({ theme }) => theme.teamSocialbg};
     }
-    .team-boxes  .social a:hover {
+
+    .social-icon:hover {
         color:${({ theme }) => theme.teamSocialColorHover};
-        background-color:${({ theme }) => theme.teamSocialbgHover};
     }
+
+
     ${"" /* Activities Boxes + charity boxes*/}
     .act-boxes,.char-box{
         ${"" /* background-color: #fff; */}
@@ -109,13 +99,25 @@ const GlobalStyle = createGlobalStyle`
     .char-box p:nth-child(odd) {
         background-color: ${({ theme }) => theme.charityOdd};
     }
-    ${"" /* Contact Page social + footer  */}
-    .info .social a, .social-footer a {
+    ${"" /*social footer  */}
+    .social-footer a {
         background-color: ${({ theme }) => theme.socialFooterbg};
         color:${({ theme }) => theme.socialFooterColor};
     }
-    .info .social a:hover,.social-footer a:hover {
+    .social-footer a:hover {
          background-color: ${({ theme }) => theme.socialFooterColorHover};
+    }
+    ${"" /* COntact page */}
+    .input::placeholder {
+        color: ${({ theme }) => theme.placeholder};
+    }
+    input,
+    textarea {
+         color: ${({ theme }) => theme.inputColor};
+    }
+    .btn-contact{
+        background-color:${({ theme }) => theme.btnCntact} !important;
+        border-color:${({ theme }) => theme.btnCntact} !important;
     }
 `;
 

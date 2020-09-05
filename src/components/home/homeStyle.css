@@ -163,17 +163,17 @@
   margin-bottom: 1.2rem;
 }
 
-.team-section .main-row .social a {
-  display: inline-block;
-  height: 3rem;
-  line-height: 3rem;
-  text-align: center;
-  width: 3rem;
+.social-icon {
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+  /* color: #0303b6; */
+}
 
-  border-radius: 50%;
-  font-size: 1.4rem;
-  transition: 0.3s ease-in-out;
-  text-decoration: none;
+.team-section .main-row .social a {
+  margin: 0 0.3rem;
+  padding: 0.5rem 0.3rem;
+  cursor: default;
 }
 
 /* FeedBack */

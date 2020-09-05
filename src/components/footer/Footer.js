@@ -1,6 +1,8 @@
 import React from "react";
 import "./footer.css";
 import logo from "./embs_logo.png";
+import { MdLocationOn, MdMailOutline } from "react-icons/md";
+import { FiPhoneCall } from "react-icons/fi";
 
 const Footer = () => {
   return (
@@ -17,14 +19,16 @@ const Footer = () => {
         <div className="footer-col">
           <p className="title">CONTACT US</p>
           <p className="body paragraph">
-            <i className="fas fa-location-arrow"></i>
+            <MdLocationOn
+              style={{ fontSize: "1.1rem", position: "relative", top: "-4px" }}
+            />
             INSAT Centre Urbain Nord BP 676 - 1080 Tunis Cedex{" "}
           </p>
           <p className="body paragraph">
-            <i className="fas fa-phone-square-alt"></i> (+216) 58 869 350
+            <FiPhoneCall /> (+216) 58 869 350
           </p>
           <p className="body paragraph">
-            <i className="fas fa-envelope-square"></i> embs-insat@outlook.com
+            <MdMailOutline /> embs-insat@outlook.com
           </p>
           <p className="social-footer">
             <a href="http://" target="_blank" rel="noopener noreferrer">

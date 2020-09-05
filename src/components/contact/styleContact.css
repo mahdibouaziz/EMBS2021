@@ -72,21 +72,18 @@
   font-family: "Montserrat", sans-serif;
   font-size: 0.9rem;
 }
-.info .social i {
-  font-size: 1.2rem;
+
+.social-icon {
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+  /* color: #0303b6; */
 }
 
 .info .social a {
-  display: inline-block;
-  width: 2.6rem;
-  height: 2.6rem;
-  line-height: 2.7rem;
-  text-align: center;
-  color: #fff;
-  margin: 0.6rem;
-  border-radius: 50%;
-  transition: background-color 0.3s ease-in-out;
-  text-decoration: none;
+  margin: 0 0.3rem;
+  padding: 0.5rem 0.3rem;
+  cursor: default;
 }
 
 /* Mobile */

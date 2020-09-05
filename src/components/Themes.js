@@ -9,14 +9,15 @@ export const lightTheme = {
   text2: "#222",
   text3: "#5e6d74",
   // Bonus
-  teamSocialColor: "#0000a0",
-  teamSocialbg: "#f2f2f2",
-  teamSocialColorHover: "#1768c5",
-  teamSocialbgHover: "#f2f2f2",
+  teamSocialColor: "#0303b6",
+  teamSocialColorHover: "#030370",
   charityOdd: "#f8f8f8",
   socialFooterColor: "#f9f9f9",
   socialFooterbg: "rgb(7, 7, 139)",
   socialFooterColorHover: "rgb(18, 18, 221)",
+  placeholder: "#6e6e6e",
+  inputColor: "#222",
+  btnCntact: "#007bff",
 };
 
 export const darkTheme = {
@@ -31,11 +32,12 @@ export const darkTheme = {
   text3: "#ccc",
   // Bonus
   teamSocialColor: "#f5ffff",
-  teamSocialbg: "#0c0c0c",
-  teamSocialColorHover: "#0f0f0f",
-  teamSocialbgHover: "#f2f2f2",
+  teamSocialColorHover: "#c0c0c0",
   charityOdd: "#222",
   socialFooterColor: "#222",
   socialFooterbg: "#f9f9f9",
   socialFooterColorHover: "rgba(255, 255, 255,0.6)",
+  placeholder: "#d1d1d1",
+  inputColor: "#fff",
+  btnCntact: "#555",
 };
