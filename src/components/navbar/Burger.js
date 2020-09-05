@@ -59,7 +59,7 @@ const StyledBurger = styled.div`
 
 const Burger = (props) => {
   const { open, setOpen } = useContext(ContextNav);
-  const { theme } = props;
+  const { theme, themeToggler } = props;
 
   const [headerShow, setHeaderShow] = useState(false);
 
@@ -91,7 +91,7 @@ const Burger = (props) => {
         <div className="burger-line"></div>
         <div className="burger-line"></div>
       </StyledBurger>
-      <RightNav open={open} theme={theme} />
+      <RightNav open={open} theme={theme} themeToggler={themeToggler} />
     </>
   );
 };

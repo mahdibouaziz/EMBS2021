@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import { ContextNav } from "./ContextNav";
+import ThemeToggle from "./ThemeToggle";
 
 const UL = styled.ul`
   list-style: none;
@@ -92,7 +93,8 @@ const Links = [
 
 const RightNav = (props) => {
   const [headerShow, setHeaderShow] = useState(false);
-  const { theme } = props;
+  const { theme, themeToggler } = props;
+
   console.log(theme);
 
   useEffect(() => {
@@ -122,6 +124,7 @@ const RightNav = (props) => {
           {e.name}
         </StyledNavlink>
       ))}
+      <ThemeToggle themeToggler={themeToggler} />
 
       {/* <StyledNavlink
         activeClassName="active"

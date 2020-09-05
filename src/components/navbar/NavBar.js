@@ -86,14 +86,14 @@ const Logo = styled.img`
 
 const NavBar = (props) => {
   const [headerShow, setHeaderShow] = useState(false);
-  const { theme } = props;
+  const { theme, themeToggler } = props;
 
   useEffect(() => {
     window.addEventListener("scroll", scrollEffect);
   });
 
   // Scroll effect
-  const scrollEffect = () => {
+  const scrollEffect = (props) => {
     if (window.scrollY > 70) {
       setHeaderShow(true);
     } else {
@@ -109,7 +109,7 @@ const NavBar = (props) => {
             <Logo src={logo} alt="logo" />
           </Link>
           <Spacer />
-          <Burger theme={theme} />
+          <Burger theme={theme} themeToggler={themeToggler} />
         </Container>
       </ContextNavProvider>
     </Nav>

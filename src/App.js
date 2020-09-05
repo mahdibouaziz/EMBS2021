@@ -26,14 +26,9 @@ function App() {
       <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
         <Router>
           <ScrollToTop />
-          <button
-            style={{ position: "fixed", zIndex: "100" }}
-            onClick={themeToggler}
-          >
-            Test Theme
-          </button>
+
           <Container>
-            <NavBar theme={theme} />
+            <NavBar theme={theme} themeToggler={themeToggler} />
           </Container>
           <Switch>
             <Route exact path="/" component={Home} />
