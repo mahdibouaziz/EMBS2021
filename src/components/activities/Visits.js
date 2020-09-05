@@ -17,7 +17,7 @@ const Visits = () => {
           </p>
         </Row>
         <Row>
-          <p className="visit-date">2018/2019</p>
+          <p className="visit-date paragraph">2018/2019</p>
         </Row>
         <Row className="main-row">
           <Carousel interval={2500} className="visit-carr" fade={false}>

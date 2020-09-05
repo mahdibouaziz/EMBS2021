@@ -161,8 +161,7 @@
   width: 47%;
   margin: 2rem auto;
   border-radius: 4px;
-
-  border: 1px solid #ececec;
+  /* border: 1px solid #ececec; */
   position: relative;
   top: 0px;
   transition: 0.2s linear;
@@ -181,7 +180,6 @@
 .training-section .main-row .training-icon {
   width: 60px;
   height: 60px;
-
   display: inline-block;
   line-height: 60px;
   font-size: 24px;
@@ -282,7 +280,6 @@
   padding: 0rem 2rem;
   margin-bottom: 0.8rem;
   font-size: 1.35rem;
-  color: #41474b;
   line-height: 26px;
   font-family: "Open Sans", sans-serif;
 }

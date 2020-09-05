@@ -60,12 +60,17 @@ const GlobalStyle = createGlobalStyle`
         color:${({ theme }) => theme.teamSocialColorHover};
     }
 
+    ${"" /* Border in trainings */}
+    .training-section .main-row > div {
+        border: 1px solid ${({ theme }) => theme.bg3};
+    }
 
     ${"" /* Activities Boxes + charity boxes*/}
     .act-boxes,.char-box{
         ${"" /* background-color: #fff; */}
         background-color:${({ theme }) => theme.bg1};
     }
+   
     .act-boxes .date,
     .act-boxes .training-date{
         ${"" /* color: #546e7a; */}
