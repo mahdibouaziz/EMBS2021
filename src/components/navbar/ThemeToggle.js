@@ -9,7 +9,7 @@ const Toggle = styled.div`
   background-image: ${(props) =>
     props.toggled
       ? "linear-gradient(midnightblue, rebeccapurple)"
-      : "linear-gradient(aqua, skyblue)"};
+      : "linear-gradient(#0fb7f1, #2383ab)"};
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   margin-left: 1.2rem;
@@ -19,7 +19,7 @@ const Notch = styled.div`
   height: 22.5px;
   width: 22.5px;
   border-radius: 50%;
-  background: ${(props) => (props.toggled ? "whitesmoke" : "yellow")};
+  background: ${(props) => (props.toggled ? "whitesmoke" : "whitesmoke")};
   position: absolute;
   top: 1.25px;
   left: 1.25px;

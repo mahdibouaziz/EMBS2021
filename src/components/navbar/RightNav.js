@@ -95,8 +95,6 @@ const RightNav = (props) => {
   const [headerShow, setHeaderShow] = useState(false);
   const { theme, themeToggler } = props;
 
-  console.log(theme);
-
   useEffect(() => {
     window.addEventListener("scroll", scrollEffect);
   });
