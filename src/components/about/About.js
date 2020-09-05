@@ -7,13 +7,17 @@ import ieee_insat from "./img/ieee_insat.png";
 import embs_logo from "./img/embs_logo.png";
 import { Container, Row, Col } from "react-bootstrap";
 import "./aboutStyle.css";
+import { Wrapper, BgImage, Content } from "../bannerElements";
 
 const About = () => {
   return (
     <div>
-      <div className="banner" style={{ backgroundImage: `url(${pic})` }}>
-        <h1 className="banner-text">About</h1>
-      </div>
+      <Wrapper>
+        <BgImage src={pic}></BgImage>
+        <Content>
+          <h1 className="banner-text">About</h1>
+        </Content>
+      </Wrapper>
       <div className="about-section">
         <Container>
           <Row className="row-about">

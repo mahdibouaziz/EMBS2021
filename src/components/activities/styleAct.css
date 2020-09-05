@@ -1,7 +1,4 @@
 /* Taswira lekbira */
-.banner {
-  height: 80vh;
-}
 
 .banner-text {
   color: #fff;
@@ -177,6 +174,7 @@
 .training-section .main-row > div img {
   width: 20rem;
   height: 20rem;
+  object-fit: cover;
   border-radius: 50%;
 }
 

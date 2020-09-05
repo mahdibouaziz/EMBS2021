@@ -2,13 +2,30 @@ import React from "react";
 import pic from "./img/pic.jpg";
 import "./styleContact.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
+import styled from "styled-components";
+import { Wrapper, Content, BgImage } from "../bannerElements";
+
+const MyWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+  > * {
+    flex-grow: 1;
+  }
+`;
 
 const Contact = () => {
   return (
     <div>
-      <div className="banner" style={{ backgroundImage: `url(${pic})` }}>
-        <h1 className="banner-text">Contact Us</h1>
-      </div>
+      <Wrapper>
+        <BgImage src={pic}></BgImage>
+        <Content>
+          <h1 className="banner-text">About</h1>
+        </Content>
+      </Wrapper>
+
       <div className="contact-section">
         <Container>
           <Row>
@@ -25,20 +42,23 @@ const Contact = () => {
           <Row className="contact-row">
             <Col md={8}>
               <form>
-                <input
-                  className="input input-name"
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Name"
-                />
-                <input
-                  className="input input-email"
-                  type="text"
-                  id="email"
-                  name="email"
-                  placeholder="Email"
-                />
+                <MyWrapper>
+                  <input
+                    className="input input-name"
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Name"
+                  />
+                  <input
+                    className="input input-email"
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                  />
+                </MyWrapper>
+
                 <input
                   className="input"
                   type="text"
