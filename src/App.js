@@ -37,7 +37,7 @@ function App() {
             <Route exact path="/newsletter" component={NewsLetter} />
             <Route exact path="/contact" component={Contact} />
           </Switch>
-          <Footer />
+          <Footer theme={theme} />
           <GlobalStyle />
         </Router>
       </ThemeProvider>

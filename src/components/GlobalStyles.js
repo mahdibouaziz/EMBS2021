@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
    
    *{
-    transition: color 0.25s linear,background-color 0.4s linear;
+    transition: color 0.25s linear,background-color 0.25s linear;
    }
 
     ${"" /* For all the titles */}

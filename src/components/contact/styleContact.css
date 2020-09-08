@@ -76,7 +76,7 @@
 .social-icon {
   font-size: 1.7rem;
   cursor: pointer;
-  transition: color 0.2s ease-in-out;
+  /* transition: color 0.2s ease-in-out; */
   /* color: #0303b6; */
 }
 

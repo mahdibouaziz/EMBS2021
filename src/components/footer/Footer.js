@@ -1,15 +1,17 @@
 import React from "react";
 import "./footer.css";
-import logo from "./embs_logo.png";
+import logoblack from "./embs_logo_white.png";
+import logowhite from "./embs_logo_black.png";
 import { MdLocationOn, MdMailOutline } from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
 
-const Footer = () => {
+const Footer = (props) => {
+  const { theme } = props;
   return (
     <footer className="footer-section">
       <div className="wrapper">
         <div className="footer-col">
-          <img src={logo} alt="" />
+          <img src={theme === "light" ? logoblack : logowhite} alt="" />
           <p className="footer-col-desc paragraph">
             If you think you have the passion, attitude and capability to join
             us, don't hesitate

@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Burger from "./Burger";
 import ContextNavProvider from "./ContextNav";
-import logo from "./embs_logo.png";
+import logoblack from "./embs_logo_white.png";
+import logowhite from "./embs_logo_black.png";
 import { Link } from "react-router-dom";
 
 const Nav = styled.nav`
@@ -106,7 +107,16 @@ const NavBar = (props) => {
       <ContextNavProvider>
         <Container>
           <Link to="/">
-            <Logo src={logo} alt="logo" />
+            <Logo
+              src={
+                theme === "light"
+                  ? headerShow
+                    ? logoblack
+                    : logowhite
+                  : logowhite
+              }
+              alt="logo"
+            />
           </Link>
           <Spacer />
           <Burger theme={theme} themeToggler={themeToggler} />

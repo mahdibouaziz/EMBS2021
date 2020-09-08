@@ -4,8 +4,7 @@ import "./styleContact.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import styled from "styled-components";
 import { Wrapper, Content, BgImage } from "../bannerElements";
-import { SiFacebook, SiInstagram } from "react-icons/si";
-import { RiLinkedinFill } from "react-icons/ri";
+import { SiFacebook, SiInstagram, SiLinkedin } from "react-icons/si";
 import { MdLocationOn, MdMailOutline } from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
 
@@ -113,7 +112,7 @@ const Contact = () => {
                   </a>
                   <a href="http://" target="_blank" rel="noopener noreferrer">
                     {/* <i className="fab fa-linkedin-in"></i> */}
-                    <RiLinkedinFill className="social-icon" />
+                    <SiLinkedin className="social-icon" />
                   </a>
                 </p>
               </div>
