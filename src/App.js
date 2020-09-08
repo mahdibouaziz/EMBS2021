@@ -14,6 +14,7 @@ import { ThemeProvider } from "styled-components";
 import GlobalStyle from "./components/GlobalStyles";
 import { lightTheme, darkTheme } from "./components/Themes";
 import { useState } from "react";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -26,17 +27,18 @@ function App() {
       <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
         <Router>
           <ScrollToTop />
-
           <Container>
             <NavBar theme={theme} themeToggler={themeToggler} />
           </Container>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/activities" component={Activities} />
-            <Route exact path="/newsletter" component={NewsLetter} />
-            <Route exact path="/contact" component={Contact} />
-          </Switch>
+          <AnimatePresence>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/about" component={About} />
+              <Route exact path="/activities" component={Activities} />
+              <Route exact path="/newsletter" component={NewsLetter} />
+              <Route exact path="/contact" component={Contact} />
+            </Switch>
+          </AnimatePresence>
           <Footer theme={theme} />
           <GlobalStyle />
         </Router>

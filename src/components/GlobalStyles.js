@@ -33,7 +33,6 @@ const GlobalStyle = createGlobalStyle`
         background-color:${({ theme }) => theme.bg1};
     }
     .Feedback {
-        background-color: rgb(75, 164, 224);
     }
     ${"" /* Navbar 7el l Navbar ligne 19 badel men ghadi */}
     ${"" /* Hover effect for boxes */}

@@ -7,11 +7,12 @@ import ieee_insat from "./img/ieee_insat.png";
 import embs_logo from "./img/embs_logo.png";
 import { Container, Row, Col } from "react-bootstrap";
 import "./aboutStyle.css";
-import { Wrapper, BgImage, Content } from "../bannerElements";
+import { Wrapper, BgImage, Content, pageTransition } from "../bannerElements";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div>
+    <motion.div initial="out" animate="in" exit="out" variants={pageTransition}>
       <Wrapper>
         <BgImage src={pic}></BgImage>
         <Content>
@@ -142,7 +143,7 @@ const About = () => {
           </Row>
         </Container>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

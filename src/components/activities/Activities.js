@@ -4,11 +4,12 @@ import Events from "./Events";
 import Trainings from "./Trainings";
 import Visits from "./Visits";
 import act from "./img/act.png";
-import { Wrapper, BgImage, Content } from "../bannerElements";
+import { Wrapper, BgImage, Content, pageTransition } from "../bannerElements";
+import { motion } from "framer-motion";
 
 const Activities = () => {
   return (
-    <div>
+    <motion.div initial="out" animate="in" exit="out" variants={pageTransition}>
       <Wrapper>
         <BgImage src={act}></BgImage>
         <Content>
@@ -18,7 +19,7 @@ const Activities = () => {
       <Events />
       <Trainings />
       <Visits />
-    </div>
+    </motion.div>
   );
 };
 

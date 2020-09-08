@@ -3,10 +3,11 @@ import pic from "./img/pic.jpg";
 import "./styleContact.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import styled from "styled-components";
-import { Wrapper, Content, BgImage } from "../bannerElements";
+import { Wrapper, Content, BgImage, pageTransition } from "../bannerElements";
 import { SiFacebook, SiInstagram, SiLinkedin } from "react-icons/si";
 import { MdLocationOn, MdMailOutline } from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 const MyWrapper = styled.div`
   display: flex;
@@ -21,7 +22,7 @@ const MyWrapper = styled.div`
 
 const Contact = () => {
   return (
-    <div>
+    <motion.div initial="out" animate="in" exit="out" variants={pageTransition}>
       <Wrapper>
         <BgImage src={pic}></BgImage>
         <Content>
@@ -124,7 +125,7 @@ const Contact = () => {
       <Container fluid>
         <Row></Row>
       </Container>
-    </div>
+    </motion.div>
   );
 };
 

@@ -2,11 +2,12 @@ import React from "react";
 import pic from "./img/pic.jpg";
 import Charity from "./Charity";
 import Collaboration from "./Collaboration";
-import { Wrapper, BgImage, Content } from "../bannerElements";
+import { Wrapper, BgImage, Content, pageTransition } from "../bannerElements";
+import { motion } from "framer-motion";
 
 const NewsLetter = () => {
   return (
-    <div>
+    <motion.div initial="out" animate="in" exit="out" variants={pageTransition}>
       <Wrapper>
         <BgImage src={pic}></BgImage>
         <Content>
@@ -15,7 +16,7 @@ const NewsLetter = () => {
       </Wrapper>
       <Charity />
       <Collaboration />
-    </div>
+    </motion.div>
   );
 };
 

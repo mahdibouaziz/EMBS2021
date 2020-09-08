@@ -13,3 +13,8 @@ export const BgImage = styled.img`
   filter: brightness(0.85);
 `;
 export const Content = styled.div``;
+
+export const pageTransition = {
+  in: { opacity: 1 },
+  out: { opacity: 0 },
+};
