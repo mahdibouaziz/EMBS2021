@@ -191,12 +191,13 @@
 }
 
 .Feedback img {
-  width: 10rem !important;
-  height: 9rem !important;
+  width: 9.5rem !important;
+  height: 9.5rem !important;
   border-radius: 50%;
   margin: 0 auto;
   margin-top: 3rem;
   margin-bottom: 4rem;
+  object-fit: cover;
 }
 
 .Feedback .carousel-caption {
@@ -211,8 +212,9 @@
 }
 
 .Feedback .carousel-caption .name {
-  color: #333;
-  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 1.7rem;
 }
 
 .Feedback .carousel-caption .description {
