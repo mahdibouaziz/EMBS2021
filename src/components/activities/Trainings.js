@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
-import community_management_training from "./img/trainings/community_management_training.jpg";
-import iso_training from "./img/trainings/iso_training.jpg";
-import public_speaking_training from "./img/trainings/public_speaking_training.png";
-import python_training from "./img/trainings/python_training.jpg";
+import community_management_training from "./img/trainings/community_management_training.webp";
+import iso_training from "./img/trainings/iso_training.webp";
+import public_speaking_training from "./img/trainings/public_speaking_training.webp";
+import python_training from "./img/trainings/python_training.webp";
 
 const Trainings = () => {
   return (

@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
 import "./styleNews.css";
-import pic2016 from "./img/charity/charity_2016.jpg";
-import pic2018 from "./img/charity/charity_2018.JPG";
+import pic2016 from "./img/charity/charity_2016.webp";
+import pic2018 from "./img/charity/charity_2018.webp";
 
 const Charity = () => {
   return (

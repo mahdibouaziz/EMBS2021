@@ -1,16 +1,22 @@
 import React from "react";
-import pic from "./img/act.png";
-import ieee from "./img/ieee.png";
-import embs from "./img/embs.png";
-import ieee_tunisia from "./img/ieee_tunisia.png";
-import ieee_insat from "./img/ieee_insat.png";
-import embs_logo from "./img/embs_logo.png";
+import pic from "./img/act.webp";
+import ieee_white from "./img/ieee_white.png";
+import ieee_black from "./img/ieee_black.png";
+import embs_white from "./img/embs_white.png";
+import embs_black from "./img/embs_black.png";
+import ieee_tunisia_white from "./img/ieee_tunisia_white.png";
+import ieee_tunisia_black from "./img/ieee_tunisia_black.png";
+import ieee_insat_white from "./img/ieee_insat_white.png";
+import ieee_insat_black from "./img/ieee_insat_black.png";
+import embs_logo_white from "./img/embs_logo_white.png";
+import embs_logo_black from "./img/embs_logo_black.png";
 import { Container, Row, Col } from "react-bootstrap";
 import "./aboutStyle.css";
 import { Wrapper, BgImage, Content, pageTransition } from "../bannerElements";
 import { motion } from "framer-motion";
 
-const About = () => {
+const About = (props) => {
+  const { theme } = props;
   return (
     <motion.div initial="out" animate="in" exit="out" variants={pageTransition}>
       <Wrapper>
@@ -23,7 +29,11 @@ const About = () => {
         <Container>
           <Row className="row-about">
             <Col className="col-about" sm={12} md={4}>
-              <img className="ieee-logo" src={ieee} alt="ieee" />
+              <img
+                className="ieee-logo"
+                src={theme === "light" ? ieee_white : ieee_black}
+                alt="ieee"
+              />
             </Col>
             <Col sm={12} md={8}>
               <h1 className="title">WHO ARE IEEE ?</h1>
@@ -59,7 +69,11 @@ const About = () => {
               </p>
             </Col>
             <Col className="col-about" sm={12} md={4}>
-              <img className="embs-logo" src={embs} alt="ieee" />
+              <img
+                className="embs-logo"
+                src={theme === "light" ? embs_white : embs_black}
+                alt="ieee"
+              />
             </Col>
           </Row>
 
@@ -89,7 +103,9 @@ const About = () => {
             <Col className="col-about" sm={12} md={{ span: 4, order: 1 }}>
               <img
                 className="ieee-tunisia-logo"
-                src={ieee_tunisia}
+                src={
+                  theme === "light" ? ieee_tunisia_white : ieee_tunisia_black
+                }
                 alt="ieee"
               />
             </Col>
@@ -111,7 +127,11 @@ const About = () => {
               </p>
             </Col>
             <Col className="col-about" sm={12} md={4}>
-              <img className="ieee-insat-logo" src={ieee_insat} alt="ieee" />
+              <img
+                className="ieee-insat-logo"
+                src={theme === "light" ? ieee_insat_white : ieee_insat_black}
+                alt="ieee"
+              />
             </Col>
           </Row>
 
@@ -138,7 +158,12 @@ const About = () => {
               </p>
             </Col>
             <Col className="col-about" sm={12} md={{ span: 4, order: 1 }}>
-              <img className="embs-logo" src={embs_logo} alt="ieee" />
+              <img
+                className="embs-logo"
+                src={theme === "light" ? embs_logo_white : embs_logo_black}
+                alt="ieee"
+              />
+              {/* <img className="embs-logo" src={embs_logo_white} alt="ieee" /> */}
             </Col>
           </Row>
         </Container>

@@ -1,7 +1,7 @@
 import React from "react";
-import lab from "./img/carousel/lab.png";
+import lab from "./img/carousel/lab.webp";
 import medic from "./img/carousel/medic.png";
-import virus from "./img/carousel/virus.png";
+import virus from "./img/carousel/virus.webp";
 import { Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { GoChevronLeft, GoChevronRight } from "react-icons/go";

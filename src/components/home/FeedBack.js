@@ -1,6 +1,6 @@
 import React from "react";
 import { Carousel, Container } from "react-bootstrap";
-import pic from "./img/team/pic.png";
+import pic from "./img/team/mahdi.webp";
 
 const FeedBack = () => {
   return (

@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row, Carousel } from "react-bootstrap";
-import visit2018_1 from "./img/visits/2018_1.jpg";
-import visit2018_2 from "./img/visits/2018_2.jpg";
-import visit2018_3 from "./img/visits/2018_3.jpg";
+import visit2018_1 from "./img/visits/2018_1.webp";
+import visit2018_2 from "./img/visits/2018_2.webp";
+import visit2018_3 from "./img/visits/2018_3.webp";
 
 const Visits = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import pic from "./img/pic.jpg";
+import pic from "./img/pic.webp";
 import Charity from "./Charity";
 import Collaboration from "./Collaboration";
 import { Wrapper, BgImage, Content, pageTransition } from "../bannerElements";

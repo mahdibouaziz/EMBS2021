@@ -84,12 +84,13 @@ const GlobalStyle = createGlobalStyle`
         ${"" /* color: #5e6d74; */}
         color:${({ theme }) => theme.text3};
     }
-    .act-boxes:hover .training-icon-1 {
-        background: #e6f8ed;
-        color: #57d283;
+
+    .training-icon{
+        color:${({ theme }) => theme.text3};
     }
+
     .act-boxes:hover  .training-icon{
-        background: #f9f9f9;
+        background: ${({ theme }) => theme.bg3};
     }
     ${"" /* Charity boxes */}
     .char-box h2, .char-box p{

@@ -33,7 +33,11 @@ function App() {
           <AnimatePresence>
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route exact path="/about" component={About} />
+              <Route
+                exact
+                path="/about"
+                component={() => <About theme={theme} />}
+              />
               <Route exact path="/activities" component={Activities} />
               <Route exact path="/newsletter" component={NewsLetter} />
               <Route exact path="/contact" component={Contact} />

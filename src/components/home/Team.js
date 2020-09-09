@@ -1,12 +1,19 @@
 import React from "react";
 import { Row, Container } from "react-bootstrap";
 import "./homeStyle.css";
-import pic from "./img/team/pic.png";
+import aicha from "./img/team/aicha.webp";
+import emnag from "./img/team/emnag.webp";
+import emnah from "./img/team/emnah.webp";
+import farouk from "./img/team/farouk.webp";
+import houssem from "./img/team/houssem.webp";
+import mahdi from "./img/team/mahdi.webp";
+import rihab from "./img/team/rihab.webp";
+import selma from "./img/team/selma.webp";
 import { SiFacebook, SiInstagram, SiLinkedin } from "react-icons/si";
 
 const ourTeam = [
   {
-    image: pic,
+    image: farouk,
     name: "Farouk Saaidia",
     post: "Chairmain",
     fb: "https://www.facebook.com/saaidia.farouk",
@@ -14,7 +21,7 @@ const ourTeam = [
     linkedin: "",
   },
   {
-    image: pic,
+    image: emnag,
     name: "Emna Guesmi",
     post: "Vice Chair",
     fb: "https://www.facebook.com/emna.guesmi.0123",
@@ -22,7 +29,7 @@ const ourTeam = [
     linkedin: "",
   },
   {
-    image: pic,
+    image: emnah,
     name: "Emna Hdili",
     post: "HR Manager",
     fb: "https://www.facebook.com/emna.hdili",
@@ -30,7 +37,7 @@ const ourTeam = [
     linkedin: "",
   },
   {
-    image: pic,
+    image: houssem,
     name: "Houssem Zitoun",
     post: "General Secretary",
     fb: "https://www.facebook.com/houssem.zitoun.2k",
@@ -38,7 +45,7 @@ const ourTeam = [
     linkedin: "",
   },
   {
-    image: pic,
+    image: rihab,
     name: "Rihab Darghouthi",
     post: "Training Manager",
     fb: "https://www.facebook.com/rihab.darghouthi",
@@ -46,7 +53,7 @@ const ourTeam = [
     linkedin: "",
   },
   {
-    image: pic,
+    image: selma,
     name: "Selma Ayechi",
     post: "Media Manager",
     fb: "https://www.facebook.com/selma.ayachi",
@@ -54,7 +61,7 @@ const ourTeam = [
     linkedin: "",
   },
   {
-    image: pic,
+    image: aicha,
     name: "Aicha Hedda",
     post: "Treasurer",
     fb: "https://www.facebook.com/aicha.hedda.52",
@@ -62,7 +69,7 @@ const ourTeam = [
     linkedin: "",
   },
   {
-    image: pic,
+    image: mahdi,
     name: "Med Mahdi Bouaziz",
     post: "Webmaster",
     fb: "https://www.facebook.com/mahdi.bouaziz.319",
