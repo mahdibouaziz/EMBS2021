@@ -27,7 +27,7 @@ const Footer = (props) => {
             INSAT Centre Urbain Nord BP 676 - 1080 Tunis Cedex{" "}
           </p>
           <p className="body paragraph">
-            <FiPhoneCall /> (+216) 58 869 350
+            <FiPhoneCall /> (+216) 53 737 757
           </p>
           <p className="body paragraph">
             <MdMailOutline /> embs-insat@outlook.com

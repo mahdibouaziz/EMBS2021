@@ -96,4 +96,8 @@
     padding-right: 7px;
     font-size: 1.6rem;
   }
+  .sponsor img {
+    display: inline-block;
+    width: 41%;
+  }
 }
