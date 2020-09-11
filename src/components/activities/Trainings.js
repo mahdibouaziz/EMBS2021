@@ -14,7 +14,7 @@ const Trainings = () => {
           <h1 className="title">Trainings We Provide</h1>
           <p className="body paragraph">
             IEEE INSAT EMBS Chapter often provides several events in different
-            domains, here are our top 4 for the previous years.
+            domains, here is a glipmse of our top trainings.
           </p>
         </Row>
 
@@ -53,9 +53,8 @@ const Trainings = () => {
               <i className="far fa-calendar-check"></i> November 2017
             </p>
             <p className="training-desc">
-              In collaboration with the IMDTEC Tunisie, IEEE EMBS INSAT SB has
-              put at the disposal of some of its members a certified ISO 17025
-              training.
+              IEEE EMBS chapter INSAT was honored to provide a Community
+              Management training session with Mrs Amal Monsri
             </p>
             <img
               className="training-img"
@@ -66,9 +65,9 @@ const Trainings = () => {
               <i className="far fa-calendar-check"></i> November 2017
             </p>
             <p className="training-desc">
-              IEEE EMBS chapter INSAT gave an introduction to Bio-informatics
-              through a workshop combining biology, computer science and
-              mathematics conducted by Mr Ali Chamkhi
+              IEEE EMBS chapter INSAT, in collaboration with Mrs Aziza Inoubli
+              and Mr Ali Bouslimi, offered to students a professional Public
+              Speaking training Session.
             </p>
             <img
               className="training-img"

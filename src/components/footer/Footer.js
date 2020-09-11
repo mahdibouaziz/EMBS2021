@@ -33,10 +33,18 @@ const Footer = (props) => {
             <MdMailOutline /> embs-insat@outlook.com
           </p>
           <p className="social-footer">
-            <a href="http://" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.facebook.com/EMBS.INSAT"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fab fa-facebook-f"></i>
             </a>
-            <a href="http://" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.instagram.com/ieee.embs.insat/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fab fa-instagram"></i>
             </a>
             <a href="http://" target="_blank" rel="noopener noreferrer">
