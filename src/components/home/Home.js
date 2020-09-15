@@ -15,7 +15,7 @@ const LoaderWrapper = styled.div`
   top: 0;
   left: 0;
   background-color: #242f3f;
-  display: ${({ loading }) => (loading ? "flex" : "flex")};
+  display: ${({ loading }) => (loading ? "flex" : "none")};
   justify-content: center;
   align-items: center;
   z-index: 100;
