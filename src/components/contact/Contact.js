@@ -1,5 +1,5 @@
 import React from "react";
-import pic from "./img/pic.jpg";
+import pic from "./img/pic.webp";
 import "./styleContact.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import styled from "styled-components";
@@ -26,7 +26,7 @@ const Contact = () => {
       <Wrapper>
         <BgImage src={pic}></BgImage>
         <Content>
-          <h1 className="banner-text">Contact</h1>
+          <h1 className="banner-text">About</h1>
         </Content>
       </Wrapper>
 
@@ -101,21 +101,13 @@ const Contact = () => {
                 <h3 className="title">
                   <FiPhoneCall /> Phone
                 </h3>
-                <p className="paragraph">(+216) 53 737 757</p>
+                <p className="paragraph">(+216) 58 869 350</p>
                 <p className="social">
-                  <a
-                    href="https://www.facebook.com/EMBS.INSAT"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
                     {/* <i className="fab fa-facebook-f"></i> */}
                     <SiFacebook className="social-icon" />
                   </a>
-                  <a
-                    href="https://www.instagram.com/ieee.embs.insat/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href="http://" target="_blank" rel="noopener noreferrer">
                     {/* <i className="fab fa-instagram"></i> */}
                     <SiInstagram className="social-icon" />
                   </a>

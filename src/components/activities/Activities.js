@@ -3,7 +3,7 @@ import "./styleAct.css";
 import Events from "./Events";
 import Trainings from "./Trainings";
 import Visits from "./Visits";
-import act from "./img/act.jpg";
+import act from "./img/act.png";
 import { Wrapper, BgImage, Content, pageTransition } from "../bannerElements";
 import { motion } from "framer-motion";
 
