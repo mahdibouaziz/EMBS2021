@@ -15,7 +15,7 @@ const LoaderWrapper = styled.div`
   top: 0;
   left: 0;
   background-color: #242f3f;
-  display: ${({ loading }) => (loading ? "flex" : "none")};
+  display: ${({ loading }) => (loading ? "flex" : "flex")};
   justify-content: center;
   align-items: center;
   z-index: 100;
@@ -79,6 +79,8 @@ const Home = () => {
   const handleLoading = (e) => setLoading(false);
 
   useEffect(handleLoading, []);
+
+  console.log(loading);
 
   return (
     <motion.div initial="out" animate="in" exit="out" variants={pageTransition}>
