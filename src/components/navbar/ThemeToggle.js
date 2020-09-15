@@ -13,6 +13,9 @@ const Toggle = styled.div`
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   margin-left: 1.2rem;
+  @media (max-width: 768px) {
+    margin-top: 1rem;
+  }
 `;
 
 const Notch = styled.div`

@@ -123,26 +123,6 @@ const RightNav = (props) => {
         </StyledNavlink>
       ))}
       <ThemeToggle themeToggler={themeToggler} />
-
-      {/* <StyledNavlink
-        activeClassName="active"
-        onClick={() => setOpen(!open)}
-        to="/"
-      >
-        Home
-      </StyledNavlink>
-      <StyledNavlink onClick={() => setOpen(!open)} to="/about">
-        About
-      </StyledNavlink>
-      <StyledNavlink onClick={() => setOpen(!open)} to="/activities">
-        Activities
-      </StyledNavlink>
-      <StyledNavlink onClick={() => setOpen(!open)} to="/newsletter">
-        NewsLetter
-      </StyledNavlink>
-      <StyledNavlink onClick={() => setOpen(!open)} to="/contact">
-        Contact
-      </StyledNavlink> */}
     </UL>
   );
 };
