@@ -11,7 +11,11 @@ const Footer = (props) => {
     <footer className="footer-section">
       <div className="wrapper">
         <div className="footer-col">
-          <img src={theme === "light" ? logoblack : logowhite} alt="" />
+          <img
+            loading="lazy"
+            src={theme === "light" ? logoblack : logowhite}
+            alt=""
+          />
           <p className="footer-col-desc paragraph">
             If you think you have the passion, attitude and capability to join
             us, don't hesitate

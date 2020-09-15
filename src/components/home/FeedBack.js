@@ -8,7 +8,12 @@ const FeedBack = () => {
       <Container>
         <Carousel>
           <Carousel.Item>
-            <img className="d-block w-100" src={pic} alt="First slide" />
+            <img
+              loading="lazy"
+              className="d-block w-100"
+              src={pic}
+              alt="First slide"
+            />
             <Carousel.Caption>
               <p className="name">First slide label</p>
               <p className="description">
@@ -19,7 +24,12 @@ const FeedBack = () => {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img className="d-block w-100" src={pic} alt="Third slide" />
+            <img
+              loading="lazy"
+              className="d-block w-100"
+              src={pic}
+              alt="Third slide"
+            />
 
             <Carousel.Caption>
               <p className="name">First slide label</p>
@@ -31,7 +41,12 @@ const FeedBack = () => {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img className="d-block w-100" src={pic} alt="Third slide" />
+            <img
+              loading="lazy"
+              className="d-block w-100"
+              src={pic}
+              alt="Third slide"
+            />
 
             <Carousel.Caption>
               <p className="name">First slide label</p>

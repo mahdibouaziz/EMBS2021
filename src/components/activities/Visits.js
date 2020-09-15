@@ -23,6 +23,7 @@ const Visits = () => {
           <Carousel interval={2500} className="visit-carr" fade={false}>
             <Carousel.Item className="item">
               <img
+                loading="lazy"
                 className="d-block w-100"
                 src={visit2018_1}
                 alt="First slide"
@@ -30,6 +31,7 @@ const Visits = () => {
             </Carousel.Item>
             <Carousel.Item>
               <img
+                loading="lazy"
                 className="d-block w-100"
                 src={visit2018_2}
                 alt="Third slide"
@@ -37,6 +39,7 @@ const Visits = () => {
             </Carousel.Item>
             <Carousel.Item>
               <img
+                loading="lazy"
                 className="d-block w-100"
                 src={visit2018_3}
                 alt="Third slide"

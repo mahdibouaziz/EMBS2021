@@ -62,7 +62,7 @@ const Collaboration = () => {
             <div key={e.link} className="collab-box">
               <a href={e.link} target="_blank" rel="noopener noreferrer">
                 {" "}
-                <img src={e.image} alt="" />
+                <img loading="lazy" src={e.image} alt="" />
               </a>
 
               <div className="main-row-text">

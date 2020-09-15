@@ -39,7 +39,7 @@ const Sponsors = () => {
         </Row>
         <Row className="sponsor">
           {imgSponsors.map((e) => (
-            <img key={e.id} src={e.source} alt="" />
+            <img loading="lazy" key={e.id} src={e.source} alt="" />
           ))}
         </Row>
       </Container>

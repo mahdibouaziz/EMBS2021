@@ -70,6 +70,7 @@ const About = (props) => {
             </Col>
             <Col className="col-about" sm={12} md={4}>
               <img
+                loading="lazy"
                 className="embs-logo"
                 src={theme === "light" ? embs_white : embs_black}
                 alt="ieee"
@@ -102,6 +103,7 @@ const About = (props) => {
             </Col>
             <Col className="col-about" sm={12} md={{ span: 4, order: 1 }}>
               <img
+                loading="lazy"
                 className="ieee-tunisia-logo"
                 src={
                   theme === "light" ? ieee_tunisia_white : ieee_tunisia_black
@@ -128,6 +130,7 @@ const About = (props) => {
             </Col>
             <Col className="col-about" sm={12} md={4}>
               <img
+                loading="lazy"
                 className="ieee-insat-logo"
                 src={theme === "light" ? ieee_insat_white : ieee_insat_black}
                 alt="ieee"
@@ -159,6 +162,7 @@ const About = (props) => {
             </Col>
             <Col className="col-about" sm={12} md={{ span: 4, order: 1 }}>
               <img
+                loading="lazy"
                 className="embs-logo"
                 src={theme === "light" ? embs_logo_white : embs_logo_black}
                 alt="ieee"
