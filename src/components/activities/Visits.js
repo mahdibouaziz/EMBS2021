@@ -21,7 +21,7 @@ const Visits = () => {
         </Row>
         <Row className="main-row">
           <Carousel interval={2500} className="visit-carr" fade={false}>
-            <Carousel.Item>
+            <Carousel.Item className="item">
               <img
                 loading="lazy"
                 className="d-block w-100"

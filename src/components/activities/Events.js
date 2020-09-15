@@ -1,26 +1,25 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
-import biiot from "./img/events/biiot.webp";
-import biiot_challenge from "./img/events/biiot_challenge.webp";
-import health_tech from "./img/events/health_tech.webp";
+import bioit from "./img/events/bioit.webp";
+import biiot_challenge from "./img/events/biiot_challenge.jpg";
+import health_tech from "./img/events/health_tech.jpg";
 import nanobang from "./img/events/nanobang.webp";
 
 const events = [
   {
-    link:
-      "https://www.facebook.com/pg/EMBS.INSAT/photos/?tab=album&album_id=313884439292827",
-    image: biiot,
-    date: 2019,
-    desc: "BIIOT Challenge",
+    link: "https://www.facebook.com/media/set/?set=a.440308076650462&type=3",
+    image: bioit,
+    date: "2019",
+    desc: "BIOIT",
     views: "2k Views",
-    comments: "02",
-    share: "06",
+    comments: "05",
+    share: "07",
   },
   {
     link:
       "https://www.facebook.com/pg/EMBS.INSAT/photos/?tab=album&album_id=297151707632767&ref=page_internal",
     image: health_tech,
-    date: "2018",
+    date: "2019",
     desc: "Health Tech",
     views: "1k Views",
     comments: "02",
@@ -28,14 +27,15 @@ const events = [
   },
   {
     link:
-      "https://www.facebook.com/pg/EMBS.INSAT/photos/?tab=album&album_id=378824322798838&ref=page_internal",
+      "https://www.facebook.com/pg/EMBS.INSAT/photos/?tab=album&album_id=313884439292827",
     image: biiot_challenge,
-    date: "2019",
-    desc: "BIIOT",
+    date: 2018,
+    desc: "BIIOT Challenge",
     views: "2k Views",
-    comments: "05",
-    share: "07",
+    comments: "02",
+    share: "06",
   },
+
   {
     link: "#",
     image: nanobang,
