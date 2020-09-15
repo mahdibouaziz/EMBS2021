@@ -19,7 +19,6 @@ const ourTeam = [
     fb: "https://www.facebook.com/saaidia.farouk",
     insta: "https://www.instagram.com/farouk.saaidia/",
     linkedin: "",
-    loading: "eager",
   },
   {
     image: emnag,
@@ -28,7 +27,6 @@ const ourTeam = [
     fb: "https://www.facebook.com/emna.guesmi.0123",
     insta: "https://www.instagram.com/emna.guesmi12/",
     linkedin: "",
-    loading: "eager",
   },
   {
     image: emnah,
@@ -37,7 +35,6 @@ const ourTeam = [
     fb: "https://www.facebook.com/emna.hdili",
     insta: "https://www.instagram.com/emnahdili/",
     linkedin: "",
-    loading: "eager",
   },
   {
     image: houssem,
@@ -46,7 +43,6 @@ const ourTeam = [
     fb: "https://www.facebook.com/houssem.zitoun.2k",
     insta: "https://www.instagram.com/houssamzitoun/",
     linkedin: "",
-    loading: "eager",
   },
   {
     image: rihab,
@@ -55,7 +51,6 @@ const ourTeam = [
     fb: "https://www.facebook.com/rihab.darghouthi",
     insta: "https://www.instagram.com/rihab_darghouthi/",
     linkedin: "",
-    loading: "lazy",
   },
   {
     image: selma,
@@ -64,7 +59,6 @@ const ourTeam = [
     fb: "https://www.facebook.com/selma.ayachi",
     insta: "https://www.instagram.com/selmaayachi/",
     linkedin: "",
-    loading: "lazy",
   },
   {
     image: aicha,
@@ -73,7 +67,6 @@ const ourTeam = [
     fb: "https://www.facebook.com/aicha.hedda.52",
     insta: "https://www.instagram.com/aycha_hedda/",
     linkedin: "",
-    loading: "lazy",
   },
   {
     image: mahdi,
@@ -82,7 +75,6 @@ const ourTeam = [
     fb: "https://www.facebook.com/mahdi.bouaziz.319",
     insta: "https://www.instagram.com/mahdii.bouaziz/",
     linkedin: "",
-    loading: "lazy",
   },
 ];
 
@@ -98,7 +90,7 @@ const Team = () => {
         <Row className="main-row">
           {ourTeam.map((e) => (
             <div key={e.post} className="team-boxes">
-              <img loading={e.loading} src={e.image} alt={e.name} />
+              <img src={e.image} alt={e.name} />
               <p className="name">{e.name}</p>
               <p className="post">{e.post}</p>
               <p className="social">

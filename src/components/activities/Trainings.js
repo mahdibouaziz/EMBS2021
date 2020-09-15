@@ -32,12 +32,7 @@ const Trainings = () => {
               put at the disposal of some of its members a certified ISO 17025
               training.
             </p>
-            <img
-              loading="lazy"
-              className="training-img"
-              src={iso_training}
-              alt="pic"
-            />
+            <img className="training-img" src={iso_training} alt="pic" />
             <p className="training-date">
               <i className="far fa-calendar-check"></i> November, 2018
             </p>
@@ -46,12 +41,7 @@ const Trainings = () => {
               through a workshop combining biology, computer science and
               mathematics conducted by Mr Ali Chamkhi
             </p>
-            <img
-              loading="lazy"
-              className="training-img"
-              src={python_training}
-              alt="pic"
-            />
+            <img className="training-img" src={python_training} alt="pic" />
           </div>
 
           <div className="act-boxes">
@@ -67,7 +57,6 @@ const Trainings = () => {
               Management training session with Mrs Amal Monsri
             </p>
             <img
-              loading="lazy"
               className="training-img"
               src={community_management_training}
               alt="pic"
@@ -81,7 +70,6 @@ const Trainings = () => {
               Speaking training Session.
             </p>
             <img
-              loading="lazy"
               className="training-img"
               src={public_speaking_training}
               alt="pic"
