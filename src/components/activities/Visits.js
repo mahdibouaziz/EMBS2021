@@ -20,29 +20,40 @@ const Visits = () => {
           <p className="visit-date paragraph">2018/2019</p>
         </Row>
         <Row className="main-row">
-          <Carousel interval={2500} className="visit-carr" fade={false}>
-            <Carousel.Item className="item">
-              <img
-                className="d-block w-100"
-                src={visit2018_1}
-                alt="First slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={visit2018_2}
-                alt="Third slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={visit2018_3}
-                alt="Third slide"
-              />
-            </Carousel.Item>
-          </Carousel>
+          <div className="visit-wrapper">
+            <p className="visit-text">
+              Lorem ipsum dolor sit amet consectetur
+              <br /> adipisicing elit. Ad, laborum!
+            </p>
+            <Carousel
+              pause="false"
+              interval={2500}
+              className="visit-carr"
+              fade={false}
+            >
+              <Carousel.Item className="item">
+                <img
+                  className="d-block w-100"
+                  src={visit2018_1}
+                  alt="First slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={visit2018_2}
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={visit2018_3}
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+            </Carousel>
+          </div>
         </Row>
       </Container>
     </section>

@@ -289,10 +289,45 @@
   width: 80%;
 }
 
+/* Text when Hovering on the carousel */
+.visit-wrapper {
+  transition: background-color 0.3s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.visit-wrapper:hover {
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+.visit-text {
+  color: transparent;
+  position: absolute;
+  font-size: 1.7rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.visit-wrapper:hover .visit-text {
+  color: #fff;
+}
+
+.visit-wrapper .visit-carr {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.visit-wrapper:hover .visit-carr {
+  opacity: 0.2;
+}
+
 /* ipad */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .visits-section .title {
     font-size: 2rem;
+  }
+
+  .visit-text {
+    font-size: 1.4rem;
   }
 }
 
@@ -304,5 +339,20 @@
 
   .visits-section .visit-date {
     font-size: 1.2rem;
+  }
+  .visit-text {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .visit-text {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .visit-text {
+    font-size: 0.8rem;
   }
 }
