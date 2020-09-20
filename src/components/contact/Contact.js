@@ -1,5 +1,5 @@
 import React from "react";
-import pic from "./img/pic.jpg";
+import pic from "./img/pic.webp";
 import "./styleContact.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import styled from "styled-components";

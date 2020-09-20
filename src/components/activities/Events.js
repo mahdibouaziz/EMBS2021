@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
 import bioit from "./img/events/bioit.webp";
-import biiot_challenge from "./img/events/biiot_challenge.jpg";
-import health_tech from "./img/events/health_tech.jpg";
+import biiot_challenge from "./img/events/biiot_challenge.webp";
+import health_tech from "./img/events/health_tech.webp";
 import nanobang from "./img/events/nanobang.webp";
 
 const events = [

@@ -180,7 +180,7 @@
 .Feedback {
   padding-bottom: 1rem;
   position: relative;
-  background-image: url("./img/feedback/feedbackbg.jpg");
+  background-image: url("./img/feedback/feedbackbg.webp");
   min-height: 100%;
   opacity: 0.95;
   background-position: center;

@@ -6,9 +6,9 @@ import emnag from "./img/team/emnag.webp";
 import emnah from "./img/team/emnah.webp";
 import farouk from "./img/team/farouk.webp";
 import houssem from "./img/team/houssem.webp";
-import mahdi from "./img/team/mahdi.jpg";
+import mahdi from "./img/team/mahdi.webp";
 import rihab from "./img/team/rihab.webp";
-import selma from "./img/team/selma.jpg";
+import selma from "./img/team/selma.webp";
 import { SiFacebook, SiInstagram, SiLinkedin } from "react-icons/si";
 
 const ourTeam = [

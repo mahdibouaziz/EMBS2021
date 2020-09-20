@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
-import img1 from "./img/collabs/img1.jpg";
-import img2 from "./img/collabs/img2.jpg";
-import img3 from "./img/collabs/img3.jpg";
-import img4 from "./img/collabs/img4.jpg";
+import img1 from "./img/collabs/img1.webp";
+import img2 from "./img/collabs/img2.webp";
+import img3 from "./img/collabs/img3.webp";
+import img4 from "./img/collabs/img4.webp";
 
 const collab = [
   {
