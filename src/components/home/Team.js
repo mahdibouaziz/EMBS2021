@@ -18,7 +18,7 @@ const ourTeam = [
     post: "Chairman",
     fb: "https://www.facebook.com/saaidia.farouk",
     insta: "https://www.instagram.com/farouk.saaidia/",
-    linkedin: "",
+    linkedin: "#",
   },
   {
     image: emnag,
@@ -26,7 +26,7 @@ const ourTeam = [
     post: "Vice Chair",
     fb: "https://www.facebook.com/emna.guesmi.0123",
     insta: "https://www.instagram.com/emna.guesmi12/",
-    linkedin: "",
+    linkedin: "#",
   },
   {
     image: emnah,
@@ -34,7 +34,7 @@ const ourTeam = [
     post: "HR Manager",
     fb: "https://www.facebook.com/emna.hdili",
     insta: "https://www.instagram.com/emnahdili/",
-    linkedin: "",
+    linkedin: "#",
   },
   {
     image: houssem,
@@ -42,7 +42,7 @@ const ourTeam = [
     post: "General Secretary",
     fb: "https://www.facebook.com/houssem.zitoun.2k",
     insta: "https://www.instagram.com/houssamzitoun/",
-    linkedin: "",
+    linkedin: "#",
   },
   {
     image: rihab,
@@ -50,7 +50,7 @@ const ourTeam = [
     post: "Training Manager",
     fb: "https://www.facebook.com/rihab.darghouthi",
     insta: "https://www.instagram.com/rihab_darghouthi/",
-    linkedin: "",
+    linkedin: "#",
   },
   {
     image: selma,
@@ -58,7 +58,7 @@ const ourTeam = [
     post: "Media Manager",
     fb: "https://www.facebook.com/selma.ayachi",
     insta: "https://www.instagram.com/selmaayachi/",
-    linkedin: "",
+    linkedin: "#",
   },
   {
     image: aicha,
@@ -66,7 +66,7 @@ const ourTeam = [
     post: "Treasurer",
     fb: "https://www.facebook.com/aicha.hedda.52",
     insta: "https://www.instagram.com/aycha_hedda/",
-    linkedin: "",
+    linkedin: "#",
   },
   {
     image: mahdi,
@@ -74,7 +74,7 @@ const ourTeam = [
     post: "Webmaster",
     fb: "https://www.facebook.com/mahdi.bouaziz.319",
     insta: "https://www.instagram.com/mahdii.bouaziz/",
-    linkedin: "",
+    linkedin: "#",
   },
 ];
 

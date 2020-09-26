@@ -37,9 +37,9 @@ const FeedBack = () => {
             <Carousel.Caption>
               <p className="name">Aziz Nasr</p>
               <p className="description">
-                Nulla vitae elit libero, a pharetra augue mollis interdum. Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
-                earum?
+                Life is about becoming a better version of yourself, in order to
+                make it you really need to have an organization like IEEE behind
+                you.
               </p>
             </Carousel.Caption>
           </Carousel.Item>
