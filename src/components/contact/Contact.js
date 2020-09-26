@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import pic from "./img/pic.webp";
 import "./styleContact.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
@@ -21,6 +21,25 @@ const MyWrapper = styled.div`
 `;
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+  const [warningMsg, setWarningMsg] = useState(false);
+
+  const handleClick = (e) => {
+    if (name === "" || email === "" || subject === "" || message === "") {
+      setWarningMsg(true);
+      console.log(warningMsg);
+    } else {
+      setWarningMsg(false);
+      setName("");
+      setEmail("");
+      setSubject("");
+      setMessage("");
+    }
+  };
+
   return (
     <motion.div initial="out" animate="in" exit="out" variants={pageTransition}>
       <Wrapper>
@@ -53,6 +72,8 @@ const Contact = () => {
                     id="name"
                     name="name"
                     placeholder="Name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
                   />
                   <input
                     className="input input-email"
@@ -60,6 +81,8 @@ const Contact = () => {
                     id="email"
                     name="email"
                     placeholder="Email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </MyWrapper>
 
@@ -69,18 +92,32 @@ const Contact = () => {
                   id="subject"
                   name="subject"
                   placeholder="Subject"
+                  value={subject}
+                  onChange={(e) => setSubject(e.target.value)}
                 />
                 <textarea
                   className="input"
                   type="textarea"
                   name="msg"
                   placeholder="Your Message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                 />
+
+                {warningMsg ? (
+                  <p className="error-contact">
+                    Please fill the required fields above.
+                  </p>
+                ) : (
+                  ""
+                )}
+
                 <Button
                   className="btn btn-contact"
                   variant="primary"
                   size="lg"
                   block
+                  onClick={handleClick}
                 >
                   SEND MESSAGE
                 </Button>
