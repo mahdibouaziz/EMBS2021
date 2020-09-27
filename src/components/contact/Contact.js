@@ -58,7 +58,7 @@ const Contact = () => {
           </Row>
           <Row>
             <p className="body paragraph">
-              Do you wanna know more about IEEE EMBS INSAT? Don't hesitate to
+              Do you want to know more about IEEE EMBS INSAT? Don't hesitate to
               contact us!.
             </p>
           </Row>

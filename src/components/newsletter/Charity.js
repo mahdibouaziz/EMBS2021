@@ -35,7 +35,7 @@ const Charity = () => {
                 Nicolle’s hospital
               </p>
               <p>
-                a variety of workshops such as; the DIY (do-it-yourself)
+                A variety of workshops such as; the DIY (do-it-yourself)
                 workshop.
               </p>
               <p>
@@ -67,7 +67,7 @@ const Charity = () => {
               <img src={pic2018} alt="" />
               <h2>Charity Day 2019</h2>
               <p>We went to “Bechir Hamza Children’s Hospital“</p>
-              <p>offered them gifts and spent the day having fun</p>
+              <p>Offered them gifts and spent the day having fun</p>
               <p>
                 and putting a smile on their faces by doing a bunch of
                 activities such as plays

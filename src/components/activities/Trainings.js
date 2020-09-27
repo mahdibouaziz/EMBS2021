@@ -14,7 +14,7 @@ const Trainings = () => {
           <h1 className="title">Trainings We Provide</h1>
           <p className="body paragraph">
             IEEE INSAT EMBS Chapter often provides several events in different
-            domains, here is a glipmse of our top trainings.
+            domains, here is a glimpse of our top trainings.
           </p>
         </Row>
 

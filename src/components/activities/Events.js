@@ -55,8 +55,8 @@ const Events = () => {
         <Row>
           <h1 className="title">Events We Organize</h1>
           <p className="body paragraph">
-            IEEE INSAT EMBS Chapter organizes annually multiple events, here is
-            a glimpse of our annual events.
+            IEEE INSAT EMBS Chapter organizes annually multiple events, here's a
+            glimpse of what we have been working on.
           </p>
         </Row>
 

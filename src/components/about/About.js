@@ -85,7 +85,7 @@ const About = (props) => {
                 <br />
                 The objectives are:
                 <br />
-                To encourage researchers to cooperate.
+                - To encourage researchers to cooperate.
                 <br />
                 - To increase contributions in the area of IEEE Engineering in
                 Medicine and Biology Society.
@@ -116,7 +116,7 @@ const About = (props) => {
               <h1 className="title">EMBS IN INSAT !</h1>
               <p className="paragraph">
                 INSAT Student Branch EMBS Chapter is the latest chapter within
-                our Student Branch , it was created on 2017, By students from
+                our Student Branch , it was created on 2017, by students from
                 different Specialties : Biological Engineering and Chemical
                 Engineering mainly, but also Instrumentation, Industrial
                 Computer Science … Aiming to link our studies to the latest
@@ -140,7 +140,7 @@ const About = (props) => {
               <h1 className="title">WELCOME TO OUR COMMUNITY !</h1>
               <p className="paragraph">
                 Do you want to know how to design the electrical circuits that
-                make a pacemaker run ? or create the software that reads an MRI
+                make a pacemaker run ? Or create the software that reads an MRI
                 ?
                 <br />
                 Or maybe you're interested in developing the wireless

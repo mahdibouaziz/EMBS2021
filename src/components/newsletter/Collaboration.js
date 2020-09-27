@@ -52,9 +52,9 @@ const Collaboration = () => {
         </Row>
         <Row>
           <p className="body paragraph">
-            Our chapter takes part in yearly events, such as IEEE day, TSYP.. by
-            organising and attending them along with other INSAT student branch
-            chapters.
+            Our chapter takes part in yearly events, such as IEEE day, TSYP...
+            By organising and attending them along with other INSAT student
+            branch chapters.
           </p>
         </Row>
         <Row className="main-row">
